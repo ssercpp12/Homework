@@ -1,0 +1,108 @@
+===  12330432_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+[       OK ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+[       OK ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+series_comp_unittest.cpp:38: Failure
+The difference between -9 and sc.taylor(10) is 10, which exceeds 0.01, where
+-9 evaluates to -9,
+sc.taylor(10) evaluates to 1, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+[       OK ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+[       OK ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 8 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] SeriesCompTest.Taylor_1
+
+ 1 FAILED TEST
+
+--------- Cpplint Check ---------
+12330432_series_comp.cpp:1:  Streams are highly discouraged.  [readability/streams] [3]
+12330432_series_comp.cpp:4:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330432_series_comp.cpp:11:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330432_series_comp.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:14:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330432_series_comp.cpp:14:  Missing space before {  [whitespace/braces] [5]
+12330432_series_comp.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:20:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330432_series_comp.cpp:21:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330432_series_comp.cpp:22:  Missing space after ,  [whitespace/comma] [3]
+12330432_series_comp.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:27:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330432_series_comp.cpp:27:  Missing space before {  [whitespace/braces] [5]
+12330432_series_comp.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:29:  Missing space after ;  [whitespace/semicolon] [3]
+12330432_series_comp.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:30:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330432_series_comp.cpp:30:  Missing space before {  [whitespace/braces] [5]
+12330432_series_comp.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:41:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330432_series_comp.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:44:  Missing space before ( in if(  [whitespace/parens] [5]
+12330432_series_comp.cpp:45:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:46:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:47:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:47:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330432_series_comp.cpp:47:  Missing space before {  [whitespace/braces] [5]
+12330432_series_comp.cpp:48:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:48:  Missing space after ;  [whitespace/semicolon] [3]
+12330432_series_comp.cpp:49:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:49:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330432_series_comp.cpp:49:  Missing space before {  [whitespace/braces] [5]
+12330432_series_comp.cpp:50:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:50:  Missing space after ,  [whitespace/comma] [3]
+12330432_series_comp.cpp:50:  Using C-style cast.  Use static_cast<double>(...) instead  [readability/casting] [4]
+12330432_series_comp.cpp:51:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:52:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:53:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:54:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:55:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:56:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:57:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330432_series_comp.cpp:60:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330432_series_comp.cpp:10:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330432_series_comp.cpp:50:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330432_series_comp.cpp:51:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330432_series_comp.cpp:53:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+Done processing 12330432_series_comp.cpp
+Total errors found: 61

@@ -1,0 +1,214 @@
+===  12330092_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In member function ‘int Version::CompareTo(const Version&) const’:
+version.cpp:132:1: warning: control reaches end of non-void function [-Wreturn-type]
+g++ -c -Wall version_unittest.cpp -o version_unittest.o
+g++ version.o version_unittest.o -lpthread -lgtest -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+[==========] Running 15 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 15 tests from VersionTest
+[ RUN      ] VersionTest.ValueSemantics_1
+[       OK ] VersionTest.ValueSemantics_1 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_2
+[       OK ] VersionTest.ValueSemantics_2 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_3
+version_unittest.cpp:40: Failure
+Value of: v1.IsValid()
+  Actual: true
+Expected: false
+[  FAILED  ] VersionTest.ValueSemantics_3 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_4
+[       OK ] VersionTest.ValueSemantics_4 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_5
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+[  FAILED  ] VersionTest.ValueSemantics_5 (0 ms)
+[ RUN      ] VersionTest.Compare_0
+[       OK ] VersionTest.Compare_0 (0 ms)
+[ RUN      ] VersionTest.Compare_1
+[       OK ] VersionTest.Compare_1 (0 ms)
+[ RUN      ] VersionTest.Compare_2
+[       OK ] VersionTest.Compare_2 (0 ms)
+[ RUN      ] VersionTest.Compare_3
+[       OK ] VersionTest.Compare_3 (0 ms)
+[ RUN      ] VersionTest.Compare_4
+[       OK ] VersionTest.Compare_4 (0 ms)
+[ RUN      ] VersionTest.Compare_5
+[       OK ] VersionTest.Compare_5 (0 ms)
+[ RUN      ] VersionTest.Compare_6
+[       OK ] VersionTest.Compare_6 (1 ms)
+[ RUN      ] VersionTest.Compare_7
+[       OK ] VersionTest.Compare_7 (0 ms)
+[ RUN      ] VersionTest.Compare_8
+[       OK ] VersionTest.Compare_8 (0 ms)
+[ RUN      ] VersionTest.Compare_9
+[       OK ] VersionTest.Compare_9 (0 ms)
+[----------] 15 tests from VersionTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 13 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] VersionTest.ValueSemantics_3
+[  FAILED  ] VersionTest.ValueSemantics_5
+
+ 2 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330092_version.cpp:1:  Streams are highly discouraged.  [readability/streams] [3]
+12330092_version.cpp:6:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:7:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:8:  Missing space after ,  [whitespace/comma] [3]
+12330092_version.cpp:9:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:10:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:10:  Missing spaces around <  [whitespace/operators] [3]
+12330092_version.cpp:10:  Missing space after ;  [whitespace/semicolon] [3]
+12330092_version.cpp:11:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:12:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:13:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:14:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:15:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:16:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:17:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:18:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:18:  Missing spaces around <  [whitespace/operators] [3]
+12330092_version.cpp:18:  Missing space before ( in for(  [whitespace/parens] [5]
+12330092_version.cpp:18:  Missing space after ;  [whitespace/semicolon] [3]
+12330092_version.cpp:19:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:20:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:20:  Blank line at the start of a code block.  Is this needed?  [whitespace/blank_line] [2]
+12330092_version.cpp:21:  Missing spaces around <=  [whitespace/operators] [3]
+12330092_version.cpp:21:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:22:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:23:  Missing spaces around ==  [whitespace/operators] [3]
+12330092_version.cpp:23:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:26:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330092_version.cpp:27:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:28:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:32:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:33:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:34:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:35:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:36:  Missing spaces around <  [whitespace/operators] [3]
+12330092_version.cpp:36:  Missing space before ( in while(  [whitespace/parens] [5]
+12330092_version.cpp:37:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:37:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:38:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:39:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:39:  Missing spaces around <  [whitespace/operators] [3]
+12330092_version.cpp:39:  Missing space before ( in for(  [whitespace/parens] [5]
+12330092_version.cpp:39:  Missing space after ;  [whitespace/semicolon] [3]
+12330092_version.cpp:40:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:41:  Missing spaces around ==  [whitespace/operators] [3]
+12330092_version.cpp:41:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:42:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:43:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:44:  Missing spaces around <  [whitespace/operators] [3]
+12330092_version.cpp:44:  Missing space before ( in while(  [whitespace/parens] [5]
+12330092_version.cpp:45:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:45:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:46:  Missing space after ,  [whitespace/comma] [3]
+12330092_version.cpp:46:  Using C-style cast.  Use static_cast<int>(...) instead  [readability/casting] [4]
+12330092_version.cpp:47:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:50:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:52:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:56:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:57:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:58:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:59:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:59:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:60:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:61:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:61:  Missing spaces around >=  [whitespace/operators] [3]
+12330092_version.cpp:61:  Missing space before ( in for(  [whitespace/parens] [5]
+12330092_version.cpp:61:  Missing space after ;  [whitespace/semicolon] [3]
+12330092_version.cpp:62:  Missing space after ,  [whitespace/comma] [3]
+12330092_version.cpp:62:  Using C-style cast.  Use static_cast<int>(...) instead  [readability/casting] [4]
+12330092_version.cpp:67:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:68:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:68:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:69:  Missing spaces around ==  [whitespace/operators] [3]
+12330092_version.cpp:69:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:72:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:75:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:76:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:77:  Missing space after ,  [whitespace/comma] [3]
+12330092_version.cpp:78:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:79:  Missing spaces around <=  [whitespace/operators] [3]
+12330092_version.cpp:79:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:80:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:80:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:81:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:82:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:84:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330092_version.cpp:85:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:86:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:86:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:87:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:89:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:90:  Missing spaces around ==  [whitespace/operators] [3]
+12330092_version.cpp:90:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:92:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:93:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:94:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:95:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:96:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:97:  Missing spaces around <  [whitespace/operators] [3]
+12330092_version.cpp:97:  Missing space before ( in while(  [whitespace/parens] [5]
+12330092_version.cpp:98:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:99:  Missing spaces around >  [whitespace/operators] [3]
+12330092_version.cpp:99:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:101:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:101:  Missing spaces around <  [whitespace/operators] [3]
+12330092_version.cpp:101:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:102:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:103:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:103:  Missing spaces around ==  [whitespace/operators] [3]
+12330092_version.cpp:103:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:104:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:108:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:108:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330092_version.cpp:109:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:110:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:111:  Missing spaces around ==  [whitespace/operators] [3]
+12330092_version.cpp:112:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:113:  Missing spaces around !=  [whitespace/operators] [3]
+12330092_version.cpp:113:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:114:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:115:  Missing spaces around =  [whitespace/operators] [4]
+12330092_version.cpp:115:  Missing spaces around <  [whitespace/operators] [3]
+12330092_version.cpp:115:  Missing space before ( in for(  [whitespace/parens] [5]
+12330092_version.cpp:115:  Missing space after ;  [whitespace/semicolon] [3]
+12330092_version.cpp:116:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:117:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:117:  Missing spaces around >  [whitespace/operators] [3]
+12330092_version.cpp:117:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:119:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:119:  Missing spaces around <  [whitespace/operators] [3]
+12330092_version.cpp:119:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:120:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:121:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:121:  Missing spaces around ==  [whitespace/operators] [3]
+12330092_version.cpp:121:  Missing space before ( in if(  [whitespace/parens] [5]
+12330092_version.cpp:122:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330092_version.cpp:125:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:126:  Missing spaces around ==  [whitespace/operators] [3]
+12330092_version.cpp:127:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:129:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:130:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:131:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330092_version.cpp:131:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+Done processing 12330092_version.cpp
+Total errors found: 143

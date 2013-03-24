@@ -1,0 +1,185 @@
+===  12330152_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+g++ -c -Wall version_unittest.cpp -o version_unittest.o
+g++ version.o version_unittest.o -lpthread -lgtest -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+[==========] Running 15 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 15 tests from VersionTest
+[ RUN      ] VersionTest.ValueSemantics_1
+[       OK ] VersionTest.ValueSemantics_1 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_2
+[       OK ] VersionTest.ValueSemantics_2 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_3
+[       OK ] VersionTest.ValueSemantics_3 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_4
+[       OK ] VersionTest.ValueSemantics_4 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_5
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+[  FAILED  ] VersionTest.ValueSemantics_5 (0 ms)
+[ RUN      ] VersionTest.Compare_0
+[       OK ] VersionTest.Compare_0 (0 ms)
+[ RUN      ] VersionTest.Compare_1
+[       OK ] VersionTest.Compare_1 (0 ms)
+[ RUN      ] VersionTest.Compare_2
+[       OK ] VersionTest.Compare_2 (0 ms)
+[ RUN      ] VersionTest.Compare_3
+[       OK ] VersionTest.Compare_3 (0 ms)
+[ RUN      ] VersionTest.Compare_4
+[       OK ] VersionTest.Compare_4 (0 ms)
+[ RUN      ] VersionTest.Compare_5
+[       OK ] VersionTest.Compare_5 (0 ms)
+[ RUN      ] VersionTest.Compare_6
+[       OK ] VersionTest.Compare_6 (0 ms)
+[ RUN      ] VersionTest.Compare_7
+[       OK ] VersionTest.Compare_7 (0 ms)
+[ RUN      ] VersionTest.Compare_8
+[       OK ] VersionTest.Compare_8 (0 ms)
+[ RUN      ] VersionTest.Compare_9
+[       OK ] VersionTest.Compare_9 (0 ms)
+[----------] 15 tests from VersionTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 14 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] VersionTest.ValueSemantics_5
+
+ 1 FAILED TEST
+
+--------- Cpplint Check ---------
+12330152_version.cpp:2:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330152_version.cpp:4:  Missing space after ,  [whitespace/comma] [3]
+12330152_version.cpp:5:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:6:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:6:  Missing spaces around ==  [whitespace/operators] [3]
+12330152_version.cpp:6:  Missing space after ,  [whitespace/comma] [3]
+12330152_version.cpp:10:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:11:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:11:  Missing spaces around !=  [whitespace/operators] [3]
+12330152_version.cpp:11:  Missing spaces around <  [whitespace/operators] [3]
+12330152_version.cpp:11:  Missing spaces around >  [whitespace/operators] [3]
+12330152_version.cpp:15:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:16:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:16:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:17:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:17:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:17:  Missing space after ,  [whitespace/comma] [3]
+12330152_version.cpp:18:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:19:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:19:  Missing space after ,  [whitespace/comma] [3]
+12330152_version.cpp:20:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:20:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:21:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:21:  Missing space before ( in while(  [whitespace/parens] [5]
+12330152_version.cpp:22:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:22:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:23:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:23:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:24:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:24:  Missing space before ( in if(  [whitespace/parens] [5]
+12330152_version.cpp:25:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:25:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:26:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:28:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:29:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330152_version.cpp:30:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:30:  Missing spaces around ==  [whitespace/operators] [3]
+12330152_version.cpp:30:  Missing space before ( in if(  [whitespace/parens] [5]
+12330152_version.cpp:31:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:31:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:32:  Missing spaces around ==  [whitespace/operators] [3]
+12330152_version.cpp:32:  Missing space before ( in if(  [whitespace/parens] [5]
+12330152_version.cpp:33:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:34:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:38:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:38:  Missing space after ,  [whitespace/comma] [3]
+12330152_version.cpp:39:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:40:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330152_version.cpp:41:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:41:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330152_version.cpp:42:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330152_version.cpp:42:  Missing space after ,  [whitespace/comma] [3]
+12330152_version.cpp:44:  Missing spaces around ==  [whitespace/operators] [3]
+12330152_version.cpp:44:  Missing space before ( in if(  [whitespace/parens] [5]
+12330152_version.cpp:45:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:48:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:48:  Missing spaces around <  [whitespace/operators] [3]
+12330152_version.cpp:48:  Missing space before ( in for(  [whitespace/parens] [5]
+12330152_version.cpp:48:  Missing space after ;  [whitespace/semicolon] [3]
+12330152_version.cpp:49:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:50:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:57:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:58:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:58:  Missing spaces around ==  [whitespace/operators] [3]
+12330152_version.cpp:61:  Missing space after ,  [whitespace/comma] [3]
+12330152_version.cpp:62:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:63:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:63:  Missing spaces around <  [whitespace/operators] [3]
+12330152_version.cpp:67:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:68:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:68:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:68:  Missing space after ,  [whitespace/comma] [3]
+12330152_version.cpp:69:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:69:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:69:  Missing space after ,  [whitespace/comma] [3]
+12330152_version.cpp:70:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:70:  Missing spaces around ==  [whitespace/operators] [3]
+12330152_version.cpp:70:  Missing space before ( in while(  [whitespace/parens] [5]
+12330152_version.cpp:71:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:71:  Missing spaces around ==  [whitespace/operators] [3]
+12330152_version.cpp:71:  Missing space before ( in while(  [whitespace/parens] [5]
+12330152_version.cpp:72:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:72:  Missing spaces around =  [whitespace/operators] [4]
+12330152_version.cpp:72:  Missing spaces around <  [whitespace/operators] [3]
+12330152_version.cpp:72:  Missing space before ( in for(  [whitespace/parens] [5]
+12330152_version.cpp:72:  Missing space after ;  [whitespace/semicolon] [3]
+12330152_version.cpp:73:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:73:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_version.cpp:74:  Missing spaces around <  [whitespace/operators] [3]
+12330152_version.cpp:74:  Missing space before ( in if(  [whitespace/parens] [5]
+12330152_version.cpp:75:  Missing spaces around >  [whitespace/operators] [3]
+12330152_version.cpp:75:  Missing space before ( in if(  [whitespace/parens] [5]
+12330152_version.cpp:76:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:77:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:77:  Missing spaces around <  [whitespace/operators] [3]
+12330152_version.cpp:77:  Missing space before ( in if(  [whitespace/parens] [5]
+12330152_version.cpp:78:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:78:  Missing spaces around >  [whitespace/operators] [3]
+12330152_version.cpp:78:  Missing space before ( in if(  [whitespace/parens] [5]
+12330152_version.cpp:79:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_version.cpp:4:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330152_version.cpp:9:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330152_version.cpp:17:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330152_version.cpp:23:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330152_version.cpp:24:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330152_version.cpp:32:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330152_version.cpp:37:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330152_version.cpp:44:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330152_version.cpp:46:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330152_version.cpp:48:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330152_version.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330152_version.cpp
+Total errors found: 111

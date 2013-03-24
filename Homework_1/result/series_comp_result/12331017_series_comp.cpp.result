@@ -1,0 +1,105 @@
+===  12331017_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp:1:1: error: ‘SeriesComp’ does not name a type
+series_comp.cpp:4:5: error: ‘SeriesComp’ has not been declared
+series_comp.cpp: In function ‘int sum()’:
+series_comp.cpp:6:17: error: ‘n_’ was not declared in this scope
+series_comp.cpp:9:1: warning: no return statement in function returning non-void [-Wreturn-type]
+series_comp.cpp: At global scope:
+series_comp.cpp:10:5: error: ‘SeriesComp’ has not been declared
+series_comp.cpp: In function ‘int fib()’:
+series_comp.cpp:13:6: error: ‘n_’ was not declared in this scope
+series_comp.cpp:16:6: error: ‘n_’ was not declared in this scope
+series_comp.cpp:19:6: error: ‘n_’ was not declared in this scope
+series_comp.cpp: At global scope:
+series_comp.cpp:33:8: error: ‘SeriesComp’ has not been declared
+series_comp.cpp: In function ‘double taylor(double)’:
+series_comp.cpp:36:17: error: ‘n’ was not declared in this scope
+series_comp.cpp:34:10: warning: unused variable ‘k’ [-Wunused-variable]
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12331017_series_comp.cpp:1:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:2:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:4:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:5:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:5:  Missing space after ,  [whitespace/comma] [3]
+12331017_series_comp.cpp:6:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:6:  Missing space after ;  [whitespace/semicolon] [3]
+12331017_series_comp.cpp:6:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:7:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:9:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_series_comp.cpp:9:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12331017_series_comp.cpp:9:  Should have a space between // and comment  [whitespace/comments] [4]
+12331017_series_comp.cpp:10:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:12:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_series_comp.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:13:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:16:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:19:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:22:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_series_comp.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:23:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:30:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_series_comp.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:32:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_series_comp.cpp:32:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12331017_series_comp.cpp:32:  Should have a space between // and comment  [whitespace/comments] [4]
+12331017_series_comp.cpp:33:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:34:  Missing space after ,  [whitespace/comma] [3]
+12331017_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:35:  Missing space after ,  [whitespace/comma] [3]
+12331017_series_comp.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:36:  Missing space after ;  [whitespace/semicolon] [3]
+12331017_series_comp.cpp:36:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:37:  Missing space after ,  [whitespace/comma] [3]
+12331017_series_comp.cpp:37:  Missing space after ;  [whitespace/semicolon] [3]
+12331017_series_comp.cpp:37:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:40:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:43:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12331017_series_comp.cpp:43:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12331017_series_comp.cpp:43:  Missing space before {  [whitespace/braces] [5]
+12331017_series_comp.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:45:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:46:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:47:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_series_comp.cpp:48:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_series_comp.cpp:48:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12331017_series_comp.cpp:48:  Should have a space between // and comment  [whitespace/comments] [4]
+12331017_series_comp.cpp:9:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12331017_series_comp.cpp:32:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12331017_series_comp.cpp:48:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12331017_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12331017_series_comp.cpp
+Total errors found: 77

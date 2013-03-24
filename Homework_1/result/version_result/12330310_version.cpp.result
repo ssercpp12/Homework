@@ -1,0 +1,182 @@
+===  12330310_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In member function ‘int Version::CompareTo(const Version&) const’:
+version.cpp:83:1: warning: control reaches end of non-void function [-Wreturn-type]
+g++ -c -Wall version_unittest.cpp -o version_unittest.o
+g++ version.o version_unittest.o -lpthread -lgtest -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+[==========] Running 15 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 15 tests from VersionTest
+[ RUN      ] VersionTest.ValueSemantics_1
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.ValueSemantics_1 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_2
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.ValueSemantics_2 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_3
+version_unittest.cpp:40: Failure
+Value of: v1.IsValid()
+  Actual: true
+Expected: false
+[  FAILED  ] VersionTest.ValueSemantics_3 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_4
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.ValueSemantics_4 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_5
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.ValueSemantics_5 (0 ms)
+[ RUN      ] VersionTest.Compare_0
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.Compare_0 (0 ms)
+[ RUN      ] VersionTest.Compare_1
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.Compare_1 (0 ms)
+[ RUN      ] VersionTest.Compare_2
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.Compare_2 (0 ms)
+[ RUN      ] VersionTest.Compare_3
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.Compare_3 (1 ms)
+[ RUN      ] VersionTest.Compare_4
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.Compare_4 (0 ms)
+[ RUN      ] VersionTest.Compare_5
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.Compare_5 (0 ms)
+[ RUN      ] VersionTest.Compare_6
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.Compare_6 (0 ms)
+[ RUN      ] VersionTest.Compare_7
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.Compare_7 (0 ms)
+[ RUN      ] VersionTest.Compare_8
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.Compare_8 (0 ms)
+[ RUN      ] VersionTest.Compare_9
+unknown file: Failure
+C++ exception with description "basic_string::substr" thrown in the test body.
+[  FAILED  ] VersionTest.Compare_9 (0 ms)
+[----------] 15 tests from VersionTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 15 tests, listed below:
+[  FAILED  ] VersionTest.ValueSemantics_1
+[  FAILED  ] VersionTest.ValueSemantics_2
+[  FAILED  ] VersionTest.ValueSemantics_3
+[  FAILED  ] VersionTest.ValueSemantics_4
+[  FAILED  ] VersionTest.ValueSemantics_5
+[  FAILED  ] VersionTest.Compare_0
+[  FAILED  ] VersionTest.Compare_1
+[  FAILED  ] VersionTest.Compare_2
+[  FAILED  ] VersionTest.Compare_3
+[  FAILED  ] VersionTest.Compare_4
+[  FAILED  ] VersionTest.Compare_5
+[  FAILED  ] VersionTest.Compare_6
+[  FAILED  ] VersionTest.Compare_7
+[  FAILED  ] VersionTest.Compare_8
+[  FAILED  ] VersionTest.Compare_9
+
+15 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330310_version.cpp:5:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330310_version.cpp:10:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330310_version.cpp:11:  Missing space before ( in while(  [whitespace/parens] [5]
+12330310_version.cpp:11:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:12:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:12:  Missing space before ( in if(  [whitespace/parens] [5]
+12330310_version.cpp:12:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:14:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:15:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:16:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:18:  Missing space before ( in while(  [whitespace/parens] [5]
+12330310_version.cpp:18:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:19:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:19:  Missing space before ( in for(  [whitespace/parens] [5]
+12330310_version.cpp:19:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:20:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:26:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330310_version.cpp:31:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:35:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330310_version.cpp:38:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330310_version.cpp:39:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330310_version.cpp:45:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:45:  Missing space before ( in if(  [whitespace/parens] [5]
+12330310_version.cpp:45:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:47:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:48:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:48:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330310_version.cpp:48:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12330310_version.cpp:48:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:50:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:51:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:52:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:56:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:56:  Missing spaces around =  [whitespace/operators] [4]
+12330310_version.cpp:57:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330310_version.cpp:58:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:58:  Missing space before ( in for(  [whitespace/parens] [5]
+12330310_version.cpp:58:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:59:  Missing space before ( in if(  [whitespace/parens] [5]
+12330310_version.cpp:59:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:60:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:62:  Missing space before ( in if(  [whitespace/parens] [5]
+12330310_version.cpp:62:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:63:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:65:  Missing space before ( in if(  [whitespace/parens] [5]
+12330310_version.cpp:65:  Missing space before {  [whitespace/braces] [5]
+12330310_version.cpp:66:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:68:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:69:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:70:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:71:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:72:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:73:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:74:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:75:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:76:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:77:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:78:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:79:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:80:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:81:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:82:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330310_version.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330310_version.cpp
+Total errors found: 75

@@ -1,0 +1,200 @@
+===  12331017_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp:1:1: error: ‘Version’ does not name a type
+version.cpp:40:6: error: ‘Version’ has not been declared
+version.cpp:40:25: error: non-member function ‘bool IsValid()’ cannot have cv-qualifier
+version.cpp: In function ‘bool IsValid()’:
+version.cpp:41:6: error: ‘components_size_’ was not declared in this scope
+version.cpp: At global scope:
+version.cpp:49:5: error: ‘Version’ has not been declared
+version.cpp:49:30: error: ‘Version’ does not name a type
+version.cpp:49:39: error: ISO C++ forbids declaration of ‘other’ with no type [-fpermissive]
+version.cpp:49:46: error: non-member function ‘int CompareTo(const int&)’ cannot have cv-qualifier
+version.cpp: In function ‘int CompareTo(const int&)’:
+version.cpp:52:7: error: ‘components_size_’ was not declared in this scope
+version.cpp:53:13: error: request for member ‘components_size_’ in ‘other’, which is of non-class type ‘const int’
+version.cpp:64:15: error: request for member ‘components_’ in ‘other’, which is of non-class type ‘const int’
+version.cpp:64:34: error: ‘components_’ was not declared in this scope
+version.cpp:66:15: error: request for member ‘components_’ in ‘other’, which is of non-class type ‘const int’
+version.cpp:66:34: error: ‘components_’ was not declared in this scope
+version.cpp:68:15: error: request for member ‘components_’ in ‘other’, which is of non-class type ‘const int’
+version.cpp:68:35: error: ‘components_’ was not declared in this scope
+version.cpp:73:9: error: ‘components_’ was not declared in this scope
+version.cpp:84:15: error: request for member ‘components_’ in ‘other’, which is of non-class type ‘const int’
+version.cpp:84:34: error: ‘components_’ was not declared in this scope
+version.cpp:86:15: error: request for member ‘components_’ in ‘other’, which is of non-class type ‘const int’
+version.cpp:86:34: error: ‘components_’ was not declared in this scope
+version.cpp:88:15: error: request for member ‘components_’ in ‘other’, which is of non-class type ‘const int’
+version.cpp:88:35: error: ‘components_’ was not declared in this scope
+version.cpp:93:15: error: request for member ‘components_’ in ‘other’, which is of non-class type ‘const int’
+version.cpp:104:15: error: request for member ‘components_’ in ‘other’, which is of non-class type ‘const int’
+version.cpp:104:34: error: ‘components_’ was not declared in this scope
+version.cpp:106:15: error: request for member ‘components_’ in ‘other’, which is of non-class type ‘const int’
+version.cpp:106:34: error: ‘components_’ was not declared in this scope
+version.cpp:108:15: error: request for member ‘components_’ in ‘other’, which is of non-class type ‘const int’
+version.cpp:108:35: error: ‘components_’ was not declared in this scope
+version.cpp:114:1: warning: control reaches end of non-void function [-Wreturn-type]
+version.cpp: In function ‘bool IsValid()’:
+version.cpp:47:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [version.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+timeout: failed to run command `./version/a.out': No such file or directory
+
+--------- Cpplint Check ---------
+12331017_version.cpp:2:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:3:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:3:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_version.cpp:4:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:5:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:5:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:5:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:6:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:6:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12331017_version.cpp:7:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:7:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:11:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_version.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:15:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:15:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:19:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:19:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:21:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:22:  Missing space before ( in if(  [whitespace/parens] [5]
+12331017_version.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:23:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_version.cpp:23:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:29:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12331017_version.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:30:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:31:  Extra space after (  [whitespace/parens] [2]
+12331017_version.cpp:31:  Extra space before )  [whitespace/parens] [2]
+12331017_version.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:41:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:44:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12331017_version.cpp:44:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12331017_version.cpp:44:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:45:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:50:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:51:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:51:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_version.cpp:52:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:53:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:54:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:54:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_version.cpp:55:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:56:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:57:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:58:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:58:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:58:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:59:  Blank line at the start of a code block.  Is this needed?  [whitespace/blank_line] [2]
+12331017_version.cpp:60:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:61:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:61:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:61:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:62:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:63:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:63:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:63:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:64:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:65:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:66:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:67:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:68:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:69:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:70:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:71:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:72:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:72:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:72:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:73:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:74:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:74:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:74:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:75:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:76:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:77:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:78:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:79:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:79:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331017_version.cpp:80:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:81:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:81:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:81:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:82:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:83:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:83:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:83:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:84:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:85:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:86:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:87:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:88:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:89:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:90:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:91:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:92:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:92:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:92:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:93:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:94:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:94:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:94:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:95:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:96:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:97:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:98:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:99:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:100:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:101:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:101:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:101:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:102:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:103:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:103:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331017_version.cpp:103:  Missing space before {  [whitespace/braces] [5]
+12331017_version.cpp:104:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:105:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:106:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:107:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:108:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:109:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:110:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:111:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:112:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:113:  Tab found; better to use spaces  [whitespace/tab] [1]
+12331017_version.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12331017_version.cpp
+Total errors found: 152

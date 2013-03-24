@@ -1,0 +1,107 @@
+===  12330376_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In function ‘int sum()’:
+series_comp.cpp:22:8: error: ‘i’ was not declared in this scope
+series_comp.cpp:22:20: error: ‘n’ was not declared in this scope
+series_comp.cpp: In member function ‘int SeriesComp::fib()’:
+series_comp.cpp:30:8: error: ‘i’ was not declared in this scope
+series_comp.cpp:30:15: error: ‘s’ was not declared in this scope
+series_comp.cpp:30:22: error: ‘a’ was not declared in this scope
+series_comp.cpp:30:34: error: ‘n’ was not declared in this scope
+series_comp.cpp:32:5: error: ‘b’ was not declared in this scope
+series_comp.cpp: At global scope:
+series_comp.cpp:38:8: error: ‘SeriesCom’ has not been declared
+series_comp.cpp: In function ‘double tralor(double)’:
+series_comp.cpp:42:20: error: ‘n’ was not declared in this scope
+series_comp.cpp: In function ‘int jiech(int)’:
+series_comp.cpp:51:2: error: ‘hou’ was not declared in this scope
+series_comp.cpp:52:6: error: ‘i’ was not declared in this scope
+series_comp.cpp:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+series_comp.cpp: In member function ‘int SeriesComp::fib()’:
+series_comp.cpp:37:3: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330376_series_comp.cpp:2:  Missing space before {  [whitespace/braces] [5]
+12330376_series_comp.cpp:3:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:3:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12330376_series_comp.cpp:4:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:4:  Single-argument constructors should be marked explicit.  [runtime/explicit] [5]
+12330376_series_comp.cpp:5:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:5:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330376_series_comp.cpp:6:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:7:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:7:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330376_series_comp.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:9:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330376_series_comp.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:11:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330376_series_comp.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:12:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12330376_series_comp.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:16:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330376_series_comp.cpp:16:  Missing space before {  [whitespace/braces] [5]
+12330376_series_comp.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:20:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330376_series_comp.cpp:20:  Missing space before {  [whitespace/braces] [5]
+12330376_series_comp.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:23:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330376_series_comp.cpp:23:  Missing space before {  [whitespace/braces] [5]
+12330376_series_comp.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:29:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330376_series_comp.cpp:29:  Missing space before {  [whitespace/braces] [5]
+12330376_series_comp.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:31:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330376_series_comp.cpp:31:  Missing space before {  [whitespace/braces] [5]
+12330376_series_comp.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:39:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330376_series_comp.cpp:39:  Missing space before {  [whitespace/braces] [5]
+12330376_series_comp.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:41:  Missing space after ,  [whitespace/comma] [3]
+12330376_series_comp.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:43:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330376_series_comp.cpp:43:  Missing space before {  [whitespace/braces] [5]
+12330376_series_comp.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:44:  Missing space after ,  [whitespace/comma] [3]
+12330376_series_comp.cpp:45:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:46:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:47:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330376_series_comp.cpp:48:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:50:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330376_series_comp.cpp:51:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:52:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:53:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:53:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330376_series_comp.cpp:53:  Missing space before {  [whitespace/braces] [5]
+12330376_series_comp.cpp:54:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:55:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:56:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330376_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330376_series_comp.cpp
+Total errors found: 76

@@ -1,0 +1,73 @@
+===  12330335_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In member function ‘bool Version::IsValid() const’:
+version.cpp:60:23: warning: unused variable ‘a’ [-Wunused-variable]
+version.cpp: In function ‘int main(int, char**)’:
+version.cpp:154:20: error: ‘system’ was not declared in this scope
+version.cpp: In member function ‘int Version::CompareTo(const Version&) const’:
+version.cpp:138:14: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [version.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+timeout: failed to run command `./version/a.out': No such file or directory
+
+--------- Cpplint Check ---------
+12330335_version.cpp:1:  Streams are highly discouraged.  [readability/streams] [3]
+12330335_version.cpp:4:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330335_version.cpp:11:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:13:  Missing space after ,  [whitespace/comma] [3]
+12330335_version.cpp:14:  Missing space after ,  [whitespace/comma] [3]
+12330335_version.cpp:15:  Missing space after ;  [whitespace/semicolon] [3]
+12330335_version.cpp:16:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:18:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:25:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330335_version.cpp:25:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330335_version.cpp:25:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330335_version.cpp:26:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:31:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330335_version.cpp:31:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330335_version.cpp:32:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:36:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330335_version.cpp:37:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:44:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330335_version.cpp:44:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330335_version.cpp:49:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:51:  Missing space after ;  [whitespace/semicolon] [3]
+12330335_version.cpp:52:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:59:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:67:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:68:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330335_version.cpp:68:  Missing space after ,  [whitespace/comma] [3]
+12330335_version.cpp:73:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:74:  Missing space after ;  [whitespace/semicolon] [3]
+12330335_version.cpp:75:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:77:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:81:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330335_version.cpp:82:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:87:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:94:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330335_version.cpp:95:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:96:  Missing space after ;  [whitespace/semicolon] [3]
+12330335_version.cpp:97:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:99:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:103:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330335_version.cpp:104:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:109:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:116:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330335_version.cpp:117:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:118:  Missing space after ;  [whitespace/semicolon] [3]
+12330335_version.cpp:119:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:121:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:125:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330335_version.cpp:126:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:131:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:139:  "private:" should be preceded by a blank line  [whitespace/blank_line] [3]
+12330335_version.cpp:140:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330335_version.cpp:144:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330335_version.cpp:145:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330335_version.cpp:154:  Extra space before ( in function call  [whitespace/parens] [4]
+12330335_version.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330335_version.cpp
+Total errors found: 55

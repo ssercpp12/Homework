@@ -1,0 +1,58 @@
+===  12330286_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+series_comp.o: In function `util::SeriesComp::taylor(double)':
+series_comp.cpp:(.text+0xd0): undefined reference to `util::factorial(int)'
+collect2: error: ld returned 1 exit status
+make: *** [a.out] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330286_series_comp.cpp:1:  Should have a space between // and comment  [whitespace/comments] [4]
+12330286_series_comp.cpp:2:  Should have a space between // and comment  [whitespace/comments] [4]
+12330286_series_comp.cpp:3:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330286_series_comp.cpp:3:  Should have a space between // and comment  [whitespace/comments] [4]
+12330286_series_comp.cpp:10:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330286_series_comp.cpp:11:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330286_series_comp.cpp:12:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330286_series_comp.cpp:12:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330286_series_comp.cpp:14:  Single-argument constructors should be marked explicit.  [runtime/explicit] [5]
+12330286_series_comp.cpp:18:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330286_series_comp.cpp:21:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330286_series_comp.cpp:22:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330286_series_comp.cpp:27:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330286_series_comp.cpp:33:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330286_series_comp.cpp:39:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330286_series_comp.cpp:41:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330286_series_comp.cpp:42:  Missing space before ( in if(  [whitespace/parens] [5]
+12330286_series_comp.cpp:45:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330286_series_comp.cpp:48:  Missing space before ( in for(  [whitespace/parens] [5]
+12330286_series_comp.cpp:48:  Missing space after ;  [whitespace/semicolon] [3]
+12330286_series_comp.cpp:49:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330286_series_comp.cpp:61:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330286_series_comp.cpp:64:  Use int16/int64/etc, rather than the C type long  [runtime/int] [4]
+12330286_series_comp.cpp:65:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330286_series_comp.cpp:67:  Missing space before ( in for(  [whitespace/parens] [5]
+12330286_series_comp.cpp:67:  Missing space after ;  [whitespace/semicolon] [3]
+12330286_series_comp.cpp:69:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330286_series_comp.cpp:71:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330286_series_comp.cpp:73:  Use int16/int64/etc, rather than the C type long  [runtime/int] [4]
+12330286_series_comp.cpp:74:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330286_series_comp.cpp:76:  Use int16/int64/etc, rather than the C type long  [runtime/int] [4]
+12330286_series_comp.cpp:78:  Missing space before ( in for(  [whitespace/parens] [5]
+12330286_series_comp.cpp:78:  Missing space after ;  [whitespace/semicolon] [3]
+12330286_series_comp.cpp:79:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330286_series_comp.cpp:80:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330286_series_comp.cpp:93:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330286_series_comp.cpp:94:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330286_series_comp.cpp:95:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330286_series_comp.cpp:1:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330286_series_comp.cpp:2:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330286_series_comp.cpp:3:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330286_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330286_series_comp.cpp
+Total errors found: 42

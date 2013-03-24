@@ -1,0 +1,67 @@
+===  12330003_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp:29:31: error: invalid suffix "S" on integer constant
+series_comp.cpp:6:11: error: redefinition of ‘class util::SeriesComp’
+In file included from series_comp.cpp:2:0:
+series_comp.h:6:7: error: previous definition of ‘class util::SeriesComp’
+series_comp.cpp:17:27: error: expected constructor, destructor, or type conversion before ‘(’ token
+series_comp.cpp:19:21: error: ISO C++ forbids declaration of ‘sum’ with no type [-fpermissive]
+series_comp.cpp:27:21: error: ISO C++ forbids declaration of ‘fib’ with no type [-fpermissive]
+series_comp.cpp: In member function ‘int util::SeriesComp::fib()’:
+series_comp.cpp:29:20: error: ‘n’ was not declared in this scope
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330003_series_comp.cpp:1:  Streams are highly discouraged.  [readability/streams] [3]
+12330003_series_comp.cpp:5:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330003_series_comp.cpp:8:  Single-argument constructors should be marked explicit.  [runtime/explicit] [5]
+12330003_series_comp.cpp:12:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330003_series_comp.cpp:16:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330003_series_comp.cpp:17:  Missing space before {  [whitespace/braces] [5]
+12330003_series_comp.cpp:18:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330003_series_comp.cpp:19:  Missing space before {  [whitespace/braces] [5]
+12330003_series_comp.cpp:20:  Missing spaces around =  [whitespace/operators] [4]
+12330003_series_comp.cpp:21:  Missing spaces around =  [whitespace/operators] [4]
+12330003_series_comp.cpp:21:  Missing spaces around <  [whitespace/operators] [3]
+12330003_series_comp.cpp:21:  Missing space before ( in for(  [whitespace/parens] [5]
+12330003_series_comp.cpp:21:  Missing space after ;  [whitespace/semicolon] [3]
+12330003_series_comp.cpp:21:  Missing space before {  [whitespace/braces] [5]
+12330003_series_comp.cpp:26:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330003_series_comp.cpp:27:  Missing space before {  [whitespace/braces] [5]
+12330003_series_comp.cpp:28:  Missing spaces around =  [whitespace/operators] [4]
+12330003_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:29:  Missing spaces around =  [whitespace/operators] [4]
+12330003_series_comp.cpp:29:  Missing spaces around <  [whitespace/operators] [3]
+12330003_series_comp.cpp:29:  Missing space before ( in for(  [whitespace/parens] [5]
+12330003_series_comp.cpp:29:  Missing space after ;  [whitespace/semicolon] [3]
+12330003_series_comp.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:32:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330003_series_comp.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:34:  Missing space after ,  [whitespace/comma] [3]
+12330003_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:35:  Missing spaces around =  [whitespace/operators] [4]
+12330003_series_comp.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:36:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330003_series_comp.cpp:36:  Missing spaces around =  [whitespace/operators] [4]
+12330003_series_comp.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:37:  Missing spaces around =  [whitespace/operators] [4]
+12330003_series_comp.cpp:37:  Missing spaces around <  [whitespace/operators] [3]
+12330003_series_comp.cpp:37:  Missing space before ( in for(  [whitespace/parens] [5]
+12330003_series_comp.cpp:37:  Missing space after ;  [whitespace/semicolon] [3]
+12330003_series_comp.cpp:37:  Missing space before {  [whitespace/braces] [5]
+12330003_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:41:  Missing spaces around =  [whitespace/operators] [4]
+12330003_series_comp.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330003_series_comp.cpp:47:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330003_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330003_series_comp.cpp
+Total errors found: 46

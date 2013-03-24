@@ -1,0 +1,186 @@
+===  12330368_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In constructor ‘Version::Version(const string&)’:
+version.cpp:17:84: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+version.cpp:27:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -c -Wall version_unittest.cpp -o version_unittest.o
+g++ version.o version_unittest.o -lpthread -lgtest -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+[==========] Running 15 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 15 tests from VersionTest
+[ RUN      ] VersionTest.ValueSemantics_1
+[       OK ] VersionTest.ValueSemantics_1 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_2
+version_unittest.cpp:35: Failure
+Value of: v1.IsValid()
+  Actual: true
+Expected: false
+[  FAILED  ] VersionTest.ValueSemantics_2 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_3
+version_unittest.cpp:40: Failure
+Value of: v1.IsValid()
+  Actual: true
+Expected: false
+[  FAILED  ] VersionTest.ValueSemantics_3 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_4
+[       OK ] VersionTest.ValueSemantics_4 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_5
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+[  FAILED  ] VersionTest.ValueSemantics_5 (1 ms)
+[ RUN      ] VersionTest.Compare_0
+[       OK ] VersionTest.Compare_0 (0 ms)
+[ RUN      ] VersionTest.Compare_1
+[       OK ] VersionTest.Compare_1 (0 ms)
+[ RUN      ] VersionTest.Compare_2
+[       OK ] VersionTest.Compare_2 (0 ms)
+[ RUN      ] VersionTest.Compare_3
+[       OK ] VersionTest.Compare_3 (0 ms)
+[ RUN      ] VersionTest.Compare_4
+[       OK ] VersionTest.Compare_4 (0 ms)
+[ RUN      ] VersionTest.Compare_5
+[       OK ] VersionTest.Compare_5 (0 ms)
+[ RUN      ] VersionTest.Compare_6
+[       OK ] VersionTest.Compare_6 (0 ms)
+[ RUN      ] VersionTest.Compare_7
+[       OK ] VersionTest.Compare_7 (0 ms)
+[ RUN      ] VersionTest.Compare_8
+version_unittest.cpp:146: Failure
+Value of: cases[i].expected
+  Actual: 0
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0.0 ? 1.0
+[  FAILED  ] VersionTest.Compare_8 (0 ms)
+[ RUN      ] VersionTest.Compare_9
+[       OK ] VersionTest.Compare_9 (0 ms)
+[----------] 15 tests from VersionTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 11 tests.
+[  FAILED  ] 4 tests, listed below:
+[  FAILED  ] VersionTest.ValueSemantics_2
+[  FAILED  ] VersionTest.ValueSemantics_3
+[  FAILED  ] VersionTest.ValueSemantics_5
+[  FAILED  ] VersionTest.Compare_8
+
+ 4 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330368_version.cpp:2:  Streams are highly discouraged.  [readability/streams] [3]
+12330368_version.cpp:5:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330368_version.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:10:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330368_version.cpp:11:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330368_version.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:14:  Lines should very rarely be longer than 100 characters  [whitespace/line_length] [4]
+12330368_version.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:17:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330368_version.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:22:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330368_version.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:25:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330368_version.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:27:  Extra space after ( in function call  [whitespace/parens] [4]
+12330368_version.cpp:27:  Extra space before )  [whitespace/parens] [2]
+12330368_version.cpp:27:  Missing space before {  [whitespace/braces] [5]
+12330368_version.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:48:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:49:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:51:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:53:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:54:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:55:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:56:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:57:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:57:  Missing space before {  [whitespace/braces] [5]
+12330368_version.cpp:58:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:59:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:60:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:61:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:62:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:63:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:64:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330368_version.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330368_version.cpp
+Total errors found: 47

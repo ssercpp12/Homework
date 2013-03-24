@@ -1,0 +1,59 @@
+===  12330118_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘int util::SeriesComp::sum()’:
+series_comp.cpp:29:14: error: ‘n’ was not declared in this scope
+series_comp.cpp:33:3: error: ‘cout’ was not declared in this scope
+series_comp.cpp: In member function ‘int util::SeriesComp::fib()’:
+series_comp.cpp:39:14: error: ‘n’ was not declared in this scope
+series_comp.cpp:45:3: error: ‘cout’ was not declared in this scope
+series_comp.cpp: In member function ‘double util::SeriesComp::taylor(double)’:
+series_comp.cpp:51:14: error: ‘n’ was not declared in this scope
+series_comp.cpp:54:18: error: ‘pow’ was not declared in this scope
+series_comp.cpp:55:3: error: ‘cout’ was not declared in this scope
+series_comp.cpp:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330118_series_comp.cpp:8:  Single-argument constructors should be marked explicit.  [runtime/explicit] [5]
+12330118_series_comp.cpp:17:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330118_series_comp.cpp:28:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:28:  Missing space after ,  [whitespace/comma] [3]
+12330118_series_comp.cpp:29:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:29:  Missing spaces around <=  [whitespace/operators] [3]
+12330118_series_comp.cpp:29:  Missing space before ( in for(  [whitespace/parens] [5]
+12330118_series_comp.cpp:29:  Missing space after ;  [whitespace/semicolon] [3]
+12330118_series_comp.cpp:30:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330118_series_comp.cpp:31:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:33:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330118_series_comp.cpp:38:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:38:  Missing space after ,  [whitespace/comma] [3]
+12330118_series_comp.cpp:39:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:39:  Missing spaces around <=  [whitespace/operators] [3]
+12330118_series_comp.cpp:39:  Missing space before ( in for(  [whitespace/parens] [5]
+12330118_series_comp.cpp:39:  Missing space after ;  [whitespace/semicolon] [3]
+12330118_series_comp.cpp:40:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:41:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:42:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:43:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:50:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:50:  Missing space after ,  [whitespace/comma] [3]
+12330118_series_comp.cpp:51:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:51:  Missing spaces around <=  [whitespace/operators] [3]
+12330118_series_comp.cpp:51:  Missing space before ( in for(  [whitespace/parens] [5]
+12330118_series_comp.cpp:51:  Missing space after ;  [whitespace/semicolon] [3]
+12330118_series_comp.cpp:52:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330118_series_comp.cpp:53:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:54:  Missing spaces around =  [whitespace/operators] [4]
+12330118_series_comp.cpp:54:  Missing space after ,  [whitespace/comma] [3]
+12330118_series_comp.cpp:60:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330118_series_comp.cpp:63:  Streams are highly discouraged.  [readability/streams] [3]
+12330118_series_comp.cpp:66:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330118_series_comp.cpp:69:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330118_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330118_series_comp.cpp
+Total errors found: 36

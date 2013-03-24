@@ -1,0 +1,77 @@
+===  12330067_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘int util::SeriesComp::fib()’:
+series_comp.cpp:17:11: warning: unused variable ‘k’ [-Wunused-variable]
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+[       OK ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+[       OK ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+[       OK ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+[       OK ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+[       OK ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 9 tests.
+
+--------- Cpplint Check ---------
+12330067_series_comp.cpp:7:  Missing spaces around =  [whitespace/operators] [4]
+12330067_series_comp.cpp:11:  Missing spaces around =  [whitespace/operators] [4]
+12330067_series_comp.cpp:11:  Missing space after ,  [whitespace/comma] [3]
+12330067_series_comp.cpp:12:  Missing spaces around =  [whitespace/operators] [4]
+12330067_series_comp.cpp:12:  Missing spaces around <=  [whitespace/operators] [3]
+12330067_series_comp.cpp:12:  Missing space before ( in for(  [whitespace/parens] [5]
+12330067_series_comp.cpp:12:  Missing space after ;  [whitespace/semicolon] [3]
+12330067_series_comp.cpp:17:  Missing space after ,  [whitespace/comma] [3]
+12330067_series_comp.cpp:18:  Missing space after ;  [whitespace/semicolon] [3]
+12330067_series_comp.cpp:19:  Missing spaces around =  [whitespace/operators] [4]
+12330067_series_comp.cpp:20:  Missing spaces around =  [whitespace/operators] [4]
+12330067_series_comp.cpp:21:  Missing spaces around =  [whitespace/operators] [4]
+12330067_series_comp.cpp:21:  Missing spaces around ==  [whitespace/operators] [3]
+12330067_series_comp.cpp:21:  Missing space before ( in if(  [whitespace/parens] [5]
+12330067_series_comp.cpp:22:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12330067_series_comp.cpp:22:  Missing space before {  [whitespace/braces] [5]
+12330067_series_comp.cpp:23:  Missing spaces around =  [whitespace/operators] [4]
+12330067_series_comp.cpp:23:  Missing spaces around ==  [whitespace/operators] [3]
+12330067_series_comp.cpp:23:  Missing space before ( in if(  [whitespace/parens] [5]
+12330067_series_comp.cpp:24:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12330067_series_comp.cpp:24:  Missing space before {  [whitespace/braces] [5]
+12330067_series_comp.cpp:25:  Missing spaces around =  [whitespace/operators] [4]
+12330067_series_comp.cpp:26:  Missing spaces around =  [whitespace/operators] [4]
+12330067_series_comp.cpp:26:  Missing spaces around <=  [whitespace/operators] [3]
+12330067_series_comp.cpp:26:  Missing space before ( in for(  [whitespace/parens] [5]
+12330067_series_comp.cpp:26:  Missing space after ;  [whitespace/semicolon] [3]
+12330067_series_comp.cpp:26:  Missing space before {  [whitespace/braces] [5]
+12330067_series_comp.cpp:30:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330067_series_comp.cpp:36:  Missing spaces around =  [whitespace/operators] [4]
+12330067_series_comp.cpp:36:  Missing space after ,  [whitespace/comma] [3]
+12330067_series_comp.cpp:37:  Missing spaces around =  [whitespace/operators] [4]
+12330067_series_comp.cpp:37:  Missing spaces around <=  [whitespace/operators] [3]
+12330067_series_comp.cpp:37:  Missing space before ( in for(  [whitespace/parens] [5]
+12330067_series_comp.cpp:37:  Missing space after ;  [whitespace/semicolon] [3]
+12330067_series_comp.cpp:37:  Missing space before {  [whitespace/braces] [5]
+12330067_series_comp.cpp:39:  Missing space after ,  [whitespace/comma] [3]
+12330067_series_comp.cpp:44:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+Done processing 12330067_series_comp.cpp
+Total errors found: 37

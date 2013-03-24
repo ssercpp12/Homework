@@ -1,0 +1,45 @@
+===  12331016_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘double util::SeriesComp::taylor(double)’:
+series_comp.cpp:47:13: error: declaration of ‘int x’ shadows a parameter
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12331016_series_comp.cpp:7:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12331016_series_comp.cpp:8:  Single-argument constructors should be marked explicit.  [runtime/explicit] [5]
+12331016_series_comp.cpp:13:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12331016_series_comp.cpp:17:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12331016_series_comp.cpp:22:  Streams are highly discouraged.  [readability/streams] [3]
+12331016_series_comp.cpp:24:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12331016_series_comp.cpp:30:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_series_comp.cpp:31:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_series_comp.cpp:37:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_series_comp.cpp:38:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_series_comp.cpp:40:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12331016_series_comp.cpp:40:  Missing space after ,  [whitespace/comma] [3]
+12331016_series_comp.cpp:44:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_series_comp.cpp:45:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_series_comp.cpp:47:  Missing space after ,  [whitespace/comma] [3]
+12331016_series_comp.cpp:48:  Missing spaces around =  [whitespace/operators] [4]
+12331016_series_comp.cpp:49:  Missing spaces around =  [whitespace/operators] [4]
+12331016_series_comp.cpp:50:  Missing spaces around =  [whitespace/operators] [4]
+12331016_series_comp.cpp:50:  Missing spaces around <=  [whitespace/operators] [3]
+12331016_series_comp.cpp:50:  Missing space before ( in for(  [whitespace/parens] [5]
+12331016_series_comp.cpp:50:  Missing space after ;  [whitespace/semicolon] [3]
+12331016_series_comp.cpp:51:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_series_comp.cpp:52:  Missing spaces around =  [whitespace/operators] [4]
+12331016_series_comp.cpp:53:  Missing spaces around =  [whitespace/operators] [4]
+12331016_series_comp.cpp:53:  Missing space after ,  [whitespace/comma] [3]
+12331016_series_comp.cpp:55:  Missing spaces around =  [whitespace/operators] [4]
+12331016_series_comp.cpp:55:  Using deprecated casting style.  Use static_cast<double>(...) instead  [readability/casting] [4]
+12331016_series_comp.cpp:59:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12331016_series_comp.cpp:62:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12331016_series_comp.cpp:65:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12331016_series_comp.cpp
+Total errors found: 31

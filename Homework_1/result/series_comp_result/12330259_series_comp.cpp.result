@@ -1,0 +1,64 @@
+===  12330259_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘int util::SeriesComp::sum()’:
+series_comp.cpp:11:13: error: ‘n’ was not declared in this scope
+series_comp.cpp: In member function ‘int util::SeriesComp::fib()’:
+series_comp.cpp:18:10: error: ‘n’ was not declared in this scope
+series_comp.cpp:19:2: error: expected ‘;’ before ‘if’
+series_comp.cpp:24:1: error: expected ‘;’ before ‘}’ token
+series_comp.cpp:17:6: warning: unused variable ‘i’ [-Wunused-variable]
+series_comp.cpp: In member function ‘double util::SeriesComp::taylor(double)’:
+series_comp.cpp:28:13: error: ‘n’ was not declared in this scope
+series_comp.cpp:30:20: error: too many arguments to function ‘double sqrt(double)’
+In file included from /usr/include/math.h:71:0,
+                 from series_comp.cpp:3:
+/usr/include/i386-linux-gnu/bits/mathcalls.h:158:1: note: declared here
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330259_series_comp.cpp:1:  Streams are highly discouraged.  [readability/streams] [3]
+12330259_series_comp.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:10:  Missing spaces around =  [whitespace/operators] [4]
+12330259_series_comp.cpp:10:  Missing space after ,  [whitespace/comma] [3]
+12330259_series_comp.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:11:  Missing spaces around =  [whitespace/operators] [4]
+12330259_series_comp.cpp:11:  Missing spaces around <=  [whitespace/operators] [3]
+12330259_series_comp.cpp:11:  Missing space after ;  [whitespace/semicolon] [3]
+12330259_series_comp.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:12:  Missing spaces around =  [whitespace/operators] [4]
+12330259_series_comp.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:17:  Missing spaces around =  [whitespace/operators] [4]
+12330259_series_comp.cpp:17:  Missing space after ,  [whitespace/comma] [3]
+12330259_series_comp.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:18:  Missing spaces around =  [whitespace/operators] [4]
+12330259_series_comp.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:19:  Missing spaces around ==  [whitespace/operators] [3]
+12330259_series_comp.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:20:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330259_series_comp.cpp:20:  Missing space before {  [whitespace/braces] [5]
+12330259_series_comp.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:27:  Missing spaces around =  [whitespace/operators] [4]
+12330259_series_comp.cpp:27:  Missing space after ,  [whitespace/comma] [3]
+12330259_series_comp.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:28:  Missing spaces around =  [whitespace/operators] [4]
+12330259_series_comp.cpp:28:  Missing spaces around <=  [whitespace/operators] [3]
+12330259_series_comp.cpp:28:  Missing space after ;  [whitespace/semicolon] [3]
+12330259_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:29:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330259_series_comp.cpp:29:  Missing space before {  [whitespace/braces] [5]
+12330259_series_comp.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:30:  Missing spaces around =  [whitespace/operators] [4]
+12330259_series_comp.cpp:30:  Missing space after ,  [whitespace/comma] [3]
+12330259_series_comp.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330259_series_comp.cpp:35:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330259_series_comp.cpp:37:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330259_series_comp.cpp:40:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+Done processing 12330259_series_comp.cpp
+Total errors found: 39

@@ -1,0 +1,117 @@
+===  12330437_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+series_comp_unittest.cpp:28: Failure
+Value of: sc_10.fib()
+  Actual: 141
+Expected: 143
+[  FAILED  ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+series_comp_unittest.cpp:33: Failure
+Value of: sc_4.fib()
+  Actual: 5
+Expected: 7
+[  FAILED  ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+[       OK ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+[       OK ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+series_comp_unittest.cpp:48: Failure
+The difference between 1342.59 and sc.taylor(10) is 3346.5900000000001, which exceeds 0.01, where
+1342.59 evaluates to 1342.5899999999999,
+sc.taylor(10) evaluates to -2004, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 6 tests.
+[  FAILED  ] 3 tests, listed below:
+[  FAILED  ] SeriesCompTest.Fib_2
+[  FAILED  ] SeriesCompTest.Fib_3
+[  FAILED  ] SeriesCompTest.Taylor_3
+
+ 3 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330437_series_comp.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:11:  Missing space before {  [whitespace/braces] [5]
+12330437_series_comp.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:19:  Missing space after ,  [whitespace/comma] [3]
+12330437_series_comp.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:23:  Lines should very rarely be longer than 100 characters  [whitespace/line_length] [4]
+12330437_series_comp.cpp:23:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330437_series_comp.cpp:23:  Should have a space between // and comment  [whitespace/comments] [4]
+12330437_series_comp.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:24:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330437_series_comp.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:25:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330437_series_comp.cpp:25:  Lines should very rarely be longer than 100 characters  [whitespace/line_length] [4]
+12330437_series_comp.cpp:25:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12330437_series_comp.cpp:25:  Should have a space between // and comment  [whitespace/comments] [4]
+12330437_series_comp.cpp:25:  Missing space before {  [whitespace/braces] [5]
+12330437_series_comp.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:26:  Missing space before {  [whitespace/braces] [5]
+12330437_series_comp.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:28:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330437_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:38:  Lines should very rarely be longer than 100 characters  [whitespace/line_length] [4]
+12330437_series_comp.cpp:38:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330437_series_comp.cpp:38:  Should have a space between // and comment  [whitespace/comments] [4]
+12330437_series_comp.cpp:38:  Missing space after ,  [whitespace/comma] [3]
+12330437_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:39:  Should have a space between // and comment  [whitespace/comments] [4]
+12330437_series_comp.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:41:  Missing space before {  [whitespace/braces] [5]
+12330437_series_comp.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:42:  Missing space before {  [whitespace/braces] [5]
+12330437_series_comp.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:44:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330437_series_comp.cpp:45:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:46:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:46:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330437_series_comp.cpp:46:  Should have a space between // and comment  [whitespace/comments] [4]
+12330437_series_comp.cpp:47:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:48:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:49:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:50:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:51:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:51:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330437_series_comp.cpp:52:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330437_series_comp.cpp:54:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330437_series_comp.cpp:54:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+Done processing 12330437_series_comp.cpp
+Total errors found: 60

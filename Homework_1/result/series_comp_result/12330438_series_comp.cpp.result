@@ -1,0 +1,65 @@
+===  12330438_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+series_comp_unittest.cpp:28: Failure
+Value of: sc_10.fib()
+  Actual: 55
+Expected: 143
+[  FAILED  ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+series_comp_unittest.cpp:33: Failure
+Value of: sc_4.fib()
+  Actual: 3
+Expected: 7
+[  FAILED  ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+[       OK ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+[       OK ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+[       OK ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 7 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] SeriesCompTest.Fib_2
+[  FAILED  ] SeriesCompTest.Fib_3
+
+ 2 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330438_series_comp.cpp:4:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330438_series_comp.cpp:6:  Extra space before ( in function call  [whitespace/parens] [4]
+12330438_series_comp.cpp:7:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330438_series_comp.cpp:12:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330438_series_comp.cpp:15:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330438_series_comp.cpp:22:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330438_series_comp.cpp:29:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330438_series_comp.cpp:31:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330438_series_comp.cpp:40:  Extra space before ( in function call  [whitespace/parens] [4]
+12330438_series_comp.cpp:41:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330438_series_comp.cpp:45:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330438_series_comp.cpp:50:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330438_series_comp.cpp:55:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330438_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330438_series_comp.cpp
+Total errors found: 14

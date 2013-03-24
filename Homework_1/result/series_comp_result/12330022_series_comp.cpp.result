@@ -1,0 +1,75 @@
+===  12330022_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp:1:26: fatal error: serjies_comp.h: No such file or directory
+compilation terminated.
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330022_series_comp.cpp:8:  Blank line at the start of a code block.  Is this needed?  [whitespace/blank_line] [2]
+12330022_series_comp.cpp:12:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330022_series_comp.cpp:13:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330022_series_comp.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:14:  Missing spaces around =  [whitespace/operators] [4]
+12330022_series_comp.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:15:  Missing spaces around =  [whitespace/operators] [4]
+12330022_series_comp.cpp:15:  Missing space after ,  [whitespace/comma] [3]
+12330022_series_comp.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:17:  Missing spaces around ==  [whitespace/operators] [3]
+12330022_series_comp.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:18:  Missing spaces around ==  [whitespace/operators] [3]
+12330022_series_comp.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:19:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330022_series_comp.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:20:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330022_series_comp.cpp:20:  Missing space before {  [whitespace/braces] [5]
+12330022_series_comp.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:21:  Missing spaces around =  [whitespace/operators] [4]
+12330022_series_comp.cpp:21:  Missing spaces around <=  [whitespace/operators] [3]
+12330022_series_comp.cpp:21:  Missing space after ;  [whitespace/semicolon] [3]
+12330022_series_comp.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:22:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330022_series_comp.cpp:22:  Missing space before {  [whitespace/braces] [5]
+12330022_series_comp.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:23:  Missing spaces around =  [whitespace/operators] [4]
+12330022_series_comp.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:24:  Missing spaces around =  [whitespace/operators] [4]
+12330022_series_comp.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:25:  Missing spaces around =  [whitespace/operators] [4]
+12330022_series_comp.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:31:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330022_series_comp.cpp:32:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330022_series_comp.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:33:  Missing spaces around ==  [whitespace/operators] [3]
+12330022_series_comp.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:34:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330022_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:35:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330022_series_comp.cpp:35:  Missing space before {  [whitespace/braces] [5]
+12330022_series_comp.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:36:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330022_series_comp.cpp:36:  Blank line at the start of a code block.  Is this needed?  [whitespace/blank_line] [2]
+12330022_series_comp.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:37:  Missing spaces around =  [whitespace/operators] [4]
+12330022_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:38:  Missing spaces around >  [whitespace/operators] [3]
+12330022_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:39:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330022_series_comp.cpp:39:  Missing space before {  [whitespace/braces] [5]
+12330022_series_comp.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:40:  Missing spaces around =  [whitespace/operators] [4]
+12330022_series_comp.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330022_series_comp.cpp:47:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330022_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330022_series_comp.cpp
+Total errors found: 61

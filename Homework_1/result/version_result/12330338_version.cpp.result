@@ -1,0 +1,214 @@
+===  12330338_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In member function ‘int Version::CompareTo(const Version&) const’:
+version.cpp:71:3: warning: control reaches end of non-void function [-Wreturn-type]
+g++ -c -Wall version_unittest.cpp -o version_unittest.o
+g++ version.o version_unittest.o -lpthread -lgtest -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+[==========] Running 15 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 15 tests from VersionTest
+[ RUN      ] VersionTest.ValueSemantics_1
+[       OK ] VersionTest.ValueSemantics_1 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_2
+[       OK ] VersionTest.ValueSemantics_2 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_3
+version_unittest.cpp:40: Failure
+Value of: v1.IsValid()
+  Actual: true
+Expected: false
+[  FAILED  ] VersionTest.ValueSemantics_3 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_4
+[       OK ] VersionTest.ValueSemantics_4 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_5
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+[  FAILED  ] VersionTest.ValueSemantics_5 (0 ms)
+[ RUN      ] VersionTest.Compare_0
+[       OK ] VersionTest.Compare_0 (0 ms)
+[ RUN      ] VersionTest.Compare_1
+[       OK ] VersionTest.Compare_1 (0 ms)
+[ RUN      ] VersionTest.Compare_2
+[       OK ] VersionTest.Compare_2 (0 ms)
+[ RUN      ] VersionTest.Compare_3
+[       OK ] VersionTest.Compare_3 (0 ms)
+[ RUN      ] VersionTest.Compare_4
+[       OK ] VersionTest.Compare_4 (0 ms)
+[ RUN      ] VersionTest.Compare_5
+version_unittest.cpp:122: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 0
+1.0 ? 1.0.1
+[  FAILED  ] VersionTest.Compare_5 (0 ms)
+[ RUN      ] VersionTest.Compare_6
+[       OK ] VersionTest.Compare_6 (0 ms)
+[ RUN      ] VersionTest.Compare_7
+[       OK ] VersionTest.Compare_7 (0 ms)
+[ RUN      ] VersionTest.Compare_8
+[       OK ] VersionTest.Compare_8 (0 ms)
+[ RUN      ] VersionTest.Compare_9
+[       OK ] VersionTest.Compare_9 (0 ms)
+[----------] 15 tests from VersionTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 12 tests.
+[  FAILED  ] 3 tests, listed below:
+[  FAILED  ] VersionTest.ValueSemantics_3
+[  FAILED  ] VersionTest.ValueSemantics_5
+[  FAILED  ] VersionTest.Compare_5
+
+ 3 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330338_version.cpp:4:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:4:  Missing space after ,  [whitespace/comma] [3]
+12330338_version.cpp:5:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:5:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:6:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:6:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:6:  Missing spaces around <  [whitespace/operators] [3]
+12330338_version.cpp:6:  Missing space before ( in for(  [whitespace/parens] [5]
+12330338_version.cpp:6:  Missing space after ;  [whitespace/semicolon] [3]
+12330338_version.cpp:6:  Missing space before {  [whitespace/braces] [5]
+12330338_version.cpp:7:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:9:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:9:  Missing spaces around <  [whitespace/operators] [3]
+12330338_version.cpp:9:  Missing space before ( in for(  [whitespace/parens] [5]
+12330338_version.cpp:9:  Missing space after ;  [whitespace/semicolon] [3]
+12330338_version.cpp:9:  Missing space before {  [whitespace/braces] [5]
+12330338_version.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:10:  Missing spaces around ==  [whitespace/operators] [3]
+12330338_version.cpp:10:  Missing space before {  [whitespace/braces] [5]
+12330338_version.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:11:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:12:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330338_version.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:14:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330338_version.cpp:14:  Missing spaces around ==  [whitespace/operators] [3]
+12330338_version.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:16:  Missing spaces around >=  [whitespace/operators] [3]
+12330338_version.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:17:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330338_version.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:18:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12330338_version.cpp:18:  Missing space before {  [whitespace/braces] [5]
+12330338_version.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:19:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:23:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:23:  Missing spaces around <  [whitespace/operators] [3]
+12330338_version.cpp:23:  Missing space before ( in for(  [whitespace/parens] [5]
+12330338_version.cpp:23:  Missing space after ;  [whitespace/semicolon] [3]
+12330338_version.cpp:23:  Missing space before {  [whitespace/braces] [5]
+12330338_version.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:24:  Missing spaces around ==  [whitespace/operators] [3]
+12330338_version.cpp:24:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:24:  Missing space before {  [whitespace/braces] [5]
+12330338_version.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:26:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330338_version.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:28:  Missing spaces around >=  [whitespace/operators] [3]
+12330338_version.cpp:28:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:28:  Missing space before {  [whitespace/braces] [5]
+12330338_version.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:32:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:36:  Missing spaces around ==  [whitespace/operators] [3]
+12330338_version.cpp:36:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:43:  Missing spaces around ==  [whitespace/operators] [3]
+12330338_version.cpp:43:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:45:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:45:  Missing space after ,  [whitespace/comma] [3]
+12330338_version.cpp:46:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:46:  Lines should very rarely be longer than 100 characters  [whitespace/line_length] [4]
+12330338_version.cpp:46:  Missing spaces around <  [whitespace/operators] [3]
+12330338_version.cpp:47:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:47:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:47:  Missing spaces around <  [whitespace/operators] [3]
+12330338_version.cpp:47:  Missing space before ( in for(  [whitespace/parens] [5]
+12330338_version.cpp:47:  Missing space after ;  [whitespace/semicolon] [3]
+12330338_version.cpp:47:  Missing space before {  [whitespace/braces] [5]
+12330338_version.cpp:48:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:48:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330338_version.cpp:48:  Missing spaces around >  [whitespace/operators] [3]
+12330338_version.cpp:48:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:49:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:50:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:50:  Missing spaces around <  [whitespace/operators] [3]
+12330338_version.cpp:50:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:52:  Missing spaces around ==  [whitespace/operators] [3]
+12330338_version.cpp:52:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:54:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:55:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:55:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:56:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:56:  Missing spaces around >  [whitespace/operators] [3]
+12330338_version.cpp:56:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:56:  Missing space before {  [whitespace/braces] [5]
+12330338_version.cpp:57:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:57:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:57:  Missing spaces around <  [whitespace/operators] [3]
+12330338_version.cpp:57:  Missing space before ( in for(  [whitespace/parens] [5]
+12330338_version.cpp:57:  Missing space after ;  [whitespace/semicolon] [3]
+12330338_version.cpp:58:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:58:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330338_version.cpp:58:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:59:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:60:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:60:  Missing spaces around <  [whitespace/operators] [3]
+12330338_version.cpp:60:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:60:  Missing space before {  [whitespace/braces] [5]
+12330338_version.cpp:61:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:61:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:61:  Missing spaces around <  [whitespace/operators] [3]
+12330338_version.cpp:61:  Missing space before ( in for(  [whitespace/parens] [5]
+12330338_version.cpp:61:  Missing space after ;  [whitespace/semicolon] [3]
+12330338_version.cpp:62:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:62:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330338_version.cpp:62:  Missing spaces around =  [whitespace/operators] [4]
+12330338_version.cpp:63:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:64:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:64:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330338_version.cpp:65:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:65:  Missing spaces around >  [whitespace/operators] [3]
+12330338_version.cpp:65:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:66:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:67:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:67:  Missing spaces around ==  [whitespace/operators] [3]
+12330338_version.cpp:67:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:68:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:69:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:69:  Missing spaces around <  [whitespace/operators] [3]
+12330338_version.cpp:69:  Missing space before ( in if(  [whitespace/parens] [5]
+12330338_version.cpp:70:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:71:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330338_version.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330338_version.cpp
+Total errors found: 141

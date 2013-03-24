@@ -1,0 +1,61 @@
+===  12330358_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+[       OK ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+[       OK ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+[       OK ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+[       OK ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+[       OK ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 9 tests.
+
+--------- Cpplint Check ---------
+12330358_series_comp.cpp:1:  Streams are highly discouraged.  [readability/streams] [3]
+12330358_series_comp.cpp:5:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330358_series_comp.cpp:8:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_series_comp.cpp:10:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_series_comp.cpp:12:  Single-argument constructors should be marked explicit.  [runtime/explicit] [5]
+12330358_series_comp.cpp:19:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330358_series_comp.cpp:23:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_series_comp.cpp:27:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_series_comp.cpp:31:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_series_comp.cpp:33:  Missing space before ( in for(  [whitespace/parens] [5]
+12330358_series_comp.cpp:38:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_series_comp.cpp:39:  Missing spaces around =  [whitespace/operators] [4]
+12330358_series_comp.cpp:39:  Missing space after ,  [whitespace/comma] [3]
+12330358_series_comp.cpp:41:  Missing space before ( in for(  [whitespace/parens] [5]
+12330358_series_comp.cpp:42:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_series_comp.cpp:46:  Missing spaces around ==  [whitespace/operators] [3]
+12330358_series_comp.cpp:46:  Missing space before ( in if(  [whitespace/parens] [5]
+12330358_series_comp.cpp:48:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330358_series_comp.cpp:52:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_series_comp.cpp:54:  Missing space before ( in for(  [whitespace/parens] [5]
+12330358_series_comp.cpp:55:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_series_comp.cpp:56:  Missing space after ,  [whitespace/comma] [3]
+12330358_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330358_series_comp.cpp
+Total errors found: 23

@@ -1,0 +1,101 @@
+===  12330318_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+series_comp_unittest.cpp:28: Failure
+Value of: sc_10.fib()
+  Actual: 55
+Expected: 143
+[  FAILED  ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+series_comp_unittest.cpp:33: Failure
+Value of: sc_4.fib()
+  Actual: 3
+Expected: 7
+[  FAILED  ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+[       OK ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+[       OK ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+[       OK ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 7 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] SeriesCompTest.Fib_2
+[  FAILED  ] SeriesCompTest.Fib_3
+
+ 2 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330318_series_comp.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:14:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330318_series_comp.cpp:16:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330318_series_comp.cpp:17:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330318_series_comp.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:20:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330318_series_comp.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:21:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330318_series_comp.cpp:21:  Missing space before {  [whitespace/braces] [5]
+12330318_series_comp.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:31:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330318_series_comp.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:32:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330318_series_comp.cpp:32:  Missing space before {  [whitespace/braces] [5]
+12330318_series_comp.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:45:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:45:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330318_series_comp.cpp:46:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:46:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330318_series_comp.cpp:46:  Missing space before {  [whitespace/braces] [5]
+12330318_series_comp.cpp:47:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:48:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:50:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:51:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:51:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330318_series_comp.cpp:51:  Missing space before {  [whitespace/braces] [5]
+12330318_series_comp.cpp:52:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:53:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:53:  Using C-style cast.  Use static_cast<double>(...) instead  [readability/casting] [4]
+12330318_series_comp.cpp:54:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:55:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:56:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:58:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:59:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330318_series_comp.cpp:60:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330318_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330318_series_comp.cpp
+Total errors found: 50

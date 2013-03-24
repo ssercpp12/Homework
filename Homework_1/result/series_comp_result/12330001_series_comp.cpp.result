@@ -1,0 +1,96 @@
+===  12330001_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘int util::SeriesComp::fib()’:
+series_comp.cpp:23:32: warning: statement has no effect [-Wunused-value]
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+series_comp_unittest.cpp:23: Failure
+Value of: sc.fib()
+  Actual: -1218584576
+Expected: 1
+[  FAILED  ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+series_comp_unittest.cpp:28: Failure
+Value of: sc_10.fib()
+  Actual: 1836160512
+Expected: 143
+[  FAILED  ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+series_comp_unittest.cpp:33: Failure
+Value of: sc_4.fib()
+  Actual: 59846912
+Expected: 7
+[  FAILED  ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+[       OK ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+[       OK ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+[       OK ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 6 tests.
+[  FAILED  ] 3 tests, listed below:
+[  FAILED  ] SeriesCompTest.Fib_1
+[  FAILED  ] SeriesCompTest.Fib_2
+[  FAILED  ] SeriesCompTest.Fib_3
+
+ 3 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330001_series_comp.cpp:5:  Should have a space between // and comment  [whitespace/comments] [4]
+12330001_series_comp.cpp:7:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330001_series_comp.cpp:8:  Missing spaces around =  [whitespace/operators] [4]
+12330001_series_comp.cpp:10:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330001_series_comp.cpp:11:  Should have a space between // and comment  [whitespace/comments] [4]
+12330001_series_comp.cpp:13:  Missing spaces around =  [whitespace/operators] [4]
+12330001_series_comp.cpp:13:  Missing space after ,  [whitespace/comma] [3]
+12330001_series_comp.cpp:14:  Missing spaces around =  [whitespace/operators] [4]
+12330001_series_comp.cpp:14:  Missing spaces around <=  [whitespace/operators] [3]
+12330001_series_comp.cpp:14:  Missing space before ( in for(  [whitespace/parens] [5]
+12330001_series_comp.cpp:14:  Missing space after ;  [whitespace/semicolon] [3]
+12330001_series_comp.cpp:19:  Should have a space between // and comment  [whitespace/comments] [4]
+12330001_series_comp.cpp:21:  Missing spaces around =  [whitespace/operators] [4]
+12330001_series_comp.cpp:21:  Missing space after ,  [whitespace/comma] [3]
+12330001_series_comp.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330001_series_comp.cpp:22:  Missing spaces around =  [whitespace/operators] [4]
+12330001_series_comp.cpp:22:  Missing spaces around <=  [whitespace/operators] [3]
+12330001_series_comp.cpp:22:  Missing space before {  [whitespace/braces] [5]
+12330001_series_comp.cpp:23:  Missing spaces around ==  [whitespace/operators] [3]
+12330001_series_comp.cpp:23:  Missing space before ( in if(  [whitespace/parens] [5]
+12330001_series_comp.cpp:24:  Else clause should never be on same line as else (use 2 lines)  [whitespace/newline] [4]
+12330001_series_comp.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330001_series_comp.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330001_series_comp.cpp:26:  Missing spaces around =  [whitespace/operators] [4]
+12330001_series_comp.cpp:26:  Missing spaces around <=  [whitespace/operators] [3]
+12330001_series_comp.cpp:26:  Missing space after ;  [whitespace/semicolon] [3]
+12330001_series_comp.cpp:26:  Missing space before {  [whitespace/braces] [5]
+12330001_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330001_series_comp.cpp:31:  Should have a space between // and comment  [whitespace/comments] [4]
+12330001_series_comp.cpp:33:  Missing spaces around =  [whitespace/operators] [4]
+12330001_series_comp.cpp:34:  Missing spaces around =  [whitespace/operators] [4]
+12330001_series_comp.cpp:34:  Missing space after ,  [whitespace/comma] [3]
+12330001_series_comp.cpp:35:  Missing spaces around =  [whitespace/operators] [4]
+12330001_series_comp.cpp:35:  Missing spaces around <=  [whitespace/operators] [3]
+12330001_series_comp.cpp:35:  Missing space after ;  [whitespace/semicolon] [3]
+12330001_series_comp.cpp:35:  Missing space before {  [whitespace/braces] [5]
+12330001_series_comp.cpp:36:  Missing space after ,  [whitespace/comma] [3]
+12330001_series_comp.cpp:42:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+Done processing 12330001_series_comp.cpp
+Total errors found: 38

@@ -1,0 +1,85 @@
+===  12330079_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘double util::SeriesComp::taylor(double)’:
+series_comp.cpp:32:10: warning: unused variable ‘c’ [-Wunused-variable]
+series_comp.cpp:32:14: warning: unused variable ‘d’ [-Wunused-variable]
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+series_comp_unittest.cpp:28: Failure
+Value of: sc_10.fib()
+  Actual: 55
+Expected: 143
+[  FAILED  ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+series_comp_unittest.cpp:33: Failure
+Value of: sc_4.fib()
+  Actual: 3
+Expected: 7
+[  FAILED  ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+[       OK ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+[       OK ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+[       OK ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 7 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] SeriesCompTest.Fib_2
+[  FAILED  ] SeriesCompTest.Fib_3
+
+ 2 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330079_series_comp.cpp:9:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:10:  Missing space before ( in for(  [whitespace/parens] [5]
+12330079_series_comp.cpp:16:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:17:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:18:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:19:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330079_series_comp.cpp:20:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330079_series_comp.cpp:21:  Missing space before ( in for(  [whitespace/parens] [5]
+12330079_series_comp.cpp:21:  Missing space before {  [whitespace/braces] [5]
+12330079_series_comp.cpp:22:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:23:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:24:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:25:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330079_series_comp.cpp:26:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:27:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330079_series_comp.cpp:31:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330079_series_comp.cpp:31:  Blank line at the start of a code block.  Is this needed?  [whitespace/blank_line] [2]
+12330079_series_comp.cpp:32:  Missing space after ,  [whitespace/comma] [3]
+12330079_series_comp.cpp:32:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:33:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:34:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330079_series_comp.cpp:35:  Missing space before ( in for(  [whitespace/parens] [5]
+12330079_series_comp.cpp:35:  Missing space before {  [whitespace/braces] [5]
+12330079_series_comp.cpp:36:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:37:  Missing space before ( in for(  [whitespace/parens] [5]
+12330079_series_comp.cpp:37:  Missing space before {  [whitespace/braces] [5]
+12330079_series_comp.cpp:38:  Extra space after (  [whitespace/parens] [2]
+12330079_series_comp.cpp:38:  Extra space before )  [whitespace/parens] [2]
+12330079_series_comp.cpp:40:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:42:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330079_series_comp.cpp:44:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+Done processing 12330079_series_comp.cpp
+Total errors found: 31

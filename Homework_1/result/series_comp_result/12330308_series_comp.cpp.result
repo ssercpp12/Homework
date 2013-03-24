@@ -1,0 +1,102 @@
+===  12330308_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+series_comp_unittest.cpp:28: Failure
+Value of: sc_10.fib()
+  Actual: 142
+Expected: 143
+[  FAILED  ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+series_comp_unittest.cpp:33: Failure
+Value of: sc_4.fib()
+  Actual: 6
+Expected: 7
+[  FAILED  ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+series_comp_unittest.cpp:38: Failure
+The difference between -9 and sc.taylor(10) is 10, which exceeds 0.01, where
+-9 evaluates to -9,
+sc.taylor(10) evaluates to 1, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+series_comp_unittest.cpp:43: Failure
+The difference between 291 and sc.taylor(10) is 416.66666666666669, which exceeds 0.01, where
+291 evaluates to 291,
+sc.taylor(10) evaluates to -125.66666666666667, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+series_comp_unittest.cpp:48: Failure
+The difference between 1342.59 and sc.taylor(10) is 2755.7346208112876, which exceeds 0.01, where
+1342.59 evaluates to 1342.5899999999999,
+sc.taylor(10) evaluates to -1413.1446208112877, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 4 tests.
+[  FAILED  ] 5 tests, listed below:
+[  FAILED  ] SeriesCompTest.Fib_2
+[  FAILED  ] SeriesCompTest.Fib_3
+[  FAILED  ] SeriesCompTest.Taylor_1
+[  FAILED  ] SeriesCompTest.Taylor_2
+[  FAILED  ] SeriesCompTest.Taylor_3
+
+ 5 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330308_series_comp.cpp:8:  Missing space after ,  [whitespace/comma] [3]
+12330308_series_comp.cpp:9:  Missing space before ( in for(  [whitespace/parens] [5]
+12330308_series_comp.cpp:10:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330308_series_comp.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:15:  Missing space after ,  [whitespace/comma] [3]
+12330308_series_comp.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:18:  Missing space before ( in if(  [whitespace/parens] [5]
+12330308_series_comp.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:19:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330308_series_comp.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:20:  Else clause should never be on same line as else (use 2 lines)  [whitespace/newline] [4]
+12330308_series_comp.cpp:20:  Missing space before ( in for(  [whitespace/parens] [5]
+12330308_series_comp.cpp:20:  Missing space after ;  [whitespace/semicolon] [3]
+12330308_series_comp.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:21:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330308_series_comp.cpp:21:  Missing space before {  [whitespace/braces] [5]
+12330308_series_comp.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:31:  Missing space after ,  [whitespace/comma] [3]
+12330308_series_comp.cpp:32:  Missing space after ,  [whitespace/comma] [3]
+12330308_series_comp.cpp:33:  Missing space before ( in for(  [whitespace/parens] [5]
+12330308_series_comp.cpp:34:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330308_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330308_series_comp.cpp:43:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330308_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330308_series_comp.cpp
+Total errors found: 33

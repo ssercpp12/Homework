@@ -1,0 +1,95 @@
+===  12330146_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘int util::SeriesComp::sum()’:
+series_comp.cpp:9:2: error: ‘cin’ was not declared in this scope
+series_comp.cpp: In member function ‘int util::SeriesComp::fib()’:
+series_comp.cpp:18:2: error: ‘cin’ was not declared in this scope
+series_comp.cpp:24:3: error: ‘cout’ was not declared in this scope
+series_comp.cpp:28:37: error: a function-definition is not allowed here before ‘{’ token
+series_comp.cpp:48:1: error: expected ‘}’ at end of input
+series_comp.cpp: At global scope:
+series_comp.cpp:48:1: error: expected ‘}’ at end of input
+series_comp.cpp: In member function ‘int util::SeriesComp::fib()’:
+series_comp.cpp:48:1: warning: control reaches end of non-void function [-Wreturn-type]
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330146_series_comp.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:8:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:8:  Missing space after ,  [whitespace/comma] [3]
+12330146_series_comp.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:9:  Missing spaces around >>  [whitespace/operators] [3]
+12330146_series_comp.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:10:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:10:  Missing spaces around <=  [whitespace/operators] [3]
+12330146_series_comp.cpp:10:  Missing space after ;  [whitespace/semicolon] [3]
+12330146_series_comp.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:11:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:17:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330146_series_comp.cpp:17:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:17:  Missing space after ,  [whitespace/comma] [3]
+12330146_series_comp.cpp:18:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330146_series_comp.cpp:18:  Missing spaces around >>  [whitespace/operators] [3]
+12330146_series_comp.cpp:19:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330146_series_comp.cpp:19:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:19:  Missing spaces around <  [whitespace/operators] [3]
+12330146_series_comp.cpp:19:  Missing space after ;  [whitespace/semicolon] [3]
+12330146_series_comp.cpp:20:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330146_series_comp.cpp:20:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330146_series_comp.cpp:21:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330146_series_comp.cpp:21:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:22:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330146_series_comp.cpp:22:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:23:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330146_series_comp.cpp:23:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:24:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330146_series_comp.cpp:24:  Missing spaces around <<  [whitespace/operators] [3]
+12330146_series_comp.cpp:29:  Missing space after ,  [whitespace/comma] [3]
+12330146_series_comp.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:30:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:30:  Missing space after ,  [whitespace/comma] [3]
+12330146_series_comp.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:31:  Missing space after ,  [whitespace/comma] [3]
+12330146_series_comp.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:32:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:32:  Missing spaces around <=  [whitespace/operators] [3]
+12330146_series_comp.cpp:32:  Missing space after ,  [whitespace/comma] [3]
+12330146_series_comp.cpp:32:  Missing space after ;  [whitespace/semicolon] [3]
+12330146_series_comp.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:33:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330146_series_comp.cpp:33:  Missing space before {  [whitespace/braces] [5]
+12330146_series_comp.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:34:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:34:  Missing spaces around <  [whitespace/operators] [3]
+12330146_series_comp.cpp:34:  Missing space after ,  [whitespace/comma] [3]
+12330146_series_comp.cpp:34:  Missing space after ;  [whitespace/semicolon] [3]
+12330146_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:35:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330146_series_comp.cpp:35:  Missing space before {  [whitespace/braces] [5]
+12330146_series_comp.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:36:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:38:  Missing spaces around ==  [whitespace/operators] [3]
+12330146_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:39:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:39:  Missing space before {  [whitespace/braces] [5]
+12330146_series_comp.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:41:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:41:  Missing space after ,  [whitespace/comma] [3]
+12330146_series_comp.cpp:41:  Missing space before {  [whitespace/braces] [5]
+12330146_series_comp.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:42:  Missing spaces around =  [whitespace/operators] [4]
+12330146_series_comp.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330146_series_comp.cpp:44:  Missing space after ,  [whitespace/comma] [3]
+12330146_series_comp.cpp:47:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+Done processing 12330146_series_comp.cpp
+Total errors found: 72

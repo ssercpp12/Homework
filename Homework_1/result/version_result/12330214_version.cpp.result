@@ -1,0 +1,242 @@
+===  12330214_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+g++ -c -Wall version_unittest.cpp -o version_unittest.o
+g++ version.o version_unittest.o -lpthread -lgtest -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+[==========] Running 15 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 15 tests from VersionTest
+[ RUN      ] VersionTest.ValueSemantics_1
+[       OK ] VersionTest.ValueSemantics_1 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_2
+[       OK ] VersionTest.ValueSemantics_2 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_3
+version_unittest.cpp:40: Failure
+Value of: v1.IsValid()
+  Actual: true
+Expected: false
+[  FAILED  ] VersionTest.ValueSemantics_3 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_4
+[       OK ] VersionTest.ValueSemantics_4 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_5
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+[  FAILED  ] VersionTest.ValueSemantics_5 (0 ms)
+[ RUN      ] VersionTest.Compare_0
+version_unittest.cpp:82: Failure
+Value of: cases[i].expected
+  Actual: 0
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 1.0
+[  FAILED  ] VersionTest.Compare_0 (0 ms)
+[ RUN      ] VersionTest.Compare_1
+[       OK ] VersionTest.Compare_1 (0 ms)
+[ RUN      ] VersionTest.Compare_2
+version_unittest.cpp:98: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 2.0
+[  FAILED  ] VersionTest.Compare_2 (0 ms)
+[ RUN      ] VersionTest.Compare_3
+version_unittest.cpp:106: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 1.1
+[  FAILED  ] VersionTest.Compare_3 (0 ms)
+[ RUN      ] VersionTest.Compare_4
+[       OK ] VersionTest.Compare_4 (0 ms)
+[ RUN      ] VersionTest.Compare_5
+version_unittest.cpp:122: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 1.0.1
+[  FAILED  ] VersionTest.Compare_5 (0 ms)
+[ RUN      ] VersionTest.Compare_6
+[       OK ] VersionTest.Compare_6 (0 ms)
+[ RUN      ] VersionTest.Compare_7
+[       OK ] VersionTest.Compare_7 (0 ms)
+[ RUN      ] VersionTest.Compare_8
+version_unittest.cpp:146: Failure
+Value of: cases[i].expected
+  Actual: 0
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0.0 ? 1.0
+[  FAILED  ] VersionTest.Compare_8 (0 ms)
+[ RUN      ] VersionTest.Compare_9
+version_unittest.cpp:154: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0.3 ? 1.0.20
+[  FAILED  ] VersionTest.Compare_9 (0 ms)
+[----------] 15 tests from VersionTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 7 tests.
+[  FAILED  ] 8 tests, listed below:
+[  FAILED  ] VersionTest.ValueSemantics_3
+[  FAILED  ] VersionTest.ValueSemantics_5
+[  FAILED  ] VersionTest.Compare_0
+[  FAILED  ] VersionTest.Compare_2
+[  FAILED  ] VersionTest.Compare_3
+[  FAILED  ] VersionTest.Compare_5
+[  FAILED  ] VersionTest.Compare_8
+[  FAILED  ] VersionTest.Compare_9
+
+ 8 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330214_version.cpp:1:  Should have a space between // and comment  [whitespace/comments] [4]
+12330214_version.cpp:5:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:6:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:6:  Missing spaces around =  [whitespace/operators] [4]
+12330214_version.cpp:6:  Missing spaces around !=  [whitespace/operators] [3]
+12330214_version.cpp:6:  Missing space after ,  [whitespace/comma] [3]
+12330214_version.cpp:6:  Missing space after ;  [whitespace/semicolon] [3]
+12330214_version.cpp:7:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:7:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:7:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:8:  Missing spaces around ==  [whitespace/operators] [3]
+12330214_version.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:9:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:9:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:12:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330214_version.cpp:12:  Missing spaces around <=  [whitespace/operators] [3]
+12330214_version.cpp:12:  Missing space before ( in if(  [whitespace/parens] [5]
+12330214_version.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:13:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:13:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:14:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330214_version.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:16:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330214_version.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:17:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:17:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:25:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330214_version.cpp:28:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330214_version.cpp:29:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330214_version.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:35:  Missing spaces around ==  [whitespace/operators] [3]
+12330214_version.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:36:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:36:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:39:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330214_version.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:40:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:40:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:48:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:49:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:49:  Missing spaces around ==  [whitespace/operators] [3]
+12330214_version.cpp:50:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:50:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:50:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:51:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:52:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:53:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:53:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330214_version.cpp:54:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:54:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:54:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:55:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:55:  Missing spaces around =  [whitespace/operators] [4]
+12330214_version.cpp:55:  Missing spaces around <  [whitespace/operators] [3]
+12330214_version.cpp:55:  Missing space after ;  [whitespace/semicolon] [3]
+12330214_version.cpp:56:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:56:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:56:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:57:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:57:  Missing spaces around <  [whitespace/operators] [3]
+12330214_version.cpp:58:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:58:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:58:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:59:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:60:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:61:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:61:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330214_version.cpp:61:  Missing spaces around >  [whitespace/operators] [3]
+12330214_version.cpp:61:  Missing space before ( in if(  [whitespace/parens] [5]
+12330214_version.cpp:62:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:62:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:62:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:63:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:64:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:65:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:66:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:66:  Missing spaces around <  [whitespace/operators] [3]
+12330214_version.cpp:67:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:67:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:67:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:68:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:68:  Missing spaces around <  [whitespace/operators] [3]
+12330214_version.cpp:68:  Missing space after ;  [whitespace/semicolon] [3]
+12330214_version.cpp:69:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:69:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:69:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:70:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:70:  Missing spaces around !=  [whitespace/operators] [3]
+12330214_version.cpp:71:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:71:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:71:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:72:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:73:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:74:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:75:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:76:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:76:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330214_version.cpp:76:  Missing spaces around >  [whitespace/operators] [3]
+12330214_version.cpp:76:  Missing space before ( in if(  [whitespace/parens] [5]
+12330214_version.cpp:77:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:77:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:77:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:78:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:78:  Missing spaces around <  [whitespace/operators] [3]
+12330214_version.cpp:78:  Missing space after ;  [whitespace/semicolon] [3]
+12330214_version.cpp:79:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:79:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:79:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:80:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:80:  Missing spaces around !=  [whitespace/operators] [3]
+12330214_version.cpp:81:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:81:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330214_version.cpp:81:  Missing space before {  [whitespace/braces] [5]
+12330214_version.cpp:82:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:83:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:84:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:85:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:86:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:87:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330214_version.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330214_version.cpp
+Total errors found: 136

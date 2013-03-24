@@ -1,0 +1,102 @@
+===  12331016_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In constructor ‘Version::Version(const string&)’:
+version.cpp:42:29: error: returning a value from a constructor
+version.cpp:48:28: error: assignment of read-only location ‘(& version_str)->std::basic_string<_CharT, _Traits, _Alloc>::operator[]<char, std::char_traits<char>, std::allocator<char> >(((std::basic_string<char>::size_type)i))’
+version.cpp:49:17: error: lvalue required as left operand of assignment
+version.cpp:52:12: error: returning a value from a constructor
+version.cpp:57:16: error: returning a value from a constructor
+version.cpp:56:22: warning: unused variable ‘version_str’ [-Wunused-variable]
+version.cpp:32:13: warning: unused variable ‘c’ [-Wunused-variable]
+version.cpp: In member function ‘int Version::CompareTo(const Version&) const’:
+version.cpp:83:9: error: ‘i’ was not declared in this scope
+version.cpp:85:12: error: ‘v1_str’ was not declared in this scope
+version.cpp:85:22: error: ‘v2_str’ was not declared in this scope
+make: *** [version.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+timeout: failed to run command `./version/a.out': No such file or directory
+
+--------- Cpplint Check ---------
+12331016_version.cpp:7:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12331016_version.cpp:10:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:15:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12331016_version.cpp:16:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:18:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:19:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:21:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:22:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:23:  Streams are highly discouraged.  [readability/streams] [3]
+12331016_version.cpp:26:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12331016_version.cpp:28:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:29:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:29:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:30:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:32:  Missing space after ,  [whitespace/comma] [3]
+12331016_version.cpp:33:  Missing spaces around =  [whitespace/operators] [4]
+12331016_version.cpp:34:  Missing spaces around =  [whitespace/operators] [4]
+12331016_version.cpp:34:  Missing spaces around <=  [whitespace/operators] [3]
+12331016_version.cpp:34:  Missing space before ( in for(  [whitespace/parens] [5]
+12331016_version.cpp:34:  Missing space after ;  [whitespace/semicolon] [3]
+12331016_version.cpp:35:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:36:  Missing spaces around !=  [whitespace/operators] [3]
+12331016_version.cpp:36:  Missing space before ( in if(  [whitespace/parens] [5]
+12331016_version.cpp:37:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:38:  Missing spaces around =  [whitespace/operators] [4]
+12331016_version.cpp:39:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:41:  Missing spaces around =  [whitespace/operators] [4]
+12331016_version.cpp:43:  Missing spaces around =  [whitespace/operators] [4]
+12331016_version.cpp:43:  Missing spaces around <=  [whitespace/operators] [3]
+12331016_version.cpp:43:  Missing space before ( in for(  [whitespace/parens] [5]
+12331016_version.cpp:43:  Missing space after ;  [whitespace/semicolon] [3]
+12331016_version.cpp:44:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:45:  Missing spaces around ==  [whitespace/operators] [3]
+12331016_version.cpp:45:  Missing space before ( in if(  [whitespace/parens] [5]
+12331016_version.cpp:46:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:47:  Missing spaces around =  [whitespace/operators] [4]
+12331016_version.cpp:53:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:54:  Missing spaces around !=  [whitespace/operators] [3]
+12331016_version.cpp:54:  Missing space before ( in if(  [whitespace/parens] [5]
+12331016_version.cpp:55:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:57:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:59:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12331016_version.cpp:61:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:62:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12331016_version.cpp:64:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:65:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:65:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12331016_version.cpp:66:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12331016_version.cpp:67:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12331016_version.cpp:71:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:72:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:73:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12331016_version.cpp:75:  Missing spaces around ==  [whitespace/operators] [3]
+12331016_version.cpp:75:  Missing space before ( in if(  [whitespace/parens] [5]
+12331016_version.cpp:81:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:82:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:83:  Missing spaces around =  [whitespace/operators] [4]
+12331016_version.cpp:83:  Missing spaces around <=  [whitespace/operators] [3]
+12331016_version.cpp:83:  Missing space before ( in for(  [whitespace/parens] [5]
+12331016_version.cpp:83:  Missing space after ;  [whitespace/semicolon] [3]
+12331016_version.cpp:84:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:85:  Missing spaces around >  [whitespace/operators] [3]
+12331016_version.cpp:85:  Missing space before ( in if(  [whitespace/parens] [5]
+12331016_version.cpp:86:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:89:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12331016_version.cpp:89:  Missing spaces around <  [whitespace/operators] [3]
+12331016_version.cpp:89:  Missing space before ( in if(  [whitespace/parens] [5]
+12331016_version.cpp:90:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:93:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12331016_version.cpp:94:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:97:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:98:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12331016_version.cpp:119:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12331016_version.cpp:121:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:122:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12331016_version.cpp:126:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:128:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12331016_version.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12331016_version.cpp
+Total errors found: 78

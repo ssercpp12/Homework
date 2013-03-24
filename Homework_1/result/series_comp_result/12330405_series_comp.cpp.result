@@ -1,0 +1,110 @@
+===  12330405_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+[       OK ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+[       OK ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+series_comp_unittest.cpp:38: Failure
+The difference between -9 and sc.taylor(10) is inf, which exceeds 0.01, where
+-9 evaluates to -9,
+sc.taylor(10) evaluates to -inf, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+series_comp_unittest.cpp:43: Failure
+The difference between 291 and sc.taylor(10) is inf, which exceeds 0.01, where
+291 evaluates to 291,
+sc.taylor(10) evaluates to inf, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_2 (1 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+series_comp_unittest.cpp:48: Failure
+The difference between 1342.59 and sc.taylor(10) is inf, which exceeds 0.01, where
+1342.59 evaluates to 1342.5899999999999,
+sc.taylor(10) evaluates to inf, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 6 tests.
+[  FAILED  ] 3 tests, listed below:
+[  FAILED  ] SeriesCompTest.Taylor_1
+[  FAILED  ] SeriesCompTest.Taylor_2
+[  FAILED  ] SeriesCompTest.Taylor_3
+
+ 3 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330405_series_comp.cpp:3:  Extra space after ( in function call  [whitespace/parens] [4]
+12330405_series_comp.cpp:3:  Missing space before {  [whitespace/braces] [5]
+12330405_series_comp.cpp:4:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:4:  Missing space before {  [whitespace/braces] [5]
+12330405_series_comp.cpp:5:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:6:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:7:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:7:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330405_series_comp.cpp:7:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12330405_series_comp.cpp:7:  Missing space before {  [whitespace/braces] [5]
+12330405_series_comp.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:17:  Missing space after ,  [whitespace/comma] [3]
+12330405_series_comp.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:19:  Missing space before {  [whitespace/braces] [5]
+12330405_series_comp.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:26:  Missing space after ,  [whitespace/comma] [3]
+12330405_series_comp.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:28:  Extra space for operator  ++   [whitespace/operators] [4]
+12330405_series_comp.cpp:28:  Missing space before {  [whitespace/braces] [5]
+12330405_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:29:  Extra space after ( in function call  [whitespace/parens] [4]
+12330405_series_comp.cpp:29:  Extra space before )  [whitespace/parens] [2]
+12330405_series_comp.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:38:  Missing space after ,  [whitespace/comma] [3]
+12330405_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:40:  Missing space before {  [whitespace/braces] [5]
+12330405_series_comp.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:43:  Missing space before {  [whitespace/braces] [5]
+12330405_series_comp.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:44:  Extra space after ( in function call  [whitespace/parens] [4]
+12330405_series_comp.cpp:44:  Extra space before )  [whitespace/parens] [2]
+12330405_series_comp.cpp:45:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:45:  Extra space after ( in function call  [whitespace/parens] [4]
+12330405_series_comp.cpp:45:  Extra space before )  [whitespace/parens] [2]
+12330405_series_comp.cpp:46:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:47:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330405_series_comp.cpp:51:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330405_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330405_series_comp.cpp
+Total errors found: 51

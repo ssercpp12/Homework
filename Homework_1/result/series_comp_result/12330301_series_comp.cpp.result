@@ -1,0 +1,62 @@
+===  12330301_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp:20:1: error: redefinition of ‘util::SeriesComp::SeriesComp(int)’
+series_comp.cpp:5:1: error: ‘util::SeriesComp::SeriesComp(int)’ previously defined here
+series_comp.cpp:25:5: error: redefinition of ‘int util::SeriesComp::sum()’
+series_comp.cpp:7:5: error: ‘int util::SeriesComp::sum()’ previously defined here
+series_comp.cpp:30:5: error: redefinition of ‘int util::SeriesComp::fib()’
+series_comp.cpp:11:5: error: ‘int util::SeriesComp::fib()’ previously defined here
+series_comp.cpp:51:8: error: redefinition of ‘double util::SeriesComp::taylor(double)’
+series_comp.cpp:15:8: error: ‘double util::SeriesComp::taylor(double)’ previously defined here
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330301_series_comp.cpp:19:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330301_series_comp.cpp:21:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330301_series_comp.cpp:22:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:26:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330301_series_comp.cpp:31:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330301_series_comp.cpp:32:  Missing space after ,  [whitespace/comma] [3]
+12330301_series_comp.cpp:33:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330301_series_comp.cpp:34:  Missing spaces around <  [whitespace/operators] [3]
+12330301_series_comp.cpp:34:  Missing space before ( in if(  [whitespace/parens] [5]
+12330301_series_comp.cpp:37:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330301_series_comp.cpp:38:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:39:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:40:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:40:  Missing spaces around <  [whitespace/operators] [3]
+12330301_series_comp.cpp:40:  Missing space before ( in for(  [whitespace/parens] [5]
+12330301_series_comp.cpp:40:  Missing space after ;  [whitespace/semicolon] [3]
+12330301_series_comp.cpp:41:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330301_series_comp.cpp:42:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:43:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:44:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:45:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:52:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330301_series_comp.cpp:55:  Use int16/int64/etc, rather than the C type long  [runtime/int] [4]
+12330301_series_comp.cpp:56:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330301_series_comp.cpp:57:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:58:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:58:  Missing spaces around <=  [whitespace/operators] [3]
+12330301_series_comp.cpp:58:  Missing space before ( in for(  [whitespace/parens] [5]
+12330301_series_comp.cpp:58:  Missing space after ;  [whitespace/semicolon] [3]
+12330301_series_comp.cpp:59:  Missing space after ,  [whitespace/comma] [3]
+12330301_series_comp.cpp:60:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330301_series_comp.cpp:62:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330301_series_comp.cpp:64:  Use int16/int64/etc, rather than the C type long  [runtime/int] [4]
+12330301_series_comp.cpp:65:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330301_series_comp.cpp:67:  Use int16/int64/etc, rather than the C type long  [runtime/int] [4]
+12330301_series_comp.cpp:68:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:69:  Missing spaces around =  [whitespace/operators] [4]
+12330301_series_comp.cpp:69:  Missing spaces around <=  [whitespace/operators] [3]
+12330301_series_comp.cpp:69:  Missing space before ( in for(  [whitespace/parens] [5]
+12330301_series_comp.cpp:69:  Missing space after ;  [whitespace/semicolon] [3]
+12330301_series_comp.cpp:70:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330301_series_comp.cpp:70:  Missing spaces around =  [whitespace/operators] [4]
+Done processing 12330301_series_comp.cpp
+Total errors found: 42

@@ -1,0 +1,52 @@
+===  12330144_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In member function ‘int Version::CompareTo(const Version&) const’:
+version.cpp:72:5: error: name lookup of ‘i’ changed for ISO ‘for’ scoping [-fpermissive]
+version.cpp:72:5: note: (if you use ‘-fpermissive’ G++ will accept your code)
+make: *** [version.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+timeout: failed to run command `./version/a.out': No such file or directory
+
+--------- Cpplint Check ---------
+12330144_version.cpp:6:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330144_version.cpp:9:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330144_version.cpp:10:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330144_version.cpp:14:  Missing spaces around =  [whitespace/operators] [4]
+12330144_version.cpp:17:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330144_version.cpp:17:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330144_version.cpp:18:  Missing spaces around ==  [whitespace/operators] [3]
+12330144_version.cpp:19:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330144_version.cpp:23:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330144_version.cpp:24:  Using C-style cast.  Use static_cast<int>(...) instead  [readability/casting] [4]
+12330144_version.cpp:27:  Missing spaces around =  [whitespace/operators] [4]
+12330144_version.cpp:34:  Missing spaces around ==  [whitespace/operators] [3]
+12330144_version.cpp:38:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330144_version.cpp:57:  Missing spaces around =  [whitespace/operators] [4]
+12330144_version.cpp:57:  Missing space after ,  [whitespace/comma] [3]
+12330144_version.cpp:59:  Missing spaces around >  [whitespace/operators] [3]
+12330144_version.cpp:60:  Missing spaces around =  [whitespace/operators] [4]
+12330144_version.cpp:62:  Missing spaces around =  [whitespace/operators] [4]
+12330144_version.cpp:62:  Missing spaces around <  [whitespace/operators] [3]
+12330144_version.cpp:62:  Missing space after ;  [whitespace/semicolon] [3]
+12330144_version.cpp:63:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330144_version.cpp:64:  Missing spaces around <  [whitespace/operators] [3]
+12330144_version.cpp:66:  Missing spaces around ==  [whitespace/operators] [3]
+12330144_version.cpp:66:  Missing space before ( in if(  [whitespace/parens] [5]
+12330144_version.cpp:67:  Missing spaces around =  [whitespace/operators] [4]
+12330144_version.cpp:71:  Missing spaces around >  [whitespace/operators] [3]
+12330144_version.cpp:72:  Missing spaces around =  [whitespace/operators] [4]
+12330144_version.cpp:72:  Missing spaces around <  [whitespace/operators] [3]
+12330144_version.cpp:72:  Missing space after ;  [whitespace/semicolon] [3]
+12330144_version.cpp:73:  Missing spaces around >  [whitespace/operators] [3]
+12330144_version.cpp:76:  Missing spaces around =  [whitespace/operators] [4]
+12330144_version.cpp:78:  Missing spaces around =  [whitespace/operators] [4]
+12330144_version.cpp:78:  Missing spaces around <  [whitespace/operators] [3]
+12330144_version.cpp:78:  Missing space after ;  [whitespace/semicolon] [3]
+12330144_version.cpp:79:  Missing spaces around >  [whitespace/operators] [3]
+12330144_version.cpp:82:  Missing spaces around =  [whitespace/operators] [4]
+12330144_version.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330144_version.cpp
+Total errors found: 37

@@ -1,0 +1,136 @@
+===  12330009_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+series_comp_unittest.cpp:8: Failure
+Value of: sc_10.sum()
+  Actual: -1216606153
+Expected: 55
+[  FAILED  ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+series_comp_unittest.cpp:13: Failure
+Value of: sc_1.sum()
+  Actual: -1220290815
+Expected: 1
+[  FAILED  ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+series_comp_unittest.cpp:18: Failure
+Value of: sc_4.sum()
+  Actual: -1220290806
+Expected: 10
+[  FAILED  ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+series_comp_unittest.cpp:28: Failure
+Value of: sc_10.fib()
+  Actual: 55
+Expected: 143
+[  FAILED  ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+series_comp_unittest.cpp:33: Failure
+Value of: sc_4.fib()
+  Actual: 3
+Expected: 7
+[  FAILED  ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+series_comp_unittest.cpp:38: Failure
+The difference between -9 and sc.taylor(10) is 10, which exceeds 0.01, where
+-9 evaluates to -9,
+sc.taylor(10) evaluates to 1, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+series_comp_unittest.cpp:43: Failure
+The difference between 291 and sc.taylor(10) is 416.66666666666663, which exceeds 0.01, where
+291 evaluates to 291,
+sc.taylor(10) evaluates to -125.66666666666666, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_2 (1 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+series_comp_unittest.cpp:48: Failure
+The difference between 1342.59 and sc.taylor(10) is 2755.7346208112876, which exceeds 0.01, where
+1342.59 evaluates to 1342.5899999999999,
+sc.taylor(10) evaluates to -1413.1446208112875, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 1 test.
+[  FAILED  ] 8 tests, listed below:
+[  FAILED  ] SeriesCompTest.Sum_1
+[  FAILED  ] SeriesCompTest.Sum_2
+[  FAILED  ] SeriesCompTest.Sum_3
+[  FAILED  ] SeriesCompTest.Fib_2
+[  FAILED  ] SeriesCompTest.Fib_3
+[  FAILED  ] SeriesCompTest.Taylor_1
+[  FAILED  ] SeriesCompTest.Taylor_2
+[  FAILED  ] SeriesCompTest.Taylor_3
+
+ 8 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330009_series_comp.cpp:8:  Single-argument constructors should be marked explicit.  [runtime/explicit] [5]
+12330009_series_comp.cpp:17:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330009_series_comp.cpp:24:  Missing spaces around =  [whitespace/operators] [4]
+12330009_series_comp.cpp:26:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330009_series_comp.cpp:27:  Missing space after ,  [whitespace/comma] [3]
+12330009_series_comp.cpp:28:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330009_series_comp.cpp:28:  Missing spaces around =  [whitespace/operators] [4]
+12330009_series_comp.cpp:28:  Missing spaces around <=  [whitespace/operators] [3]
+12330009_series_comp.cpp:28:  Missing space before ( in for(  [whitespace/parens] [5]
+12330009_series_comp.cpp:28:  Missing space after ;  [whitespace/semicolon] [3]
+12330009_series_comp.cpp:33:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330009_series_comp.cpp:34:  Missing space after ,  [whitespace/comma] [3]
+12330009_series_comp.cpp:34:  Missing space before {  [whitespace/braces] [5]
+12330009_series_comp.cpp:35:  Missing spaces around ==  [whitespace/operators] [3]
+12330009_series_comp.cpp:35:  Missing space before ( in if(  [whitespace/parens] [5]
+12330009_series_comp.cpp:37:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12330009_series_comp.cpp:40:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330009_series_comp.cpp:41:  Missing spaces around =  [whitespace/operators] [4]
+12330009_series_comp.cpp:41:  Missing spaces around <=  [whitespace/operators] [3]
+12330009_series_comp.cpp:41:  Missing space before ( in for(  [whitespace/parens] [5]
+12330009_series_comp.cpp:41:  Missing space after ;  [whitespace/semicolon] [3]
+12330009_series_comp.cpp:42:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330009_series_comp.cpp:43:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330009_series_comp.cpp:46:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330009_series_comp.cpp:49:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330009_series_comp.cpp:50:  Missing spaces around =  [whitespace/operators] [4]
+12330009_series_comp.cpp:50:  Missing space after ,  [whitespace/comma] [3]
+12330009_series_comp.cpp:51:  Missing spaces around =  [whitespace/operators] [4]
+12330009_series_comp.cpp:51:  Missing spaces around ==  [whitespace/operators] [3]
+12330009_series_comp.cpp:51:  Missing space before ( in if(  [whitespace/parens] [5]
+12330009_series_comp.cpp:53:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330009_series_comp.cpp:54:  Missing spaces around =  [whitespace/operators] [4]
+12330009_series_comp.cpp:54:  Missing spaces around <=  [whitespace/operators] [3]
+12330009_series_comp.cpp:54:  Missing space before ( in for(  [whitespace/parens] [5]
+12330009_series_comp.cpp:54:  Missing space after ;  [whitespace/semicolon] [3]
+12330009_series_comp.cpp:55:  Missing spaces around =  [whitespace/operators] [4]
+12330009_series_comp.cpp:56:  Missing spaces around =  [whitespace/operators] [4]
+12330009_series_comp.cpp:57:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330009_series_comp.cpp:57:  Missing spaces around =  [whitespace/operators] [4]
+12330009_series_comp.cpp:57:  Missing spaces around <=  [whitespace/operators] [3]
+12330009_series_comp.cpp:57:  Missing space before ( in for(  [whitespace/parens] [5]
+12330009_series_comp.cpp:57:  Missing space after ;  [whitespace/semicolon] [3]
+12330009_series_comp.cpp:61:  Missing spaces around =  [whitespace/operators] [4]
+12330009_series_comp.cpp:62:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330009_series_comp.cpp:62:  Missing spaces around ==  [whitespace/operators] [3]
+12330009_series_comp.cpp:62:  Missing space before ( in if(  [whitespace/parens] [5]
+12330009_series_comp.cpp:62:  Using C-style cast.  Use static_cast<int>(...) instead  [readability/casting] [4]
+12330009_series_comp.cpp:63:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330009_series_comp.cpp:64:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330009_series_comp.cpp:65:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330009_series_comp.cpp:67:  Missing spaces around =  [whitespace/operators] [4]
+12330009_series_comp.cpp:71:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+Done processing 12330009_series_comp.cpp
+Total errors found: 52

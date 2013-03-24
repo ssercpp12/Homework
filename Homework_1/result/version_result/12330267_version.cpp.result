@@ -1,0 +1,192 @@
+===  12330267_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In constructor ‘Version::Version(const string&)’:
+version.cpp:83:1: error: expected ‘;’ after class definition
+In file included from version.cpp:4:0:
+version.h: In constructor ‘Version::Version(const string&)::Version::Version(const string&)’:
+version.h:19:7: error: invalid use of non-static data member ‘Version::components_size_’
+version.cpp:13:3: error: from this location
+version.cpp:23:33: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+In file included from version.cpp:4:0:
+version.h:19:7: error: invalid use of non-static data member ‘Version::components_size_’
+version.cpp:24:5: error: from this location
+In file included from version.cpp:4:0:
+version.h:19:7: error: invalid use of non-static data member ‘Version::components_size_’
+version.cpp:26:5: error: from this location
+In file included from version.cpp:4:0:
+version.h:19:7: error: invalid use of non-static data member ‘Version::components_size_’
+version.cpp:28:6: error: from this location
+In file included from version.cpp:4:0:
+version.h:19:7: error: invalid use of non-static data member ‘Version::components_size_’
+version.cpp:34:3: error: from this location
+In file included from version.cpp:4:0:
+version.h:18:21: error: invalid use of non-static data member ‘Version::components_’
+version.cpp:36:3: error: from this location
+In file included from version.cpp:4:0:
+version.h:18:21: error: invalid use of non-static data member ‘Version::components_’
+version.cpp:43:5: error: from this location
+In file included from version.cpp:4:0:
+version.h:18:21: error: invalid use of non-static data member ‘Version::components_’
+version.cpp:43:20: error: from this location
+In file included from version.cpp:4:0:
+version.h: In member function ‘bool Version::Version(const string&)::Version::IsValid() const’:
+version.h:19:7: error: invalid use of non-static data member ‘Version::components_size_’
+version.cpp:54:5: error: from this location
+In file included from version.cpp:4:0:
+version.h: In member function ‘int Version::Version(const string&)::Version::CompareTo(const Version::Version(const string&)::Version&) const’:
+version.h:19:7: error: invalid use of non-static data member ‘Version::components_size_’
+version.cpp:64:5: error: from this location
+version.cpp:64:32: error: ‘const class Version::Version(const string&)::Version’ has no member named ‘components_size_’
+In file included from version.cpp:4:0:
+version.h:18:21: error: invalid use of non-static data member ‘Version::components_’
+version.cpp:68:6: error: from this location
+version.cpp:68:27: error: ‘const class Version::Version(const string&)::Version’ has no member named ‘components_’
+In file included from version.cpp:4:0:
+version.h:18:21: error: invalid use of non-static data member ‘Version::components_’
+version.cpp:73:6: error: from this location
+version.cpp:73:27: error: ‘const class Version::Version(const string&)::Version’ has no member named ‘components_’
+make: *** [version.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+timeout: failed to run command `./version/a.out': No such file or directory
+
+--------- Cpplint Check ---------
+12330267_version.cpp:7:  Missing space before {  [whitespace/braces] [5]
+12330267_version.cpp:8:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12330267_version.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:10:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330267_version.cpp:10:  Missing space before {  [whitespace/braces] [5]
+12330267_version.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:12:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:12:  Missing space after ,  [whitespace/comma] [3]
+12330267_version.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:13:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:14:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330267_version.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:15:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:15:  Missing spaces around !=  [whitespace/operators] [3]
+12330267_version.cpp:15:  Missing space after ;  [whitespace/semicolon] [3]
+12330267_version.cpp:15:  Missing space before {  [whitespace/braces] [5]
+12330267_version.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:17:  Missing spaces around ==  [whitespace/operators] [3]
+12330267_version.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:21:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:21:  Missing spaces around !=  [whitespace/operators] [3]
+12330267_version.cpp:21:  Missing space after ;  [whitespace/semicolon] [3]
+12330267_version.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:22:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330267_version.cpp:22:  Missing space before {  [whitespace/braces] [5]
+12330267_version.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:23:  Missing spaces around !=  [whitespace/operators] [3]
+12330267_version.cpp:23:  Missing spaces around <  [whitespace/operators] [3]
+12330267_version.cpp:23:  Missing spaces around >  [whitespace/operators] [3]
+12330267_version.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:24:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:25:  Missing spaces around ==  [whitespace/operators] [3]
+12330267_version.cpp:25:  Missing space before ( in if(  [whitespace/parens] [5]
+12330267_version.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:26:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:28:  Missing spaces around !=  [whitespace/operators] [3]
+12330267_version.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:29:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330267_version.cpp:29:  Missing space before {  [whitespace/braces] [5]
+12330267_version.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:30:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:30:  Missing spaces around !=  [whitespace/operators] [3]
+12330267_version.cpp:30:  Missing space after ;  [whitespace/semicolon] [3]
+12330267_version.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:31:  Missing spaces around ==  [whitespace/operators] [3]
+12330267_version.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:33:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330267_version.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:34:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:35:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:35:  Missing spaces around <  [whitespace/operators] [3]
+12330267_version.cpp:35:  Missing space after ;  [whitespace/semicolon] [3]
+12330267_version.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:37:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330267_version.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:38:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:38:  Missing spaces around !=  [whitespace/operators] [3]
+12330267_version.cpp:38:  Missing space after ;  [whitespace/semicolon] [3]
+12330267_version.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:39:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330267_version.cpp:39:  Missing space before {  [whitespace/braces] [5]
+12330267_version.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:40:  Missing spaces around !=  [whitespace/operators] [3]
+12330267_version.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:41:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330267_version.cpp:41:  Missing space before {  [whitespace/braces] [5]
+12330267_version.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:42:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:45:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:45:  Missing spaces around ==  [whitespace/operators] [3]
+12330267_version.cpp:45:  Missing space before ( in if(  [whitespace/parens] [5]
+12330267_version.cpp:46:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:47:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:48:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:49:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:52:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330267_version.cpp:53:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:54:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:54:  Missing spaces around ==  [whitespace/operators] [3]
+12330267_version.cpp:55:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:55:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:56:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:57:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:57:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:62:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330267_version.cpp:63:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:63:  Missing space after ,  [whitespace/comma] [3]
+12330267_version.cpp:64:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:64:  Missing spaces around ==  [whitespace/operators] [3]
+12330267_version.cpp:65:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:66:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:66:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:66:  Missing spaces around <  [whitespace/operators] [3]
+12330267_version.cpp:66:  Missing space after ;  [whitespace/semicolon] [3]
+12330267_version.cpp:67:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:67:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330267_version.cpp:67:  Missing space before {  [whitespace/braces] [5]
+12330267_version.cpp:68:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:68:  Missing spaces around >  [whitespace/operators] [3]
+12330267_version.cpp:69:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:69:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330267_version.cpp:69:  Missing space before {  [whitespace/braces] [5]
+12330267_version.cpp:70:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:70:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:71:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:72:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:73:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:73:  Missing spaces around <  [whitespace/operators] [3]
+12330267_version.cpp:74:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:74:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330267_version.cpp:74:  Missing space before {  [whitespace/braces] [5]
+12330267_version.cpp:75:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:76:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:77:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:78:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:78:  Missing spaces around ==  [whitespace/operators] [3]
+12330267_version.cpp:79:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:79:  Missing spaces around =  [whitespace/operators] [4]
+12330267_version.cpp:80:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:81:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330267_version.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330267_version.cpp
+Total errors found: 135

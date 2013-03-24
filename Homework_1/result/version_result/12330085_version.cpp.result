@@ -1,0 +1,165 @@
+===  12330085_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+g++ -c -Wall version_unittest.cpp -o version_unittest.o
+g++ version.o version_unittest.o -lpthread -lgtest -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+[==========] Running 15 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 15 tests from VersionTest
+[ RUN      ] VersionTest.ValueSemantics_1
+[       OK ] VersionTest.ValueSemantics_1 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_2
+[       OK ] VersionTest.ValueSemantics_2 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_3
+[       OK ] VersionTest.ValueSemantics_3 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_4
+[       OK ] VersionTest.ValueSemantics_4 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_5
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: false
+Expected: cases[i].success
+Which is: true
+[  FAILED  ] VersionTest.ValueSemantics_5 (0 ms)
+[ RUN      ] VersionTest.Compare_0
+version_unittest.cpp:82: Failure
+Value of: cases[i].expected
+  Actual: 0
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 1.0
+[  FAILED  ] VersionTest.Compare_0 (0 ms)
+[ RUN      ] VersionTest.Compare_1
+[       OK ] VersionTest.Compare_1 (0 ms)
+[ RUN      ] VersionTest.Compare_2
+version_unittest.cpp:98: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 2.0
+[  FAILED  ] VersionTest.Compare_2 (0 ms)
+[ RUN      ] VersionTest.Compare_3
+version_unittest.cpp:106: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 1.1
+[  FAILED  ] VersionTest.Compare_3 (1 ms)
+[ RUN      ] VersionTest.Compare_4
+[       OK ] VersionTest.Compare_4 (0 ms)
+[ RUN      ] VersionTest.Compare_5
+version_unittest.cpp:122: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 1.0.1
+[  FAILED  ] VersionTest.Compare_5 (0 ms)
+[ RUN      ] VersionTest.Compare_6
+[       OK ] VersionTest.Compare_6 (0 ms)
+[ RUN      ] VersionTest.Compare_7
+[       OK ] VersionTest.Compare_7 (0 ms)
+[ RUN      ] VersionTest.Compare_8
+version_unittest.cpp:146: Failure
+Value of: cases[i].expected
+  Actual: 0
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0.0 ? 1.0
+[  FAILED  ] VersionTest.Compare_8 (0 ms)
+[ RUN      ] VersionTest.Compare_9
+version_unittest.cpp:154: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0.3 ? 1.0.20
+[  FAILED  ] VersionTest.Compare_9 (0 ms)
+[----------] 15 tests from VersionTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 8 tests.
+[  FAILED  ] 7 tests, listed below:
+[  FAILED  ] VersionTest.ValueSemantics_5
+[  FAILED  ] VersionTest.Compare_0
+[  FAILED  ] VersionTest.Compare_2
+[  FAILED  ] VersionTest.Compare_3
+[  FAILED  ] VersionTest.Compare_5
+[  FAILED  ] VersionTest.Compare_8
+[  FAILED  ] VersionTest.Compare_9
+
+ 7 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330085_version.cpp:5:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:6:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:7:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:10:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330085_version.cpp:10:  Missing space before {  [whitespace/braces] [5]
+12330085_version.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:11:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330085_version.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:13:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330085_version.cpp:13:  Missing space before {  [whitespace/braces] [5]
+12330085_version.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:17:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330085_version.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:18:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330085_version.cpp:18:  Missing space before {  [whitespace/braces] [5]
+12330085_version.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:23:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330085_version.cpp:23:  Missing space before {  [whitespace/braces] [5]
+12330085_version.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:26:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330085_version.cpp:26:  Missing space before {  [whitespace/braces] [5]
+12330085_version.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:34:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330085_version.cpp:37:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330085_version.cpp:38:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330085_version.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:39:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330085_version.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:44:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330085_version.cpp:45:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330085_version.cpp:46:  Missing space before ( in if(  [whitespace/parens] [5]
+12330085_version.cpp:47:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:48:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:49:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:49:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330085_version.cpp:49:  Missing space before {  [whitespace/braces] [5]
+12330085_version.cpp:50:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:51:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:52:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:53:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:54:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:55:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330085_version.cpp:56:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+Done processing 12330085_version.cpp
+Total errors found: 64

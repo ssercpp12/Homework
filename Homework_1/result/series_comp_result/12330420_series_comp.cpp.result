@@ -1,0 +1,50 @@
+===  12330420_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘int util::SeriesComp::fib()’:
+series_comp.cpp:14:18: error: a function-definition is not allowed here before ‘{’ token
+series_comp.cpp:24:18: error: ‘f’ was not declared in this scope
+series_comp.cpp:25:3: error: expected ‘;’ before ‘return’
+series_comp.cpp:26:1: warning: no return statement in function returning non-void [-Wreturn-type]
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330420_series_comp.cpp:3:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330420_series_comp.cpp:5:  Missing space before {  [whitespace/braces] [5]
+12330420_series_comp.cpp:8:  Missing space before {  [whitespace/braces] [5]
+12330420_series_comp.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:13:  Missing space before {  [whitespace/braces] [5]
+12330420_series_comp.cpp:14:  Missing space before {  [whitespace/braces] [5]
+12330420_series_comp.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:23:  Missing space after ;  [whitespace/semicolon] [3]
+12330420_series_comp.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:27:  Missing space before {  [whitespace/braces] [5]
+12330420_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:31:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12330420_series_comp.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:32:  Mismatching spaces inside () in for  [whitespace/parens] [5]
+12330420_series_comp.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:37:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330420_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:39:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330420_series_comp.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330420_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330420_series_comp.cpp
+Total errors found: 33

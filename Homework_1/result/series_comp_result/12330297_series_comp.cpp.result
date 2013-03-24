@@ -1,0 +1,27 @@
+===  12330297_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘double util::SeriesComp::taylor(double)’:
+series_comp.cpp:49:27: error: ‘pow’ was not declared in this scope
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330297_series_comp.cpp:1:  Streams are highly discouraged.  [readability/streams] [3]
+12330297_series_comp.cpp:4:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330297_series_comp.cpp:14:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330297_series_comp.cpp:22:  Use int16/int64/etc, rather than the C type long  [runtime/int] [4]
+12330297_series_comp.cpp:31:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330297_series_comp.cpp:33:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330297_series_comp.cpp:38:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330297_series_comp.cpp:48:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330297_series_comp.cpp:49:  Extra space after ( in function call  [whitespace/parens] [4]
+12330297_series_comp.cpp:49:  Extra space before ( in function call  [whitespace/parens] [4]
+12330297_series_comp.cpp:49:  Extra space before )  [whitespace/parens] [2]
+12330297_series_comp.cpp:62:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330297_series_comp.cpp:65:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+Done processing 12330297_series_comp.cpp
+Total errors found: 13

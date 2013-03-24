@@ -1,0 +1,89 @@
+===  12330211_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp:18:2: error: #endif without #if
+version.cpp:3:7: error: redefinition of ‘class Version’
+In file included from version.cpp:1:0:
+version.h:7:7: error: previous definition of ‘class Version’
+version.cpp: In constructor ‘Version::Version(const string&)’:
+version.cpp:23:28: warning: suggest parentheses around comparison in operand of ‘!=’ [-Wparentheses]
+make: *** [version.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+timeout: failed to run command `./version/a.out': No such file or directory
+
+--------- Cpplint Check ---------
+12330211_version.cpp:4:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12330211_version.cpp:6:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:9:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:12:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:13:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12330211_version.cpp:21:  Missing spaces around =  [whitespace/operators] [4]
+12330211_version.cpp:21:  Missing space after ,  [whitespace/comma] [3]
+12330211_version.cpp:21:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330211_version.cpp:22:  Missing spaces around =  [whitespace/operators] [4]
+12330211_version.cpp:23:  Missing spaces around !=  [whitespace/operators] [3]
+12330211_version.cpp:23:  Missing spaces around <  [whitespace/operators] [3]
+12330211_version.cpp:23:  Missing space before ( in for(  [whitespace/parens] [5]
+12330211_version.cpp:23:  Missing space after ;  [whitespace/semicolon] [3]
+12330211_version.cpp:24:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330211_version.cpp:25:  Missing spaces around <=  [whitespace/operators] [3]
+12330211_version.cpp:25:  Missing space before ( in if(  [whitespace/parens] [5]
+12330211_version.cpp:26:  Missing spaces around =  [whitespace/operators] [4]
+12330211_version.cpp:29:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330211_version.cpp:29:  Missing spaces around ==  [whitespace/operators] [3]
+12330211_version.cpp:29:  Missing space before ( in if(  [whitespace/parens] [5]
+12330211_version.cpp:30:  Missing spaces around =  [whitespace/operators] [4]
+12330211_version.cpp:33:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:34:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330211_version.cpp:34:  Missing spaces around ==  [whitespace/operators] [3]
+12330211_version.cpp:34:  Missing space before ( in if(  [whitespace/parens] [5]
+12330211_version.cpp:35:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330211_version.cpp:36:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:36:  Blank line at the start of a code block.  Is this needed?  [whitespace/blank_line] [2]
+12330211_version.cpp:38:  Missing spaces around =  [whitespace/operators] [4]
+12330211_version.cpp:39:  Extra space for operator  ++;  [whitespace/operators] [4]
+12330211_version.cpp:40:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:40:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330211_version.cpp:42:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330211_version.cpp:42:  Missing spaces around <=  [whitespace/operators] [3]
+12330211_version.cpp:42:  Missing space before ( in if(  [whitespace/parens] [5]
+12330211_version.cpp:43:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330211_version.cpp:44:  Missing spaces around =  [whitespace/operators] [4]
+12330211_version.cpp:45:  Missing spaces around =  [whitespace/operators] [4]
+12330211_version.cpp:47:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:47:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330211_version.cpp:49:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:50:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:51:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:52:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330211_version.cpp:55:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330211_version.cpp:58:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330211_version.cpp:59:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330211_version.cpp:60:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330211_version.cpp:64:  Missing spaces around ==  [whitespace/operators] [3]
+12330211_version.cpp:64:  Missing space before ( in if(  [whitespace/parens] [5]
+12330211_version.cpp:65:  Else clause should never be on same line as else (use 2 lines)  [whitespace/newline] [4]
+12330211_version.cpp:66:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330211_version.cpp:71:  Missing spaces around =  [whitespace/operators] [4]
+12330211_version.cpp:72:  Missing spaces around ==  [whitespace/operators] [3]
+12330211_version.cpp:72:  Missing space before ( in if(  [whitespace/parens] [5]
+12330211_version.cpp:74:  Missing spaces around <  [whitespace/operators] [3]
+12330211_version.cpp:74:  Missing space before ( in for(  [whitespace/parens] [5]
+12330211_version.cpp:74:  Missing space after ;  [whitespace/semicolon] [3]
+12330211_version.cpp:75:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330211_version.cpp:76:  Missing spaces around <  [whitespace/operators] [3]
+12330211_version.cpp:76:  Missing space before ( in if(  [whitespace/parens] [5]
+12330211_version.cpp:78:  Missing spaces around >  [whitespace/operators] [3]
+12330211_version.cpp:78:  Missing space before ( in if(  [whitespace/parens] [5]
+12330211_version.cpp:80:  Else clause should never be on same line as else (use 2 lines)  [whitespace/newline] [4]
+12330211_version.cpp:81:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:82:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:82:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330211_version.cpp:85:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:86:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:87:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330211_version.cpp:88:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+Done processing 12330211_version.cpp
+Total errors found: 71

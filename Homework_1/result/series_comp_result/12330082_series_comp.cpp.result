@@ -1,0 +1,67 @@
+===  12330082_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘double util::SeriesComp::taylor(double)’:
+series_comp.cpp:37:15: error: invalid use of member function (did you forget the ‘()’ ?)
+series_comp.cpp:39:19: error: invalid use of member function (did you forget the ‘()’ ?)
+series_comp.cpp:41:16: error: cannot convert ‘util::SeriesComp::sum’ from type ‘int (util::SeriesComp::)()’ to type ‘int’
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330082_series_comp.cpp:9:  Missing spaces around =  [whitespace/operators] [4]
+12330082_series_comp.cpp:9:  Missing space after ,  [whitespace/comma] [3]
+12330082_series_comp.cpp:10:  Missing spaces around =  [whitespace/operators] [4]
+12330082_series_comp.cpp:10:  Missing spaces around <=  [whitespace/operators] [3]
+12330082_series_comp.cpp:10:  Missing space before ( in for(  [whitespace/parens] [5]
+12330082_series_comp.cpp:10:  Missing space after ;  [whitespace/semicolon] [3]
+12330082_series_comp.cpp:10:  Missing space before {  [whitespace/braces] [5]
+12330082_series_comp.cpp:18:  Missing spaces around =  [whitespace/operators] [4]
+12330082_series_comp.cpp:19:  Do not use variable-length arrays.  Use an appropriately named ('k' followed by CamelCase) compile-time constant for the size.  [runtime/arrays] [1]
+12330082_series_comp.cpp:22:  Missing spaces around =  [whitespace/operators] [4]
+12330082_series_comp.cpp:22:  Missing spaces around <=  [whitespace/operators] [3]
+12330082_series_comp.cpp:22:  Missing space before ( in for(  [whitespace/parens] [5]
+12330082_series_comp.cpp:22:  Missing space after ;  [whitespace/semicolon] [3]
+12330082_series_comp.cpp:22:  Missing space before {  [whitespace/braces] [5]
+12330082_series_comp.cpp:25:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330082_series_comp.cpp:26:  Missing spaces around =  [whitespace/operators] [4]
+12330082_series_comp.cpp:26:  Missing spaces around <=  [whitespace/operators] [3]
+12330082_series_comp.cpp:26:  Missing space before ( in for(  [whitespace/parens] [5]
+12330082_series_comp.cpp:26:  Missing space after ;  [whitespace/semicolon] [3]
+12330082_series_comp.cpp:26:  Missing space before {  [whitespace/braces] [5]
+12330082_series_comp.cpp:33:  Missing spaces around =  [whitespace/operators] [4]
+12330082_series_comp.cpp:33:  Missing space after ,  [whitespace/comma] [3]
+12330082_series_comp.cpp:34:  Do not use variable-length arrays.  Use an appropriately named ('k' followed by CamelCase) compile-time constant for the size.  [runtime/arrays] [1]
+12330082_series_comp.cpp:35:  Missing space after ,  [whitespace/comma] [3]
+12330082_series_comp.cpp:36:  Missing spaces around =  [whitespace/operators] [4]
+12330082_series_comp.cpp:36:  Missing spaces around >=  [whitespace/operators] [3]
+12330082_series_comp.cpp:36:  Missing space before ( in for(  [whitespace/parens] [5]
+12330082_series_comp.cpp:36:  Missing space after ;  [whitespace/semicolon] [3]
+12330082_series_comp.cpp:36:  Missing space before {  [whitespace/braces] [5]
+12330082_series_comp.cpp:37:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330082_series_comp.cpp:37:  Missing spaces around =  [whitespace/operators] [4]
+12330082_series_comp.cpp:38:  Missing spaces around =  [whitespace/operators] [4]
+12330082_series_comp.cpp:38:  Missing spaces around >=  [whitespace/operators] [3]
+12330082_series_comp.cpp:38:  Missing space before ( in for(  [whitespace/parens] [5]
+12330082_series_comp.cpp:38:  Missing space after ;  [whitespace/semicolon] [3]
+12330082_series_comp.cpp:38:  Missing space before {  [whitespace/braces] [5]
+12330082_series_comp.cpp:41:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330082_series_comp.cpp:43:  Missing spaces around =  [whitespace/operators] [4]
+12330082_series_comp.cpp:43:  Missing spaces around <=  [whitespace/operators] [3]
+12330082_series_comp.cpp:43:  Missing space before ( in for(  [whitespace/parens] [5]
+12330082_series_comp.cpp:43:  Missing space after ;  [whitespace/semicolon] [3]
+12330082_series_comp.cpp:43:  Missing space before {  [whitespace/braces] [5]
+12330082_series_comp.cpp:44:  Missing space after ,  [whitespace/comma] [3]
+12330082_series_comp.cpp:46:  Missing spaces around =  [whitespace/operators] [4]
+12330082_series_comp.cpp:46:  Missing spaces around <=  [whitespace/operators] [3]
+12330082_series_comp.cpp:46:  Missing space before ( in for(  [whitespace/parens] [5]
+12330082_series_comp.cpp:46:  Missing space after ;  [whitespace/semicolon] [3]
+12330082_series_comp.cpp:46:  Missing space before {  [whitespace/braces] [5]
+12330082_series_comp.cpp:47:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330082_series_comp.cpp:48:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330082_series_comp.cpp:52:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+Done processing 12330082_series_comp.cpp
+Total errors found: 51

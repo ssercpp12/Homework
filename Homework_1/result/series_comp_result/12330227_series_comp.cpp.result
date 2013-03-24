@@ -1,0 +1,128 @@
+===  12330227_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+series_comp_unittest.cpp:28: Failure
+Value of: sc_10.fib()
+  Actual: 55
+Expected: 143
+[  FAILED  ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+series_comp_unittest.cpp:33: Failure
+Value of: sc_4.fib()
+  Actual: 3
+Expected: 7
+[  FAILED  ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+[       OK ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+series_comp_unittest.cpp:43: Failure
+The difference between 291 and sc.taylor(10) is 298.61111111111109, which exceeds 0.01, where
+291 evaluates to 291,
+sc.taylor(10) evaluates to -7.6111111111111134, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+series_comp_unittest.cpp:48: Failure
+The difference between 1342.59 and sc.taylor(10) is inf, which exceeds 0.01, where
+1342.59 evaluates to 1342.5899999999999,
+sc.taylor(10) evaluates to inf, and
+0.01 evaluates to 0.01.
+[  FAILED  ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 5 tests.
+[  FAILED  ] 4 tests, listed below:
+[  FAILED  ] SeriesCompTest.Fib_2
+[  FAILED  ] SeriesCompTest.Fib_3
+[  FAILED  ] SeriesCompTest.Taylor_2
+[  FAILED  ] SeriesCompTest.Taylor_3
+
+ 4 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330227_series_comp.cpp:12:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330227_series_comp.cpp:12:  Should have a space between // and comment  [whitespace/comments] [4]
+12330227_series_comp.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:13:  Missing space after ,  [whitespace/comma] [3]
+12330227_series_comp.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:14:  Should have a space between // and comment  [whitespace/comments] [4]
+12330227_series_comp.cpp:14:  Missing spaces around =  [whitespace/operators] [4]
+12330227_series_comp.cpp:14:  Missing spaces around <=  [whitespace/operators] [3]
+12330227_series_comp.cpp:14:  Missing space after ,  [whitespace/comma] [3]
+12330227_series_comp.cpp:14:  Missing space after ;  [whitespace/semicolon] [3]
+12330227_series_comp.cpp:14:  Missing space before {  [whitespace/braces] [5]
+12330227_series_comp.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:21:  Should have a space between // and comment  [whitespace/comments] [4]
+12330227_series_comp.cpp:21:  Missing space before {  [whitespace/braces] [5]
+12330227_series_comp.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:24:  Should have a space between // and comment  [whitespace/comments] [4]
+12330227_series_comp.cpp:24:  Missing spaces around <  [whitespace/operators] [3]
+12330227_series_comp.cpp:24:  Missing space before {  [whitespace/braces] [5]
+12330227_series_comp.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:27:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330227_series_comp.cpp:27:  Should have a space between // and comment  [whitespace/comments] [4]
+12330227_series_comp.cpp:27:  Missing spaces around <  [whitespace/operators] [3]
+12330227_series_comp.cpp:27:  Missing space before {  [whitespace/braces] [5]
+12330227_series_comp.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:30:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330227_series_comp.cpp:30:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12330227_series_comp.cpp:30:  Missing space before {  [whitespace/braces] [5]
+12330227_series_comp.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:31:  Should have a space between // and comment  [whitespace/comments] [4]
+12330227_series_comp.cpp:31:  Missing spaces around =  [whitespace/operators] [4]
+12330227_series_comp.cpp:31:  Missing spaces around <=  [whitespace/operators] [3]
+12330227_series_comp.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:39:  Missing spaces around =  [whitespace/operators] [4]
+12330227_series_comp.cpp:39:  Missing space after ,  [whitespace/comma] [3]
+12330227_series_comp.cpp:39:  Extra space before last semicolon. If this should be an empty statement, use {} instead.  [whitespace/semicolon] [5]
+12330227_series_comp.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:40:  Missing spaces around =  [whitespace/operators] [4]
+12330227_series_comp.cpp:40:  Missing spaces around <=  [whitespace/operators] [3]
+12330227_series_comp.cpp:40:  Missing space before {  [whitespace/braces] [5]
+12330227_series_comp.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:41:  Missing spaces around =  [whitespace/operators] [4]
+12330227_series_comp.cpp:41:  Missing spaces around <=  [whitespace/operators] [3]
+12330227_series_comp.cpp:41:  Missing space after ;  [whitespace/semicolon] [3]
+12330227_series_comp.cpp:41:  Missing space before {  [whitespace/braces] [5]
+12330227_series_comp.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:42:  Should have a space between // and comment  [whitespace/comments] [4]
+12330227_series_comp.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:44:  Should have a space between // and comment  [whitespace/comments] [4]
+12330227_series_comp.cpp:44:  Missing space after ,  [whitespace/comma] [3]
+12330227_series_comp.cpp:45:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330227_series_comp.cpp:49:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330227_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330227_series_comp.cpp
+Total errors found: 65

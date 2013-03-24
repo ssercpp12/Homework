@@ -1,0 +1,71 @@
+===  12330358_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In constructor ‘Version::Version(const string&)’:
+version.cpp:51:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+version.cpp:53:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+version.cpp:54:80: warning: suggest parentheses around ‘&&’ within ‘||’ [-Wparentheses]
+version.cpp:68:58: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+version.cpp: In member function ‘int Version::CompareTo(const Version&) const’:
+version.cpp:122:1: warning: control reaches end of non-void function [-Wreturn-type]
+g++ -c -Wall version_unittest.cpp -o version_unittest.o
+g++ version.o version_unittest.o -lpthread -lgtest -o a.out
+version_unittest.o: In function `main':
+version_unittest.cpp:(.text+0x23d4): multiple definition of `main'
+version.o:version.cpp:(.text+0x0): first defined here
+collect2: error: ld returned 1 exit status
+make: *** [a.out] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+timeout: failed to run command `./version/a.out': No such file or directory
+
+--------- Cpplint Check ---------
+12330358_version.cpp:3:  Streams are highly discouraged.  [readability/streams] [3]
+12330358_version.cpp:6:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330358_version.cpp:9:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:10:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12330358_version.cpp:20:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12330358_version.cpp:25:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:42:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:46:  Missing space before ( in while(  [whitespace/parens] [5]
+12330358_version.cpp:47:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:51:  Missing space before ( in for(  [whitespace/parens] [5]
+12330358_version.cpp:52:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:53:  Missing space before ( in for(  [whitespace/parens] [5]
+12330358_version.cpp:54:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330358_version.cpp:54:  Missing space before ( in if(  [whitespace/parens] [5]
+12330358_version.cpp:55:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:59:  Missing space before ( in if(  [whitespace/parens] [5]
+12330358_version.cpp:62:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:66:  Missing space before ( in if(  [whitespace/parens] [5]
+12330358_version.cpp:67:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:68:  Missing space before ( in for(  [whitespace/parens] [5]
+12330358_version.cpp:69:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330358_version.cpp:73:  Missing space before ( in while(  [whitespace/parens] [5]
+12330358_version.cpp:74:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:75:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330358_version.cpp:79:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330358_version.cpp:81:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330358_version.cpp:83:  Missing space before ( in for(  [whitespace/parens] [5]
+12330358_version.cpp:87:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330358_version.cpp:90:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:91:  Missing space before ( in if(  [whitespace/parens] [5]
+12330358_version.cpp:97:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:99:  Missing space before ( in for(  [whitespace/parens] [5]
+12330358_version.cpp:100:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:101:  Missing spaces around ==  [whitespace/operators] [3]
+12330358_version.cpp:101:  Missing space before ( in if(  [whitespace/parens] [5]
+12330358_version.cpp:102:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:106:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330358_version.cpp:106:  Missing space before ( in if(  [whitespace/parens] [5]
+12330358_version.cpp:107:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:111:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330358_version.cpp:111:  Missing space before ( in if(  [whitespace/parens] [5]
+12330358_version.cpp:112:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:116:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330358_version.cpp:116:  Missing space before ( in if(  [whitespace/parens] [5]
+12330358_version.cpp:117:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330358_version.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330358_version.cpp
+Total errors found: 46

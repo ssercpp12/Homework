@@ -1,0 +1,117 @@
+===  12330115_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+g++ -c -Wall version_unittest.cpp -o version_unittest.o
+g++ version.o version_unittest.o -lpthread -lgtest -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+[==========] Running 15 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 15 tests from VersionTest
+[ RUN      ] VersionTest.ValueSemantics_1
+[       OK ] VersionTest.ValueSemantics_1 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_2
+[       OK ] VersionTest.ValueSemantics_2 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_3
+[       OK ] VersionTest.ValueSemantics_3 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_4
+[       OK ] VersionTest.ValueSemantics_4 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_5
+[       OK ] VersionTest.ValueSemantics_5 (0 ms)
+[ RUN      ] VersionTest.Compare_0
+[       OK ] VersionTest.Compare_0 (0 ms)
+[ RUN      ] VersionTest.Compare_1
+[       OK ] VersionTest.Compare_1 (0 ms)
+[ RUN      ] VersionTest.Compare_2
+[       OK ] VersionTest.Compare_2 (0 ms)
+[ RUN      ] VersionTest.Compare_3
+[       OK ] VersionTest.Compare_3 (0 ms)
+[ RUN      ] VersionTest.Compare_4
+[       OK ] VersionTest.Compare_4 (0 ms)
+[ RUN      ] VersionTest.Compare_5
+[       OK ] VersionTest.Compare_5 (0 ms)
+[ RUN      ] VersionTest.Compare_6
+[       OK ] VersionTest.Compare_6 (0 ms)
+[ RUN      ] VersionTest.Compare_7
+[       OK ] VersionTest.Compare_7 (0 ms)
+[ RUN      ] VersionTest.Compare_8
+[       OK ] VersionTest.Compare_8 (0 ms)
+[ RUN      ] VersionTest.Compare_9
+[       OK ] VersionTest.Compare_9 (0 ms)
+[----------] 15 tests from VersionTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 15 tests.
+
+--------- Cpplint Check ---------
+12330115_version.cpp:3:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330115_version.cpp:8:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330115_version.cpp:11:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330115_version.cpp:12:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330115_version.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:15:  Missing space after ,  [whitespace/comma] [3]
+12330115_version.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:16:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330115_version.cpp:16:  Missing spaces around ==  [whitespace/operators] [3]
+12330115_version.cpp:16:  Missing space after ;  [whitespace/semicolon] [3]
+12330115_version.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:17:  Missing spaces around =  [whitespace/operators] [4]
+12330115_version.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:18:  Missing spaces around =  [whitespace/operators] [4]
+12330115_version.cpp:18:  Missing space after ;  [whitespace/semicolon] [3]
+12330115_version.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:19:  Missing spaces around =  [whitespace/operators] [4]
+12330115_version.cpp:19:  Missing spaces around <  [whitespace/operators] [3]
+12330115_version.cpp:19:  Missing space after ;  [whitespace/semicolon] [3]
+12330115_version.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:20:  Missing spaces around =  [whitespace/operators] [4]
+12330115_version.cpp:20:  Missing spaces around <  [whitespace/operators] [3]
+12330115_version.cpp:20:  Missing space after ;  [whitespace/semicolon] [3]
+12330115_version.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:21:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330115_version.cpp:21:  Missing space before {  [whitespace/braces] [5]
+12330115_version.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:22:  Missing spaces around ==  [whitespace/operators] [3]
+12330115_version.cpp:22:  Missing space after ;  [whitespace/semicolon] [3]
+12330115_version.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:23:  Lines should very rarely be longer than 100 characters  [whitespace/line_length] [4]
+12330115_version.cpp:23:  Missing spaces around !=  [whitespace/operators] [3]
+12330115_version.cpp:23:  Missing spaces around <  [whitespace/operators] [3]
+12330115_version.cpp:23:  Missing spaces around >  [whitespace/operators] [3]
+12330115_version.cpp:23:  Missing space after ;  [whitespace/semicolon] [3]
+12330115_version.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:24:  Missing spaces around <=  [whitespace/operators] [3]
+12330115_version.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:25:  Missing spaces around =  [whitespace/operators] [4]
+12330115_version.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:27:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330115_version.cpp:27:  Missing spaces around ==  [whitespace/operators] [3]
+12330115_version.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:28:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330115_version.cpp:28:  Missing space before {  [whitespace/braces] [5]
+12330115_version.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:31:  Missing spaces around =  [whitespace/operators] [4]
+12330115_version.cpp:31:  Missing space after ;  [whitespace/semicolon] [3]
+12330115_version.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:33:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330115_version.cpp:33:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330115_version.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:39:  Missing spaces around >  [whitespace/operators] [3]
+12330115_version.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:59:  Missing spaces around ==  [whitespace/operators] [3]
+12330115_version.cpp:60:  Missing spaces around =  [whitespace/operators] [4]
+12330115_version.cpp:60:  Missing spaces around <  [whitespace/operators] [3]
+12330115_version.cpp:60:  Missing space after ;  [whitespace/semicolon] [3]
+12330115_version.cpp:61:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330115_version.cpp:62:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:62:  Missing spaces around >  [whitespace/operators] [3]
+12330115_version.cpp:63:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330115_version.cpp:63:  Missing spaces around <  [whitespace/operators] [3]
+Done processing 12330115_version.cpp
+Total errors found: 67

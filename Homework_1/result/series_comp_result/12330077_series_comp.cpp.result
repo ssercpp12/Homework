@@ -1,0 +1,63 @@
+===  12330077_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp:21:33: error: definition of ‘util::SeriesComp::SeriesComp(int)’ is not in namespace enclosing ‘util::SeriesComp’ [-fpermissive]
+series_comp.cpp:26:25: error: definition of ‘int util::SeriesComp::sum()’ is not in namespace enclosing ‘util::SeriesComp’ [-fpermissive]
+series_comp.cpp:35:25: error: definition of ‘int util::SeriesComp::fib()’ is not in namespace enclosing ‘util::SeriesComp’ [-fpermissive]
+series_comp.cpp:49:40: error: definition of ‘double util::SeriesComp::taylor(double)’ is not in namespace enclosing ‘util::SeriesComp’ [-fpermissive]
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330077_series_comp.cpp:1:  Streams are highly discouraged.  [readability/streams] [3]
+12330077_series_comp.cpp:2:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330077_series_comp.cpp:4:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330077_series_comp.cpp:9:  Single-argument constructors should be marked explicit.  [runtime/explicit] [5]
+12330077_series_comp.cpp:16:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330077_series_comp.cpp:21:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330077_series_comp.cpp:22:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330077_series_comp.cpp:23:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330077_series_comp.cpp:23:  Missing spaces around =  [whitespace/operators] [4]
+12330077_series_comp.cpp:26:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330077_series_comp.cpp:27:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330077_series_comp.cpp:28:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330077_series_comp.cpp:30:  Missing spaces around =  [whitespace/operators] [4]
+12330077_series_comp.cpp:30:  Missing spaces around <=  [whitespace/operators] [3]
+12330077_series_comp.cpp:30:  Missing space before ( in for(  [whitespace/parens] [5]
+12330077_series_comp.cpp:30:  Missing space after ;  [whitespace/semicolon] [3]
+12330077_series_comp.cpp:36:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330077_series_comp.cpp:36:  Blank line at the start of a code block.  Is this needed?  [whitespace/blank_line] [2]
+12330077_series_comp.cpp:39:  Missing spaces around =  [whitespace/operators] [4]
+12330077_series_comp.cpp:42:  Missing spaces around =  [whitespace/operators] [4]
+12330077_series_comp.cpp:42:  Missing spaces around <  [whitespace/operators] [3]
+12330077_series_comp.cpp:42:  Missing space before ( in for(  [whitespace/parens] [5]
+12330077_series_comp.cpp:42:  Missing space after ;  [whitespace/semicolon] [3]
+12330077_series_comp.cpp:44:  Missing spaces around =  [whitespace/operators] [4]
+12330077_series_comp.cpp:44:  Missing spaces around <  [whitespace/operators] [3]
+12330077_series_comp.cpp:44:  Missing space before ( in for(  [whitespace/parens] [5]
+12330077_series_comp.cpp:44:  Missing space after ;  [whitespace/semicolon] [3]
+12330077_series_comp.cpp:45:  Missing spaces around =  [whitespace/operators] [4]
+12330077_series_comp.cpp:54:  Missing spaces around =  [whitespace/operators] [4]
+12330077_series_comp.cpp:54:  Missing spaces around <  [whitespace/operators] [3]
+12330077_series_comp.cpp:54:  Missing space before ( in for(  [whitespace/parens] [5]
+12330077_series_comp.cpp:54:  Missing space after ;  [whitespace/semicolon] [3]
+12330077_series_comp.cpp:56:  Missing spaces around =  [whitespace/operators] [4]
+12330077_series_comp.cpp:56:  Missing spaces around <=  [whitespace/operators] [3]
+12330077_series_comp.cpp:56:  Missing space before ( in for(  [whitespace/parens] [5]
+12330077_series_comp.cpp:56:  Missing space after ;  [whitespace/semicolon] [3]
+12330077_series_comp.cpp:57:  Missing space after ,  [whitespace/comma] [3]
+12330077_series_comp.cpp:58:  Missing spaces around =  [whitespace/operators] [4]
+12330077_series_comp.cpp:59:  Missing spaces around =  [whitespace/operators] [4]
+12330077_series_comp.cpp:59:  Missing spaces around <  [whitespace/operators] [3]
+12330077_series_comp.cpp:59:  Missing space before ( in for(  [whitespace/parens] [5]
+12330077_series_comp.cpp:59:  Missing space after ;  [whitespace/semicolon] [3]
+12330077_series_comp.cpp:60:  Missing spaces around =  [whitespace/operators] [4]
+12330077_series_comp.cpp:63:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330077_series_comp.cpp:64:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330077_series_comp.cpp:67:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330077_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330077_series_comp.cpp
+Total errors found: 47

@@ -1,0 +1,96 @@
+===  12330152_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp:3:2: error: ‘SeriesComp’ does not name a type
+series_comp.cpp:8:6: error: ‘SeriesComp’ has not been declared
+series_comp.cpp: In function ‘int sum()’:
+series_comp.cpp:11:24: error: ‘n_’ was not declared in this scope
+series_comp.cpp: At global scope:
+series_comp.cpp:15:6: error: ‘SeriesComp’ has not been declared
+series_comp.cpp: In function ‘int fib()’:
+series_comp.cpp:18:6: error: ‘n_’ was not declared in this scope
+series_comp.cpp:19:6: error: ‘n_’ was not declared in this scope
+series_comp.cpp:20:13: error: ‘n_’ was not declared in this scope
+series_comp.cpp: At global scope:
+series_comp.cpp:39:9: error: ‘SeriesComp’ has not been declared
+series_comp.cpp: In function ‘double taylor(double)’:
+series_comp.cpp:42:14: error: ‘n_’ was not declared in this scope
+series_comp.cpp: At global scope:
+series_comp.cpp:47:1: error: expected declaration before ‘}’ token
+make: *** [series_comp.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330152_series_comp.cpp:3:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:4:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:4:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_series_comp.cpp:5:  Missing spaces around =  [whitespace/operators] [4]
+12330152_series_comp.cpp:6:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:7:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330152_series_comp.cpp:8:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:9:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:9:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_series_comp.cpp:10:  Missing space after ,  [whitespace/comma] [3]
+12330152_series_comp.cpp:11:  Empty loop bodies should use {} or continue  [whitespace/empty_loop_body] [5]
+12330152_series_comp.cpp:11:  Missing spaces around =  [whitespace/operators] [4]
+12330152_series_comp.cpp:11:  Missing spaces around <=  [whitespace/operators] [3]
+12330152_series_comp.cpp:11:  Missing space before ( in for(  [whitespace/parens] [5]
+12330152_series_comp.cpp:11:  Missing space after ,  [whitespace/comma] [3]
+12330152_series_comp.cpp:11:  Missing space after ;  [whitespace/semicolon] [3]
+12330152_series_comp.cpp:13:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:14:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330152_series_comp.cpp:15:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:16:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:16:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_series_comp.cpp:17:  Missing spaces around =  [whitespace/operators] [4]
+12330152_series_comp.cpp:17:  Missing space after ,  [whitespace/comma] [3]
+12330152_series_comp.cpp:18:  Missing spaces around ==  [whitespace/operators] [3]
+12330152_series_comp.cpp:18:  Missing space before ( in if(  [whitespace/parens] [5]
+12330152_series_comp.cpp:19:  Missing spaces around ==  [whitespace/operators] [3]
+12330152_series_comp.cpp:19:  Missing space before ( in if(  [whitespace/parens] [5]
+12330152_series_comp.cpp:20:  Missing spaces around =  [whitespace/operators] [4]
+12330152_series_comp.cpp:20:  Missing spaces around <  [whitespace/operators] [3]
+12330152_series_comp.cpp:20:  Missing space before ( in for(  [whitespace/parens] [5]
+12330152_series_comp.cpp:20:  Missing space after ;  [whitespace/semicolon] [3]
+12330152_series_comp.cpp:21:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_series_comp.cpp:22:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:22:  Missing spaces around =  [whitespace/operators] [4]
+12330152_series_comp.cpp:23:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:23:  Missing spaces around =  [whitespace/operators] [4]
+12330152_series_comp.cpp:24:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:27:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:28:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330152_series_comp.cpp:29:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:30:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:30:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_series_comp.cpp:31:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330152_series_comp.cpp:31:  Missing spaces around ==  [whitespace/operators] [3]
+12330152_series_comp.cpp:32:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330152_series_comp.cpp:33:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330152_series_comp.cpp:34:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:34:  Missing space after ,  [whitespace/comma] [3]
+12330152_series_comp.cpp:35:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:35:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_series_comp.cpp:36:  Missing spaces around ==  [whitespace/operators] [3]
+12330152_series_comp.cpp:36:  Missing space after ,  [whitespace/comma] [3]
+12330152_series_comp.cpp:37:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:38:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330152_series_comp.cpp:39:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:40:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:40:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330152_series_comp.cpp:41:  Missing space after ,  [whitespace/comma] [3]
+12330152_series_comp.cpp:42:  Missing spaces around =  [whitespace/operators] [4]
+12330152_series_comp.cpp:42:  Missing spaces around <=  [whitespace/operators] [3]
+12330152_series_comp.cpp:42:  Missing space before ( in for(  [whitespace/parens] [5]
+12330152_series_comp.cpp:42:  Missing space after ;  [whitespace/semicolon] [3]
+12330152_series_comp.cpp:43:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:43:  Missing space after ,  [whitespace/comma] [3]
+12330152_series_comp.cpp:45:  Weird number of spaces at line-start.  Are you using a 2-space indent?  [whitespace/indent] [3]
+12330152_series_comp.cpp:46:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330152_series_comp.cpp:46:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330152_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330152_series_comp.cpp
+Total errors found: 68

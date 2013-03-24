@@ -1,0 +1,191 @@
+===  12330153_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+g++ -c -Wall version_unittest.cpp -o version_unittest.o
+g++ version.o version_unittest.o -lpthread -lgtest -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+[==========] Running 15 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 15 tests from VersionTest
+[ RUN      ] VersionTest.ValueSemantics_1
+[       OK ] VersionTest.ValueSemantics_1 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_2
+[       OK ] VersionTest.ValueSemantics_2 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_3
+version_unittest.cpp:40: Failure
+Value of: v1.IsValid()
+  Actual: true
+Expected: false
+[  FAILED  ] VersionTest.ValueSemantics_3 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_4
+[       OK ] VersionTest.ValueSemantics_4 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_5
+version_unittest.cpp:74: Failure
+Value of: version.IsValid()
+  Actual: true
+Expected: cases[i].success
+Which is: false
+[  FAILED  ] VersionTest.ValueSemantics_5 (1 ms)
+[ RUN      ] VersionTest.Compare_0
+[       OK ] VersionTest.Compare_0 (0 ms)
+[ RUN      ] VersionTest.Compare_1
+[       OK ] VersionTest.Compare_1 (0 ms)
+[ RUN      ] VersionTest.Compare_2
+[       OK ] VersionTest.Compare_2 (0 ms)
+[ RUN      ] VersionTest.Compare_3
+[       OK ] VersionTest.Compare_3 (0 ms)
+[ RUN      ] VersionTest.Compare_4
+[       OK ] VersionTest.Compare_4 (0 ms)
+[ RUN      ] VersionTest.Compare_5
+[       OK ] VersionTest.Compare_5 (0 ms)
+[ RUN      ] VersionTest.Compare_6
+[       OK ] VersionTest.Compare_6 (0 ms)
+[ RUN      ] VersionTest.Compare_7
+[       OK ] VersionTest.Compare_7 (0 ms)
+[ RUN      ] VersionTest.Compare_8
+[       OK ] VersionTest.Compare_8 (0 ms)
+[ RUN      ] VersionTest.Compare_9
+[       OK ] VersionTest.Compare_9 (0 ms)
+[----------] 15 tests from VersionTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 13 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] VersionTest.ValueSemantics_3
+[  FAILED  ] VersionTest.ValueSemantics_5
+
+ 2 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330153_version.cpp:2:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330153_version.cpp:3:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330153_version.cpp:3:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330153_version.cpp:3:  Should have a space between // and comment  [whitespace/comments] [4]
+12330153_version.cpp:4:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330153_version.cpp:5:  Missing space after ,  [whitespace/comma] [3]
+12330153_version.cpp:6:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:7:  Missing space after ,  [whitespace/comma] [3]
+12330153_version.cpp:8:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:9:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330153_version.cpp:9:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330153_version.cpp:9:  Should have a space between // and comment  [whitespace/comments] [4]
+12330153_version.cpp:9:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:9:  Missing spaces around ==  [whitespace/operators] [3]
+12330153_version.cpp:9:  Missing space before ( in if(  [whitespace/parens] [5]
+12330153_version.cpp:9:  Missing space before {  [whitespace/braces] [5]
+12330153_version.cpp:10:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:11:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330153_version.cpp:11:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330153_version.cpp:11:  Should have a space between // and comment  [whitespace/comments] [4]
+12330153_version.cpp:11:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:11:  Missing spaces around ==  [whitespace/operators] [3]
+12330153_version.cpp:11:  Missing space before ( in if(  [whitespace/parens] [5]
+12330153_version.cpp:11:  Missing space before {  [whitespace/braces] [5]
+12330153_version.cpp:12:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:12:  Missing spaces around <  [whitespace/operators] [3]
+12330153_version.cpp:12:  Missing space before ( in for(  [whitespace/parens] [5]
+12330153_version.cpp:12:  Missing space after ;  [whitespace/semicolon] [3]
+12330153_version.cpp:13:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330153_version.cpp:14:  Missing spaces around !=  [whitespace/operators] [3]
+12330153_version.cpp:14:  Missing space before ( in if(  [whitespace/parens] [5]
+12330153_version.cpp:15:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330153_version.cpp:15:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330153_version.cpp:15:  Should have a space between // and comment  [whitespace/comments] [4]
+12330153_version.cpp:15:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:15:  Missing space after ;  [whitespace/semicolon] [3]
+12330153_version.cpp:16:  Missing spaces around ==  [whitespace/operators] [3]
+12330153_version.cpp:16:  Missing space before ( in if(  [whitespace/parens] [5]
+12330153_version.cpp:17:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330153_version.cpp:17:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330153_version.cpp:17:  Should have a space between // and comment  [whitespace/comments] [4]
+12330153_version.cpp:17:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:17:  Missing space after ;  [whitespace/semicolon] [3]
+12330153_version.cpp:18:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330153_version.cpp:18:  Should have a space between // and comment  [whitespace/comments] [4]
+12330153_version.cpp:19:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:19:  Missing spaces around <  [whitespace/operators] [3]
+12330153_version.cpp:19:  Missing space before ( in for(  [whitespace/parens] [5]
+12330153_version.cpp:19:  Missing space after ;  [whitespace/semicolon] [3]
+12330153_version.cpp:19:  Missing space before {  [whitespace/braces] [5]
+12330153_version.cpp:20:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:20:  Missing space after ;  [whitespace/semicolon] [3]
+12330153_version.cpp:21:  Missing spaces around ==  [whitespace/operators] [3]
+12330153_version.cpp:21:  Missing space before ( in if(  [whitespace/parens] [5]
+12330153_version.cpp:22:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330153_version.cpp:23:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:23:  Missing spaces around <  [whitespace/operators] [3]
+12330153_version.cpp:23:  Missing space before ( in for(  [whitespace/parens] [5]
+12330153_version.cpp:23:  Missing space after ;  [whitespace/semicolon] [3]
+12330153_version.cpp:24:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330153_version.cpp:25:  Missing spaces around ==  [whitespace/operators] [3]
+12330153_version.cpp:25:  Missing space before ( in if(  [whitespace/parens] [5]
+12330153_version.cpp:26:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330153_version.cpp:27:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:27:  Missing spaces around <  [whitespace/operators] [3]
+12330153_version.cpp:27:  Missing space before ( in for(  [whitespace/parens] [5]
+12330153_version.cpp:27:  Missing space after ;  [whitespace/semicolon] [3]
+12330153_version.cpp:28:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330153_version.cpp:28:  Missing space after ,  [whitespace/comma] [3]
+12330153_version.cpp:29:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:29:  Missing space after ;  [whitespace/semicolon] [3]
+12330153_version.cpp:32:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:32:  Missing spaces around <  [whitespace/operators] [3]
+12330153_version.cpp:32:  Missing space before ( in for(  [whitespace/parens] [5]
+12330153_version.cpp:32:  Missing space after ;  [whitespace/semicolon] [3]
+12330153_version.cpp:33:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330153_version.cpp:33:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330153_version.cpp:33:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330153_version.cpp:33:  Should have a space between // and comment  [whitespace/comments] [4]
+12330153_version.cpp:33:  Missing space after ,  [whitespace/comma] [3]
+12330153_version.cpp:34:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:35:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330153_version.cpp:40:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330153_version.cpp:40:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330153_version.cpp:42:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330153_version.cpp:42:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330153_version.cpp:42:  Should have a space between // and comment  [whitespace/comments] [4]
+12330153_version.cpp:43:  Missing space after ,  [whitespace/comma] [3]
+12330153_version.cpp:44:  Missing spaces around ==  [whitespace/operators] [3]
+12330153_version.cpp:44:  Missing space before ( in if(  [whitespace/parens] [5]
+12330153_version.cpp:44:  Missing space before {  [whitespace/braces] [5]
+12330153_version.cpp:45:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:46:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330153_version.cpp:46:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:46:  Missing spaces around >  [whitespace/operators] [3]
+12330153_version.cpp:46:  Missing space before ( in if(  [whitespace/parens] [5]
+12330153_version.cpp:46:  Missing space before {  [whitespace/braces] [5]
+12330153_version.cpp:47:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330153_version.cpp:48:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:48:  Missing spaces around <  [whitespace/operators] [3]
+12330153_version.cpp:48:  Missing space before ( in for(  [whitespace/parens] [5]
+12330153_version.cpp:48:  Missing space after ;  [whitespace/semicolon] [3]
+12330153_version.cpp:49:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330153_version.cpp:50:  Missing spaces around <  [whitespace/operators] [3]
+12330153_version.cpp:50:  Missing space before ( in if(  [whitespace/parens] [5]
+12330153_version.cpp:50:  Missing space before {  [whitespace/braces] [5]
+12330153_version.cpp:51:  Missing spaces around >  [whitespace/operators] [3]
+12330153_version.cpp:51:  Missing space before ( in if(  [whitespace/parens] [5]
+12330153_version.cpp:51:  Missing space before {  [whitespace/braces] [5]
+12330153_version.cpp:55:  Missing space after ,  [whitespace/comma] [3]
+12330153_version.cpp:56:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330153_version.cpp:57:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:57:  Missing space after ,  [whitespace/comma] [3]
+12330153_version.cpp:58:  Missing spaces around =  [whitespace/operators] [4]
+12330153_version.cpp:58:  Missing spaces around <  [whitespace/operators] [3]
+12330153_version.cpp:58:  Missing space before ( in for(  [whitespace/parens] [5]
+12330153_version.cpp:58:  Missing space after ;  [whitespace/semicolon] [3]
+12330153_version.cpp:58:  Missing space before {  [whitespace/braces] [5]
+12330153_version.cpp:3:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330153_version.cpp:9:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330153_version.cpp:11:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330153_version.cpp:15:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330153_version.cpp:17:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330153_version.cpp:18:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330153_version.cpp:33:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330153_version.cpp:40:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+12330153_version.cpp:42:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+Done processing 12330153_version.cpp
+Total errors found: 127

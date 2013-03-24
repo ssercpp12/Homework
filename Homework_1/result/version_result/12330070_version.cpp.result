@@ -1,0 +1,77 @@
+===  12330070_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In member function ‘int Version::CompareTo(const Version&) const’:
+version.cpp:90:36: error: ‘cout’ was not declared in this scope
+version.cpp:90:36: note: suggested alternative:
+In file included from version.cpp:2:0:
+/usr/include/c++/4.7/iostream:62:18: note:   ‘std::cout’
+version.cpp:90:49: error: ‘endl’ was not declared in this scope
+version.cpp:90:49: note: suggested alternative:
+In file included from /usr/include/c++/4.7/iostream:40:0,
+                 from version.cpp:2:
+/usr/include/c++/4.7/ostream:562:5: note:   ‘std::endl’
+make: *** [version.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+timeout: failed to run command `./version/a.out': No such file or directory
+
+--------- Cpplint Check ---------
+12330070_version.cpp:2:  Streams are highly discouraged.  [readability/streams] [3]
+12330070_version.cpp:6:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330070_version.cpp:6:  Blank line at the start of a code block.  Is this needed?  [whitespace/blank_line] [2]
+12330070_version.cpp:7:  Missing space after ,  [whitespace/comma] [3]
+12330070_version.cpp:9:  Missing space before ( in for(  [whitespace/parens] [5]
+12330070_version.cpp:11:  Missing space before ( in for(  [whitespace/parens] [5]
+12330070_version.cpp:13:  Missing space before ( in for(  [whitespace/parens] [5]
+12330070_version.cpp:14:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:15:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:16:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:20:  Lines should very rarely be longer than 100 characters  [whitespace/line_length] [4]
+12330070_version.cpp:20:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:21:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:25:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330070_version.cpp:25:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:26:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:29:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:30:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:31:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:32:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:36:  Missing space before ( in for(  [whitespace/parens] [5]
+12330070_version.cpp:37:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:38:  Missing space after ,  [whitespace/comma] [3]
+12330070_version.cpp:39:  Lines should very rarely be longer than 100 characters  [whitespace/line_length] [4]
+12330070_version.cpp:39:  Missing space after ,  [whitespace/comma] [3]
+12330070_version.cpp:46:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:48:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:49:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:50:  Missing space before ( in for(  [whitespace/parens] [5]
+12330070_version.cpp:51:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:52:  Missing space after ,  [whitespace/comma] [3]
+12330070_version.cpp:53:  Lines should very rarely be longer than 100 characters  [whitespace/line_length] [4]
+12330070_version.cpp:53:  Missing space after ,  [whitespace/comma] [3]
+12330070_version.cpp:58:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330070_version.cpp:61:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330070_version.cpp:62:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330070_version.cpp:68:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330070_version.cpp:68:  Blank line at the start of a code block.  Is this needed?  [whitespace/blank_line] [2]
+12330070_version.cpp:69:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:78:  Missing space after ,  [whitespace/comma] [3]
+12330070_version.cpp:79:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:81:  Else clause should never be on same line as else (use 2 lines)  [whitespace/newline] [4]
+12330070_version.cpp:82:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:84:  Missing space before ( in for(  [whitespace/parens] [5]
+12330070_version.cpp:85:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:86:  Blank line at the start of a code block.  Is this needed?  [whitespace/blank_line] [2]
+12330070_version.cpp:87:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:88:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:93:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330070_version.cpp:93:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:94:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:98:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:99:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330070_version.cpp:103:  Missing space before ( in if(  [whitespace/parens] [5]
+12330070_version.cpp:107:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+Done processing 12330070_version.cpp
+Total errors found: 55

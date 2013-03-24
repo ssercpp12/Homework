@@ -1,0 +1,57 @@
+===  12330326_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘int util::SeriesComp::F(int)’:
+series_comp.cpp:29:3: warning: control reaches end of non-void function [-Wreturn-type]
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+series_comp_unittest.o: In function `(anonymous namespace)::SeriesCompTest_Sum_1_Test::TestBody()':
+series_comp_unittest.cpp:(.text+0x59): undefined reference to `util::SeriesComp::sum()'
+series_comp_unittest.o: In function `(anonymous namespace)::SeriesCompTest_Sum_2_Test::TestBody()':
+series_comp_unittest.cpp:(.text+0x1ad): undefined reference to `util::SeriesComp::sum()'
+series_comp_unittest.o: In function `(anonymous namespace)::SeriesCompTest_Sum_3_Test::TestBody()':
+series_comp_unittest.cpp:(.text+0x301): undefined reference to `util::SeriesComp::sum()'
+series_comp_unittest.o: In function `(anonymous namespace)::SeriesCompTest_Fib_1_Test::TestBody()':
+series_comp_unittest.cpp:(.text+0x455): undefined reference to `util::SeriesComp::fib()'
+series_comp_unittest.o: In function `(anonymous namespace)::SeriesCompTest_Fib_2_Test::TestBody()':
+series_comp_unittest.cpp:(.text+0x5a9): undefined reference to `util::SeriesComp::fib()'
+series_comp_unittest.o: In function `(anonymous namespace)::SeriesCompTest_Fib_3_Test::TestBody()':
+series_comp_unittest.cpp:(.text+0x6fd): undefined reference to `util::SeriesComp::fib()'
+collect2: error: ld returned 1 exit status
+make: *** [a.out] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+./check_homework.sh: line 22: ./series_comp/a.out: No such file or directory
+
+--------- Cpplint Check ---------
+12330326_series_comp.cpp:8:  Do not leave a blank line after "public:"  [whitespace/blank_line] [3]
+12330326_series_comp.cpp:9:  Single-argument constructors should be marked explicit.  [runtime/explicit] [5]
+12330326_series_comp.cpp:10:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330326_series_comp.cpp:14:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330326_series_comp.cpp:16:  Missing space before ( in for(  [whitespace/parens] [5]
+12330326_series_comp.cpp:17:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330326_series_comp.cpp:21:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330326_series_comp.cpp:21:  Blank line at the end of a code block.  Is this needed?  [whitespace/blank_line] [3]
+12330326_series_comp.cpp:24:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330326_series_comp.cpp:25:  Missing space before ( in if(  [whitespace/parens] [5]
+12330326_series_comp.cpp:27:  Missing space before ( in if(  [whitespace/parens] [5]
+12330326_series_comp.cpp:31:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330326_series_comp.cpp:32:  Missing space before ( in if(  [whitespace/parens] [5]
+12330326_series_comp.cpp:35:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330326_series_comp.cpp:40:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330326_series_comp.cpp:41:  Missing space before ( in if(  [whitespace/parens] [5]
+12330326_series_comp.cpp:44:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330326_series_comp.cpp:46:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330326_series_comp.cpp:49:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330326_series_comp.cpp:51:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330326_series_comp.cpp:52:  Missing space before ( in for(  [whitespace/parens] [5]
+12330326_series_comp.cpp:53:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330326_series_comp.cpp:54:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330326_series_comp.cpp:63:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330326_series_comp.cpp:66:  Streams are highly discouraged.  [readability/streams] [3]
+12330326_series_comp.cpp:67:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330326_series_comp.cpp:68:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330326_series_comp.cpp:70:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330326_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330326_series_comp.cpp
+Total errors found: 29

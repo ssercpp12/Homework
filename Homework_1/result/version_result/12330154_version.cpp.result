@@ -1,0 +1,155 @@
+===  12330154_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In constructor ‘Version::Version(const string&)’:
+version.cpp:34:23: warning: statement has no effect [-Wunused-value]
+version.cpp:10:19: warning: unused variable ‘ans’ [-Wunused-variable]
+version.cpp:10:23: warning: unused variable ‘sum’ [-Wunused-variable]
+version.cpp:11:8: warning: unused variable ‘c’ [-Wunused-variable]
+version.cpp: In member function ‘int Version::CompareTo(const Version&) const’:
+version.cpp:46:11: warning: unused variable ‘k’ [-Wunused-variable]
+version.cpp:46:13: warning: unused variable ‘l’ [-Wunused-variable]
+version.cpp:46:19: warning: unused variable ‘c’ [-Wunused-variable]
+version.cpp:46:21: warning: unused variable ‘d’ [-Wunused-variable]
+g++ -c -Wall version_unittest.cpp -o version_unittest.o
+g++ version.o version_unittest.o -lpthread -lgtest -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+[==========] Running 15 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 15 tests from VersionTest
+[ RUN      ] VersionTest.ValueSemantics_1
+[       OK ] VersionTest.ValueSemantics_1 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_2
+[       OK ] VersionTest.ValueSemantics_2 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_3
+[       OK ] VersionTest.ValueSemantics_3 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_4
+[       OK ] VersionTest.ValueSemantics_4 (0 ms)
+[ RUN      ] VersionTest.ValueSemantics_5
+[       OK ] VersionTest.ValueSemantics_5 (0 ms)
+[ RUN      ] VersionTest.Compare_0
+version_unittest.cpp:82: Failure
+Value of: cases[i].expected
+  Actual: 0
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 1.0
+[  FAILED  ] VersionTest.Compare_0 (0 ms)
+[ RUN      ] VersionTest.Compare_1
+[       OK ] VersionTest.Compare_1 (0 ms)
+[ RUN      ] VersionTest.Compare_2
+version_unittest.cpp:98: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 2.0
+[  FAILED  ] VersionTest.Compare_2 (0 ms)
+[ RUN      ] VersionTest.Compare_3
+version_unittest.cpp:106: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 1.1
+[  FAILED  ] VersionTest.Compare_3 (0 ms)
+[ RUN      ] VersionTest.Compare_4
+[       OK ] VersionTest.Compare_4 (0 ms)
+[ RUN      ] VersionTest.Compare_5
+version_unittest.cpp:122: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0 ? 1.0.1
+[  FAILED  ] VersionTest.Compare_5 (0 ms)
+[ RUN      ] VersionTest.Compare_6
+[       OK ] VersionTest.Compare_6 (0 ms)
+[ RUN      ] VersionTest.Compare_7
+[       OK ] VersionTest.Compare_7 (0 ms)
+[ RUN      ] VersionTest.Compare_8
+version_unittest.cpp:146: Failure
+Value of: cases[i].expected
+  Actual: 0
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0.0 ? 1.0
+[  FAILED  ] VersionTest.Compare_8 (0 ms)
+[ RUN      ] VersionTest.Compare_9
+version_unittest.cpp:154: Failure
+Value of: cases[i].expected
+  Actual: -1
+Expected: lhs.CompareTo(rhs)
+Which is: 1
+1.0.3 ? 1.0.20
+[  FAILED  ] VersionTest.Compare_9 (0 ms)
+[----------] 15 tests from VersionTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 9 tests.
+[  FAILED  ] 6 tests, listed below:
+[  FAILED  ] VersionTest.Compare_0
+[  FAILED  ] VersionTest.Compare_2
+[  FAILED  ] VersionTest.Compare_3
+[  FAILED  ] VersionTest.Compare_5
+[  FAILED  ] VersionTest.Compare_8
+[  FAILED  ] VersionTest.Compare_9
+
+ 6 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330154_version.cpp:2:  Streams are highly discouraged.  [readability/streams] [3]
+12330154_version.cpp:7:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330154_version.cpp:10:  Missing space after ,  [whitespace/comma] [3]
+12330154_version.cpp:12:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:13:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:13:  Missing space after ;  [whitespace/semicolon] [3]
+12330154_version.cpp:14:  Missing spaces around <  [whitespace/operators] [3]
+12330154_version.cpp:15:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330154_version.cpp:16:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:16:  Missing spaces around <  [whitespace/operators] [3]
+12330154_version.cpp:16:  Missing space after ;  [whitespace/semicolon] [3]
+12330154_version.cpp:17:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330154_version.cpp:18:  Missing spaces around ==  [whitespace/operators] [3]
+12330154_version.cpp:19:  Missing spaces around >=  [whitespace/operators] [3]
+12330154_version.cpp:20:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:23:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330154_version.cpp:23:  Missing spaces around ==  [whitespace/operators] [3]
+12330154_version.cpp:24:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330154_version.cpp:24:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330154_version.cpp:25:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:28:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:28:  Missing space after ;  [whitespace/semicolon] [3]
+12330154_version.cpp:29:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:29:  Missing spaces around >=  [whitespace/operators] [3]
+12330154_version.cpp:29:  Missing space after ;  [whitespace/semicolon] [3]
+12330154_version.cpp:30:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330154_version.cpp:34:  Missing spaces around ==  [whitespace/operators] [3]
+12330154_version.cpp:35:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:37:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330154_version.cpp:37:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:41:  Missing spaces around ==  [whitespace/operators] [3]
+12330154_version.cpp:42:  Else clause should never be on same line as else (use 2 lines)  [whitespace/newline] [4]
+12330154_version.cpp:46:  Missing space after ,  [whitespace/comma] [3]
+12330154_version.cpp:47:  Missing spaces around ==  [whitespace/operators] [3]
+12330154_version.cpp:48:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:48:  Missing space after ;  [whitespace/semicolon] [3]
+12330154_version.cpp:49:  Missing spaces around <  [whitespace/operators] [3]
+12330154_version.cpp:50:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330154_version.cpp:51:  Missing spaces around >=  [whitespace/operators] [3]
+12330154_version.cpp:52:  Else clause should never be on same line as else (use 2 lines)  [whitespace/newline] [4]
+12330154_version.cpp:52:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:53:  Missing spaces around >=  [whitespace/operators] [3]
+12330154_version.cpp:54:  Else clause should never be on same line as else (use 2 lines)  [whitespace/newline] [4]
+12330154_version.cpp:54:  Missing spaces around =  [whitespace/operators] [4]
+12330154_version.cpp:55:  Missing spaces around ==  [whitespace/operators] [3]
+12330154_version.cpp:55:  Missing space after ;  [whitespace/semicolon] [3]
+12330154_version.cpp:56:  Else clause should never be on same line as else (use 2 lines)  [whitespace/newline] [4]
+12330154_version.cpp:58:  Missing spaces around >  [whitespace/operators] [3]
+12330154_version.cpp:59:  Missing spaces around ==  [whitespace/operators] [3]
+12330154_version.cpp:60:  Missing spaces around <  [whitespace/operators] [3]
+Done processing 12330154_version.cpp
+Total errors found: 50

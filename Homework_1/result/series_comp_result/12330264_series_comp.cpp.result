@@ -1,0 +1,114 @@
+===  12330264_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (1 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+series_comp_unittest.cpp:28: Failure
+Value of: sc_10.fib()
+  Actual: 88
+Expected: 143
+[  FAILED  ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+series_comp_unittest.cpp:33: Failure
+Value of: sc_4.fib()
+  Actual: 4
+Expected: 7
+[  FAILED  ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+[       OK ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+[       OK ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+[       OK ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (1 ms total)
+[  PASSED  ] 7 tests.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] SeriesCompTest.Fib_2
+[  FAILED  ] SeriesCompTest.Fib_3
+
+ 2 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330264_series_comp.cpp:1:  Streams are highly discouraged.  [readability/streams] [3]
+12330264_series_comp.cpp:3:  Do not use namespace using-directives.  Use using-declarations instead.  [build/namespaces] [5]
+12330264_series_comp.cpp:6:  Missing space before {  [whitespace/braces] [5]
+12330264_series_comp.cpp:7:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:8:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12330264_series_comp.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:9:  Single-argument constructors should be marked explicit.  [runtime/explicit] [5]
+12330264_series_comp.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:13:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330264_series_comp.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:14:  Labels should always be indented at least one space.  If this is a member-initializer list in a constructor or the base class list in a class definition, the colon should be on the following line.  [whitespace/labels] [4]
+12330264_series_comp.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:17:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330264_series_comp.cpp:22:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330264_series_comp.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:23:  Missing spaces around =  [whitespace/operators] [4]
+12330264_series_comp.cpp:26:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330264_series_comp.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:27:  Missing spaces around =  [whitespace/operators] [4]
+12330264_series_comp.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:28:  Missing spaces around =  [whitespace/operators] [4]
+12330264_series_comp.cpp:28:  Missing spaces around <=  [whitespace/operators] [3]
+12330264_series_comp.cpp:28:  Missing space after ;  [whitespace/semicolon] [3]
+12330264_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:34:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330264_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:35:  Use int16/int64/etc, rather than the C type long  [runtime/int] [4]
+12330264_series_comp.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:36:  Missing space after ;  [whitespace/semicolon] [3]
+12330264_series_comp.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:37:  Missing spaces around =  [whitespace/operators] [4]
+12330264_series_comp.cpp:37:  Use int16/int64/etc, rather than the C type long  [runtime/int] [4]
+12330264_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:38:  Missing spaces around =  [whitespace/operators] [4]
+12330264_series_comp.cpp:38:  Missing spaces around <  [whitespace/operators] [3]
+12330264_series_comp.cpp:38:  Missing space after ;  [whitespace/semicolon] [3]
+12330264_series_comp.cpp:38:  Missing space before {  [whitespace/braces] [5]
+12330264_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:40:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:41:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:46:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330264_series_comp.cpp:47:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:47:  Missing spaces around =  [whitespace/operators] [4]
+12330264_series_comp.cpp:48:  Missing spaces around =  [whitespace/operators] [4]
+12330264_series_comp.cpp:49:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:49:  Missing spaces around =  [whitespace/operators] [4]
+12330264_series_comp.cpp:49:  Missing spaces around <=  [whitespace/operators] [3]
+12330264_series_comp.cpp:49:  Missing space after ;  [whitespace/semicolon] [3]
+12330264_series_comp.cpp:50:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:50:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330264_series_comp.cpp:50:  Missing space before {  [whitespace/braces] [5]
+12330264_series_comp.cpp:51:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:52:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:52:  Missing space after ,  [whitespace/comma] [3]
+12330264_series_comp.cpp:53:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:54:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330264_series_comp.cpp:0:  One or more unexpected \r (^M) found;better to use only a \n  [whitespace/newline] [1]
+Done processing 12330264_series_comp.cpp
+Total errors found: 63

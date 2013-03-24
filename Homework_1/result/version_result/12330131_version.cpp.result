@@ -1,0 +1,164 @@
+===  12330131_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In constructor ‘Version::Version(const string&)’:
+version.cpp:15:8: error: ‘string’ has not been declared
+version.cpp:15:26: error: expected ‘;’ before ‘index’
+version.cpp:15:62: error: invalid operands of types ‘<unresolved overloaded function type>’ and ‘std::basic_string<char>::size_type {aka unsigned int}’ to binary ‘operator!=’
+version.cpp:15:69: error: no post-increment operator for type
+version.cpp:16:27: error: no match for ‘operator[]’ in ‘version_str[index]’
+version.cpp:16:27: note: candidates are:
+In file included from /usr/include/c++/4.7/string:54:0,
+                 from version.h:4,
+                 from version.cpp:1:
+/usr/include/c++/4.7/bits/basic_string.h:823:7: note: std::basic_string<_CharT, _Traits, _Alloc>::const_reference std::basic_string<_CharT, _Traits, _Alloc>::operator[](std::basic_string<_CharT, _Traits, _Alloc>::size_type) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::const_reference = const char&; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+/usr/include/c++/4.7/bits/basic_string.h:823:7: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::basic_string<char>::size_type {aka unsigned int}’
+/usr/include/c++/4.7/bits/basic_string.h:840:7: note: std::basic_string<_CharT, _Traits, _Alloc>::reference std::basic_string<_CharT, _Traits, _Alloc>::operator[](std::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::reference = char&; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+/usr/include/c++/4.7/bits/basic_string.h:840:7: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::basic_string<char>::size_type {aka unsigned int}’
+version.cpp:16:56: error: no match for ‘operator[]’ in ‘version_str[index]’
+version.cpp:16:56: note: candidates are:
+In file included from /usr/include/c++/4.7/string:54:0,
+                 from version.h:4,
+                 from version.cpp:1:
+/usr/include/c++/4.7/bits/basic_string.h:823:7: note: std::basic_string<_CharT, _Traits, _Alloc>::const_reference std::basic_string<_CharT, _Traits, _Alloc>::operator[](std::basic_string<_CharT, _Traits, _Alloc>::size_type) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::const_reference = const char&; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+/usr/include/c++/4.7/bits/basic_string.h:823:7: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::basic_string<char>::size_type {aka unsigned int}’
+/usr/include/c++/4.7/bits/basic_string.h:840:7: note: std::basic_string<_CharT, _Traits, _Alloc>::reference std::basic_string<_CharT, _Traits, _Alloc>::operator[](std::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::reference = char&; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+/usr/include/c++/4.7/bits/basic_string.h:840:7: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::basic_string<char>::size_type {aka unsigned int}’
+version.cpp:17:42: error: no match for ‘operator[]’ in ‘version_str[index]’
+version.cpp:17:42: note: candidates are:
+In file included from /usr/include/c++/4.7/string:54:0,
+                 from version.h:4,
+                 from version.cpp:1:
+/usr/include/c++/4.7/bits/basic_string.h:823:7: note: std::basic_string<_CharT, _Traits, _Alloc>::const_reference std::basic_string<_CharT, _Traits, _Alloc>::operator[](std::basic_string<_CharT, _Traits, _Alloc>::size_type) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::const_reference = const char&; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+/usr/include/c++/4.7/bits/basic_string.h:823:7: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::basic_string<char>::size_type {aka unsigned int}’
+/usr/include/c++/4.7/bits/basic_string.h:840:7: note: std::basic_string<_CharT, _Traits, _Alloc>::reference std::basic_string<_CharT, _Traits, _Alloc>::operator[](std::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::reference = char&; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+/usr/include/c++/4.7/bits/basic_string.h:840:7: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::basic_string<char>::size_type {aka unsigned int}’
+version.cpp:18:39: error: invalid operands of types ‘<unresolved overloaded function type>’ and ‘std::basic_string<char>::size_type {aka unsigned int}’ to binary ‘operator==’
+version.cpp:24:32: error: no match for ‘operator[]’ in ‘version_str[index]’
+version.cpp:24:32: note: candidates are:
+In file included from /usr/include/c++/4.7/string:54:0,
+                 from version.h:4,
+                 from version.cpp:1:
+/usr/include/c++/4.7/bits/basic_string.h:823:7: note: std::basic_string<_CharT, _Traits, _Alloc>::const_reference std::basic_string<_CharT, _Traits, _Alloc>::operator[](std::basic_string<_CharT, _Traits, _Alloc>::size_type) const [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::const_reference = const char&; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+/usr/include/c++/4.7/bits/basic_string.h:823:7: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::basic_string<char>::size_type {aka unsigned int}’
+/usr/include/c++/4.7/bits/basic_string.h:840:7: note: std::basic_string<_CharT, _Traits, _Alloc>::reference std::basic_string<_CharT, _Traits, _Alloc>::operator[](std::basic_string<_CharT, _Traits, _Alloc>::size_type) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>; std::basic_string<_CharT, _Traits, _Alloc>::reference = char&; std::basic_string<_CharT, _Traits, _Alloc>::size_type = unsigned int]
+/usr/include/c++/4.7/bits/basic_string.h:840:7: note:   no known conversion for argument 1 from ‘<unresolved overloaded function type>’ to ‘std::basic_string<char>::size_type {aka unsigned int}’
+version.cpp:25:39: error: invalid operands of types ‘<unresolved overloaded function type>’ and ‘std::basic_string<char>::size_type {aka unsigned int}’ to binary ‘operator==’
+version.cpp:25:53: error: invalid operands of types ‘<unresolved overloaded function type>’ and ‘int’ to binary ‘operator==’
+version.cpp:25:79: error: invalid operands of types ‘<unresolved overloaded function type>’ and ‘int’ to binary ‘operator+’
+make: *** [version.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+timeout: failed to run command `./version/a.out': No such file or directory
+
+--------- Cpplint Check ---------
+12330131_version.cpp:4:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:5:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:6:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:6:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330131_version.cpp:7:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:8:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:9:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:9:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330131_version.cpp:10:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:10:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330131_version.cpp:11:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:13:  Should have a space between // and comment  [whitespace/comments] [4]
+12330131_version.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:14:  Missing space after ,  [whitespace/comma] [3]
+12330131_version.cpp:14:  Extra space after ( in function call  [whitespace/parens] [4]
+12330131_version.cpp:14:  Extra space before )  [whitespace/parens] [2]
+12330131_version.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:15:  Missing space after ;  [whitespace/semicolon] [3]
+12330131_version.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:17:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:18:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:19:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:20:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:21:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:22:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330131_version.cpp:22:  Should have a space between // and comment  [whitespace/comments] [4]
+12330131_version.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:24:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330131_version.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:25:  Lines should be <= 80 characters long  [whitespace/line_length] [2]
+12330131_version.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:27:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:28:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330131_version.cpp:28:  Should have a space between // and comment  [whitespace/comments] [4]
+12330131_version.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:30:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:33:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330131_version.cpp:33:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12330131_version.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:38:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330131_version.cpp:38:  Should have a space between // and comment  [whitespace/comments] [4]
+12330131_version.cpp:42:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:43:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:48:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:49:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:50:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:51:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:52:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:53:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:54:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:55:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:56:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:57:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:58:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:59:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:60:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:61:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:62:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:63:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:63:  Missing space after ;  [whitespace/semicolon] [3]
+12330131_version.cpp:64:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:65:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:66:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:67:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:68:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:68:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330131_version.cpp:68:  Should have a space between // and comment  [whitespace/comments] [4]
+12330131_version.cpp:69:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:70:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:70:  Missing space after ;  [whitespace/semicolon] [3]
+12330131_version.cpp:71:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:72:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:73:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:73:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330131_version.cpp:73:  Should have a space between // and comment  [whitespace/comments] [4]
+12330131_version.cpp:74:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:75:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:76:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:76:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330131_version.cpp:76:  If an else has a brace on one side, it should have it on both  [readability/braces] [5]
+12330131_version.cpp:77:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:77:  Missing space after ;  [whitespace/semicolon] [3]
+12330131_version.cpp:78:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:79:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:80:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:81:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:82:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:82:  At least two spaces is best between code and comments  [whitespace/comments] [2]
+12330131_version.cpp:82:  Should have a space between // and comment  [whitespace/comments] [4]
+12330131_version.cpp:83:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:84:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:84:  An else should appear on the same line as the preceding }  [whitespace/newline] [4]
+12330131_version.cpp:85:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330131_version.cpp:13:  Line contains invalid UTF-8 (or Unicode replacement character).  [readability/utf8] [5]
+Done processing 12330131_version.cpp
+Total errors found: 107

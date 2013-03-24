@@ -1,0 +1,95 @@
+===  12330154_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+series_comp.cpp: In member function ‘int util::SeriesComp::fib()’:
+series_comp.cpp:16:17: warning: unused variable ‘j’ [-Wunused-variable]
+series_comp.cpp:16:19: warning: unused variable ‘k’ [-Wunused-variable]
+series_comp.cpp: In member function ‘double util::SeriesComp::taylor(double)’:
+series_comp.cpp:29:14: warning: unused variable ‘j’ [-Wunused-variable]
+series_comp.cpp:30:19: warning: unused variable ‘ans’ [-Wunused-variable]
+series_comp.cpp:30:25: warning: unused variable ‘b’ [-Wunused-variable]
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+series_comp_unittest.cpp:8: Failure
+Value of: sc_10.sum()
+  Actual: -1217064905
+Expected: 55
+[  FAILED  ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+series_comp_unittest.cpp:13: Failure
+Value of: sc_1.sum()
+  Actual: -1220749567
+Expected: 1
+[  FAILED  ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+series_comp_unittest.cpp:18: Failure
+Value of: sc_4.sum()
+  Actual: -1220749558
+Expected: 10
+[  FAILED  ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+[       OK ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+[       OK ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+[       OK ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+[       OK ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+[       OK ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 6 tests.
+[  FAILED  ] 3 tests, listed below:
+[  FAILED  ] SeriesCompTest.Sum_1
+[  FAILED  ] SeriesCompTest.Sum_2
+[  FAILED  ] SeriesCompTest.Sum_3
+
+ 3 FAILED TESTS
+
+--------- Cpplint Check ---------
+12330154_series_comp.cpp:7:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330154_series_comp.cpp:8:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330154_series_comp.cpp:9:  Missing space after ,  [whitespace/comma] [3]
+12330154_series_comp.cpp:10:  Missing spaces around =  [whitespace/operators] [4]
+12330154_series_comp.cpp:10:  Missing spaces around <=  [whitespace/operators] [3]
+12330154_series_comp.cpp:10:  Missing space after ;  [whitespace/semicolon] [3]
+12330154_series_comp.cpp:14:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330154_series_comp.cpp:15:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330154_series_comp.cpp:16:  Missing space after ,  [whitespace/comma] [3]
+12330154_series_comp.cpp:17:  Missing spaces around =  [whitespace/operators] [4]
+12330154_series_comp.cpp:17:  Missing space after ;  [whitespace/semicolon] [3]
+12330154_series_comp.cpp:18:  Missing spaces around =  [whitespace/operators] [4]
+12330154_series_comp.cpp:18:  Missing spaces around <=  [whitespace/operators] [3]
+12330154_series_comp.cpp:18:  Missing space after ;  [whitespace/semicolon] [3]
+12330154_series_comp.cpp:19:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330154_series_comp.cpp:21:  Missing spaces around =  [whitespace/operators] [4]
+12330154_series_comp.cpp:22:  Missing spaces around =  [whitespace/operators] [4]
+12330154_series_comp.cpp:23:  Missing spaces around =  [whitespace/operators] [4]
+12330154_series_comp.cpp:24:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330154_series_comp.cpp:29:  Missing space after ,  [whitespace/comma] [3]
+12330154_series_comp.cpp:30:  Missing space after ,  [whitespace/comma] [3]
+12330154_series_comp.cpp:31:  Missing spaces around =  [whitespace/operators] [4]
+12330154_series_comp.cpp:31:  Missing space after ;  [whitespace/semicolon] [3]
+12330154_series_comp.cpp:32:  Missing spaces around =  [whitespace/operators] [4]
+12330154_series_comp.cpp:32:  Missing spaces around <=  [whitespace/operators] [3]
+12330154_series_comp.cpp:32:  Missing space after ;  [whitespace/semicolon] [3]
+12330154_series_comp.cpp:33:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330154_series_comp.cpp:33:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330154_series_comp.cpp:34:  Missing spaces around =  [whitespace/operators] [4]
+12330154_series_comp.cpp:35:  Missing spaces around =  [whitespace/operators] [4]
+12330154_series_comp.cpp:36:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330154_series_comp.cpp:40:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+Done processing 12330154_series_comp.cpp
+Total errors found: 32

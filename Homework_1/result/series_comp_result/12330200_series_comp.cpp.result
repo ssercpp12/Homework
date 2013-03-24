@@ -1,0 +1,97 @@
+===  12330200_series_comp.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+g++ -c -Wall series_comp.cpp -o series_comp.o
+g++ series_comp.o series_comp_unittest.o -lpthread -lgtest -lgtest_main -o a.out
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/series_comp'
+--------- Google Test ---------
+Running main() from gtest_main.cc
+[==========] Running 9 tests from 1 test case.
+[----------] Global test environment set-up.
+[----------] 9 tests from SeriesCompTest
+[ RUN      ] SeriesCompTest.Sum_1
+[       OK ] SeriesCompTest.Sum_1 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_2
+[       OK ] SeriesCompTest.Sum_2 (0 ms)
+[ RUN      ] SeriesCompTest.Sum_3
+[       OK ] SeriesCompTest.Sum_3 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_1
+[       OK ] SeriesCompTest.Fib_1 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_2
+[       OK ] SeriesCompTest.Fib_2 (0 ms)
+[ RUN      ] SeriesCompTest.Fib_3
+[       OK ] SeriesCompTest.Fib_3 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_1
+[       OK ] SeriesCompTest.Taylor_1 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_2
+[       OK ] SeriesCompTest.Taylor_2 (0 ms)
+[ RUN      ] SeriesCompTest.Taylor_3
+[       OK ] SeriesCompTest.Taylor_3 (0 ms)
+[----------] 9 tests from SeriesCompTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 9 tests from 1 test case ran. (0 ms total)
+[  PASSED  ] 9 tests.
+
+--------- Cpplint Check ---------
+12330200_series_comp.cpp:10:  Should have a space between // and comment  [whitespace/comments] [4]
+12330200_series_comp.cpp:12:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:12:  Missing spaces around =  [whitespace/operators] [4]
+12330200_series_comp.cpp:13:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:13:  Missing spaces around =  [whitespace/operators] [4]
+12330200_series_comp.cpp:13:  Missing spaces around <=  [whitespace/operators] [3]
+12330200_series_comp.cpp:14:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:14:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330200_series_comp.cpp:14:  Missing space before {  [whitespace/braces] [5]
+12330200_series_comp.cpp:15:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:16:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:20:  Should have a space between // and comment  [whitespace/comments] [4]
+12330200_series_comp.cpp:22:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:22:  Missing spaces around =  [whitespace/operators] [4]
+12330200_series_comp.cpp:23:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:24:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:25:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:26:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:28:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:28:  Missing spaces around ==  [whitespace/operators] [3]
+12330200_series_comp.cpp:29:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:31:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:31:  Missing spaces around ==  [whitespace/operators] [3]
+12330200_series_comp.cpp:32:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:33:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:33:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330200_series_comp.cpp:34:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:34:  Missing spaces around =  [whitespace/operators] [4]
+12330200_series_comp.cpp:34:  Missing spaces around <  [whitespace/operators] [3]
+12330200_series_comp.cpp:35:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:35:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330200_series_comp.cpp:35:  Missing space before {  [whitespace/braces] [5]
+12330200_series_comp.cpp:36:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:37:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:38:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:39:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:42:  Should have a space between // and comment  [whitespace/comments] [4]
+12330200_series_comp.cpp:44:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:45:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:45:  Missing spaces around =  [whitespace/operators] [4]
+12330200_series_comp.cpp:46:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:46:  Missing spaces around =  [whitespace/operators] [4]
+12330200_series_comp.cpp:46:  Missing spaces around <=  [whitespace/operators] [3]
+12330200_series_comp.cpp:47:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:47:  Using deprecated casting style.  Use static_cast<double>(...) instead  [readability/casting] [4]
+12330200_series_comp.cpp:48:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:51:  Namespace should be terminated with "// namespace util"  [readability/namespace] [5]
+12330200_series_comp.cpp:53:  Should have a space between // and comment  [whitespace/comments] [4]
+12330200_series_comp.cpp:55:  { should almost always be at the end of the previous line  [whitespace/braces] [4]
+12330200_series_comp.cpp:56:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:57:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:57:  Missing spaces around ==  [whitespace/operators] [3]
+12330200_series_comp.cpp:58:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:58:  Missing spaces around =  [whitespace/operators] [4]
+12330200_series_comp.cpp:59:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:60:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:60:  Missing spaces around =  [whitespace/operators] [4]
+12330200_series_comp.cpp:61:  Tab found; better to use spaces  [whitespace/tab] [1]
+12330200_series_comp.cpp:62:  Could not find a newline character at the end of the file.  [whitespace/ending_newline] [5]
+Done processing 12330200_series_comp.cpp
+Total errors found: 59

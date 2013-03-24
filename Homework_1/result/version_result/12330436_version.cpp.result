@@ -1,0 +1,45 @@
+===  12330436_version.cpp  === 
+--------- Compile Result ---------
+make: Entering directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+g++ -c -Wall version.cpp -o version.o
+version.cpp: In constructor ‘Version::Version(const string&)’:
+version.cpp:10:9: error: ‘i’ was not declared in this scope
+version.cpp:14:14: error: returning a value from a constructor
+version.cpp:18:14: error: returning a value from a constructor
+version.cpp:24:32: error: ‘atoi’ was not declared in this scope
+version.cpp: In member function ‘int Version::CompareTo(const Version&) const’:
+version.cpp:54:30: error: assignment of read-only location ‘other.Version::components_[i]’
+version.cpp:57:24: error: assignment of read-only location ‘((const Version*)this)->Version::components_[i]’
+version.cpp:49:10: warning: unused variable ‘i1’ [-Wunused-variable]
+make: *** [version.o] Error 1
+make: Leaving directory `/home/zcb/00_CPP/00_SeriesComp&Version/version'
+--------- Google Test ---------
+timeout: failed to run command `./version/a.out': No such file or directory
+
+--------- Cpplint Check ---------
+12330436_version.cpp:4:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330436_version.cpp:4:  Blank line at the start of a code block.  Is this needed?  [whitespace/blank_line] [2]
+12330436_version.cpp:10:  Missing space before {  [whitespace/braces] [5]
+12330436_version.cpp:12:  Missing space before {  [whitespace/braces] [5]
+12330436_version.cpp:15:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330436_version.cpp:16:  Missing space before {  [whitespace/braces] [5]
+12330436_version.cpp:21:  Missing space after ,  [whitespace/comma] [3]
+12330436_version.cpp:21:  Consider using strtok_r(...) instead of strtok(...) for improved thread safety.  [runtime/threadsafe_fn] [2]
+12330436_version.cpp:23:  Mismatching spaces inside () in while  [whitespace/parens] [5]
+12330436_version.cpp:23:  Missing space before {  [whitespace/braces] [5]
+12330436_version.cpp:24:  Extra space after ( in function call  [whitespace/parens] [4]
+12330436_version.cpp:24:  Extra space before )  [whitespace/parens] [2]
+12330436_version.cpp:26:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330436_version.cpp:26:  Missing space after ,  [whitespace/comma] [3]
+12330436_version.cpp:26:  Consider using strtok_r(...) instead of strtok(...) for improved thread safety.  [runtime/threadsafe_fn] [2]
+12330436_version.cpp:29:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330436_version.cpp:30:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330436_version.cpp:33:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330436_version.cpp:34:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330436_version.cpp:44:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+12330436_version.cpp:53:  Missing space before {  [whitespace/braces] [5]
+12330436_version.cpp:56:  Missing space before {  [whitespace/braces] [5]
+12330436_version.cpp:59:  Missing space before {  [whitespace/braces] [5]
+12330436_version.cpp:65:  Line ends in whitespace.  Consider deleting these extra spaces.  [whitespace/end_of_line] [4]
+Done processing 12330436_version.cpp
+Total errors found: 24
