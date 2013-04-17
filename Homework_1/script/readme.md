@@ -11,5 +11,4 @@ $./check_homework.sh
 ```
 The `chmod` is used to make sure the script file have the permission to execute.
 
-3. If everything work as expected, you can get the file like
-   `id_name.cpp.result`.
+If everything work as expected, you can get the result file like `id_name.cpp.result`.
