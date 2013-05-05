@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CPPLINT_OPTION="--filter=-legal/copyright,-build/include,-build/include_what_you_use"
+CPPLINT_OPTION="--filter=-legal/copyright,-build/include,-build/include_what_you_use,-readability/streams"
 
 function Check {
     SUFFIX=$1
